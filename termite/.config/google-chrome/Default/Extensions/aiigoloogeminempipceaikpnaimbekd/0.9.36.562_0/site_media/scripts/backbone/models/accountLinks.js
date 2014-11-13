@@ -1,0 +1,2 @@
+var AccountLinksModel=Backbone.Model.extend({url:function(){return"/account/links/data/?common=1";},fetchXhr:null,fetch_params:function(params){var url=this.url()+"&"+$.param(params);if(this.fetchXhr&&this.fetchXhr.readyState>0&&this.fetchXhr.readyState<4){console.log(url+' - aborting previous fetch ');this.fetchXhr.abort();}
+this.fetchXhr=this.fetch({url:url});return this.fetchXhr;}});

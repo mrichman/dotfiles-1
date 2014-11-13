@@ -44,7 +44,7 @@ alias gst='g st'
 alias gstp='g stp'
 alias gd='g d'
 
-export PATH=./bin:$GOPATH/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export PATH=./bin:$GOPATH/bin:/usr/local/go/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:$PATH
 
 # Tab Completion of .ssh/known_hosts
 local knownhosts

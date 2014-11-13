@@ -1,0 +1,1 @@
+var GeneralSettingsModel=Backbone.Model.extend({url:'/account/profile_field/save'});

@@ -1,0 +1,1 @@
+var OwnerView=BaseDecryptInputView.extend({initialize:function(){$(this.el).show();$('#expireValueTip').removeClass('end');},events:{"click #bypassLinkAuth .link":"handleClick"},handleClick:function(e){lockify.index.baseDecryptOutputView.trigger('getSecretHandler',$(this),e);}});

@@ -1,0 +1,1 @@
+$(document).ready(function(){$('body').addClass('toolinfo_page');});var MAX_MESSAGE_CHAR_LENGTH=50000;var LINK_URL="https://lockify.com/d";var DATA_INPUT_INITIAL_MSG='';var DATA_INPUT_REVEAL_MSG='Press to reveal message';var MIN_CHARS_ENABLE_CLOSE=0;var LINK_WARNING_LENGTH=0;var ENABLE_EVENT_CONSOLE=false;

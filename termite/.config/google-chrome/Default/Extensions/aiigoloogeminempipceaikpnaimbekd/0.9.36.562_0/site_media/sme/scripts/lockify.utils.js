@@ -1,0 +1,1 @@
+lockifyUtils.getManageTeamUrl=function(slug){return'/sme/organization/'+slug;};

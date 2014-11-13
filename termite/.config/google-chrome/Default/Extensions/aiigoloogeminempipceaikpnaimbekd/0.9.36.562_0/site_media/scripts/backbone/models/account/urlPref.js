@@ -1,0 +1,1 @@
+var UrlPrefModel=Backbone.Model.extend({defaults:{url:'',name:'',value:''},url:'/account/url_pref/save'});var UrlPrefsCollection=Backbone.Collection.extend({model:UrlPrefModel});

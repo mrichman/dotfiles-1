@@ -1,0 +1,3 @@
+var ActivityModel=Backbone.Model.extend({save:function(){var returnedValue=ActivityModel.__super__.save.apply(this,arguments);if(_.isBoolean(returnedValue)){return new $.Deferred().reject().promise();}
+return returnedValue.then(_.bind(this.handleSaveResponse,this));},handleSaveResponse:function(resp,statusText,xhr){if(resp.success==false){this.validationError={fieldErrors:resp.fieldErrors};return new $.Deferred().reject().promise();}
+return xhr;},url:function(){return"/sme/organization/"+this.get('orgid')+"/activities/"+(this.get('id')||'');},initialize:function(options){var foo="bar";},validate:function(attrs,options){ret={formError:"",fieldErrors:[]};return ret;}});var ActivityCollection=Backbone.Collection.extend({model:ActivityModel});

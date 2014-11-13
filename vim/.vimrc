@@ -17,10 +17,10 @@ NeoBundle 'fatih/vim-go' " Go
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'rking/ag.vim' 			          " search
 NeoBundle 'bling/vim-airline' 			    " statusline
-"NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Shougo/unite.vim' 			      " completion window
 NeoBundle 'Shougo/unite-outline' 
-NeoBundleLazy 'tsukkee/unite-tag', {'autoload':{'unite_sources':['tag','tag/file']}}
+"NeoBundleLazy 'tsukkee/unite-tag', {'autoload':{'unite_sources':['tag','tag/file']}}
 NeoBundle 'scrooloose/syntastic' 		    " syntax check on buffer save
 NeoBundle 'vim-scripts/vim-startify'    " start screen
 NeoBundle 'tomtom/tlib_vim'             " VimL utility functions 
@@ -59,17 +59,8 @@ NeoBundleLazy 'pangloss/vim-javascript', {'autoload':{'filetypes':['javascript',
 NeoBundleLazy 'maksimr/vim-jsbeautify', {'autoload':{'filetypes':['javascript', 'js']}}
 NeoBundleLazy 'leshill/vim-json', {'autoload':{'filetypes':['json']}}
 
-" Ruby
-NeoBundleLazy 'janx/vim-rubytest', {'autoload':{'filetypes':['eruby', 'ruby', 'erb']}}
-NeoBundleLazy 'brentmc79/vim-rspec', {'autoload':{'filetypes':['eruby', 'ruby', 'erb']}}
-NeoBundleLazy 'tpope/vim-rails', {'autoload':{'filetypes':['eruby', 'ruby', 'erb']}}
-NeoBundleLazy 'vim-ruby/vim-ruby', {'autoload':{'filetypes':['eruby', 'ruby', 'erb']}}
-NeoBundleLazy 'kana/vim-textobj-user', {'autoload':{'filetypes':['eruby', 'ruby', 'erb']}}
-NeoBundleLazy 'nelstrom/vim-textobj-rubyblock', {'autoload':{'filetypes':['eruby', 'ruby', 'erb']}}
-NeoBundleLazy 'tpope/vim-rbenv', {'autoload':{'filetypes':['eruby', 'ruby', 'erb']}}
-NeoBundleLazy 'KurtPreston/vim-autoformat-rails', {'autoload':{'filetypes':['eruby', 'ruby', 'erb']}}         
+        
 NeoBundle 'tpope/vim-bundler'
-NeoBundle 'tpope/gem-ctags'
 
 " Vim
 NeoBundleLazy 'tpope/vim-scriptease', {'autoload':{'filetypes':['vim']}}
@@ -87,7 +78,6 @@ filetype plugin indent on	" Enable filetype-specific indenting and plugins
 set autoread			" Automatically read file when changed outside Vim
 set history=100 	" Keep 100 lines of command line history
 set viminfo^=%    " Remember info about open buffers on close
-set ttyfast			  " this is the 21st century, people
 set noesckeys 		" disable recognition of keys sending an escape sequence when in insert mode
 set nrformats-=octal      "always assume decimal numbers
 set nocompatible
@@ -102,3 +92,27 @@ let g:mapleader = ","
 augroup MyAutoCmd
   autocmd!
 augroup END
+au BufRead,BufNewFile *.md set filetype=markdown
+
+"" Disable the blinking cursor.
+set gcr=a:blinkon0
+set scrolloff=3
+
+
+"*****************************************************************************
+"" Abbreviations
+"*****************************************************************************
+"" no one is really happy until you have this shortcuts
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+
+
+
+
+

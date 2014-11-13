@@ -14,15 +14,6 @@ set nostartofline                 " keep cursor in same column for long-range mo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disable arrow keys to force use of vim as intended
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-noremap <up> <nop>
-noremap <down> <nop>
-noremap <left> <nop>
-noremap <right> <nop>
 
 " Treat long lines as break lines
 nmap j gj
@@ -43,3 +34,9 @@ map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
+
+
+
+set mouse=a
+set mousemodel=popup
+

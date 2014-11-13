@@ -16,7 +16,7 @@ set $mod Mod1
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
-font pango:Source Code Pro for Powerline 10
+font pango:Source Code Pro for Powerline 12
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -148,11 +148,10 @@ bindsym $mod+r mode "resize"
 bar {
 	i3bar_command i3bar
 	position top
-	font pango:Source Code Pro for Powerline 10 
+	font pango:Source Code Pro for Powerline 14 
         #status_command i3status
 }
 
 #--glx-no-stencil, --paint-on-overlay, --glx-no-rebind-pixmap, and --glx-swap-method 3 --vsync opengl --glx-use-copysubbuffermesa
-exec --no-startup-id compton -CGb --backend glx --glx-swap-method 3 --paint-on-overlay --glx-no-stencil --vsync opengl
-exec --no-startup-id feh --bg-fill ~/arch-linux-background.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/arch.jpg
 exec --no-startup-id conky -c ~/.conkyrc

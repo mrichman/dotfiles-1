@@ -1,0 +1,3 @@
+var UniqueurlSettingsView=Backbone.View.extend({events:{},initialize:function(){this.model.bind('change:uniqueurl',this.updateUniqueUrl);},updateUniqueUrl:function(){var uu=this.get('uniqueurl');if(uu!=null&&(typeof uu!=='undefined'||uu!=="")){$('#uniqueurlContainer').show();}else{$('#uniqueurlContainer').remove();$('#userPrefsSection').addClass('last');}
+if(this.get('uniqueurl')){$('a#lockifyme_url').text(this.get('uniqueurl')).attr('href',this.get('uniqueurl'));}else{$('a#lockifyme_url').after('<span> currently not configured.</span>').remove();}
+$(document).trigger('uniqueurlUpdated');$(document).trigger('formBoundToUserPrefs');}});

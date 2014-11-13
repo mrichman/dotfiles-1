@@ -1,0 +1,9 @@
+var lockifyAjax={sameOrigin:function(url){var host=document.location.host;var protocol=document.location.protocol;var srOrigin='//'+host;var origin=protocol+srOrigin;return(url==origin||url.slice(0,origin.length+1)==origin+'/')||(url==srOrigin||url.slice(0,srOrigin.length+1)==srOrigin+'/')||!(/^(\/\/|http:|https:).*/.test(url));},safeMethod:function(method){return(/^(HEAD|OPTIONS|TRACE)$/.test(method));},ajaxJSONSafe:function(url,data,success,error,timeout,contentType,headers,createXhr){if(typeof(timeout)!=='number'){timeout=60000;}
+if(typeof createXhr==='undefined'){createXhr=null;}
+$.ajax($.extend({},{type:"POST",contentType:contentType||"application/x-www-form-urlencoded",url:url,data:data,processData:false,dataType:"json",cache:false,headers:headers,timeout:timeout,success:success,error:error},createXhr?{xhr:createXhr}:{}));},ajaxJSONSafeForm:function(url,$form,success,failure,timeout){$form.find('.form_errors').text('');$form.find('.errors:not(.temporaryLockoutMessage)').text('');this.ajaxJSONSafe(url,$form.serialize(),function(json){if(json.field_errors){if(json.field_errors.__all__){$form.find('.form_errors').text(json.field_errors.__all__.join(', ')).show();}
+$form.find('input').each(function(){if(this.name&&json.field_errors[this.name]){$(this.parentNode).find('.errors').text(json.field_errors[this.name].join(', ')).show();}});}
+if(json.error){$form.find('.form_errors').text(json.error).show();}
+if(json.success&&success){success(json);}else if(failure){failure(json);}},function(req,textStatus,exc){try{message=$.evalJSON(req.responseText).message;}
+catch(err){message=textStatus?textStatus:'Error submitting form.';}
+if(message!=="error"){$form.find('.form_errors').text('Error: '+message).show();}
+if(failure){failure();}},timeout);}};

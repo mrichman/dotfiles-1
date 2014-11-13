@@ -1,0 +1,1959 @@
+/*
+Lockify Inc.
+Copyright 2009 - 2014
+www.Lockify.com
+-----------------------------------
+*/
+.account label .icomoon-icon {
+  display: none;
+}
+@media (min-width: 605px) {
+  .account label .icomoon-icon {
+    display: inline;
+  }
+}
+.account label .wideOnly {
+  display: none;
+}
+@media (min-width: 605px) {
+  .account label .wideOnly {
+    display: inline;
+  }
+}
+@media (min-width: 605px) {
+  .account label .narrowOnly {
+    display: none;
+  }
+}
+.account .sidebar {
+  margin-top: 89px;
+}
+.account textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.account h1 {
+  float: left;
+  line-height: 1;
+}
+.account #accountBtns {
+  margin-top: 15px;
+}
+.account .aocToggle .icomoon-icon {
+  margin-right: 1px;
+}
+.account #accountAccess {
+  color: #7c7c7c;
+  font-size: 12px;
+  font-weight: normal;
+  float: right;
+  text-align: right;
+  margin-top: 11px;
+}
+.account .accountSettingsPanel.last {
+  border-bottom: 0 none;
+}
+.account .content-inner {
+  padding-bottom: 15px;
+}
+.account .expireLimits .settingData {
+  margin-bottom: 15px;
+}
+@media (min-width: 605px) {
+  .account .expireLimits .settingData {
+    margin-bottom: 5px;
+  }
+}
+.account .settingSection {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.account .settingSection:last-child {
+  margin-bottom: 0;
+}
+.account .settingSection .settingLink {
+  float: right;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+.account .settingSection .withSplit {
+  float: left;
+}
+.account #emailDisplay {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75%;
+}
+.account #authSettings .withSplit {
+  width: 175px;
+  vertical-align: top;
+}
+.account #authSettings .settingSub {
+  font-style: italic;
+  display: block;
+}
+.account .hr {
+  margin: 15px 0 0;
+}
+.account .emailDisplay {
+  line-height: 1;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+.account .expireOr {
+  display: block;
+  margin: 5px 0;
+  text-align: center;
+  width: 160px;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 0 5px;
+  vertical-align: top;
+}
+@media (min-width: 400px) {
+  .account .expireOr {
+    margin-left: -1px;
+    width: auto;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+  }
+}
+.account .customSelectContainer_outer {
+  max-width: 350px;
+}
+.account .customSelectContainer_outer .preferenceChangeResult {
+  margin-top: 5px;
+  vertical-align: top;
+}
+.account #startScreenSelect {
+  width: 100%;
+  max-width: 350px;
+}
+.account #viewingsContainer_outer,
+.account #timerContainer_outer {
+  width: 160px;
+}
+.account .timezoneViewWrapper {
+  margin-top: -21px;
+  width: 100%;
+  max-width: 350px;
+}
+.account .timezoneViewWrapper .customSelectContainer {
+  vertical-align: top;
+}
+.account .timezoneViewWrapper .preferenceChangeResult {
+  float: right;
+  margin-top: 5px;
+}
+.account .timezoneSelect .customSelectContainer {
+  width: 100%;
+}
+.account .timezoneSelect .customSelectList {
+  max-height: 225px;
+  overflow-y: scroll;
+}
+.account div.checker {
+  margin: 0 5px 0 -3px;
+}
+.account #deleteAccount {
+  text-decoration: none;
+  font-size: 9px;
+}
+.account .entryOption {
+  margin-bottom: 5px;
+}
+.account .accessTip {
+  margin-left: 20px;
+  font-size: 12px;
+}
+@media (min-width: 605px) {
+  .account .accessTip {
+    margin-left: 41px;
+  }
+}
+.account .preferenceChangeResult {
+  margin: 0 0 0 15px;
+  font-size: 15px;
+}
+.account #assetEmbedDefault {
+  margin: 0;
+  padding: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.account #assetEmbedDefault li {
+  list-style-type: none;
+}
+.account #mailingLists p {
+  margin-bottom: 0;
+}
+.account #viewingsSelect_options li,
+.account #timerSelect_options li {
+  padding-left: 36px;
+}
+.account #authSettings .settingLink div {
+  float: left;
+  clear: both;
+}
+.account #notifyContainer div {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+.account #notifyContainer div .preferenceChangeResult {
+  margin-top: 0;
+  vertical-align: top;
+}
+.account #notifyContainer div input {
+  vertical-align: middle;
+}
+.account #notifyContainer div label {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+
+#accountHeader {
+  padding: 15px 15px 0px 15px;
+}
+@media (min-width: 605px) {
+  #accountHeader {
+    padding: 15px 25px 0px 25px;
+  }
+}
+@media (min-width: 605px) {
+  #accountHeader {
+    margin: 0;
+  }
+}
+
+.account #notaccordion {
+  margin: 20px 0 0;
+  border-top: 1px solid #bdbdbd;
+}
+.account #notaccordion .ui-accordion-header {
+  font-size: 19px;
+  padding: 10px 15px 10px 15px;
+}
+@media (min-width: 605px) {
+  .account #notaccordion .ui-accordion-header {
+    padding: 10px 25px 10px 25px;
+  }
+}
+.account #notaccordion .ui-accordion-content {
+  background-color: transparent;
+  border-top: 0 none;
+  padding: 0px 15px 0px 15px;
+}
+@media (min-width: 605px) {
+  .account #notaccordion .ui-accordion-content {
+    padding: 0px 25px 0px 25px;
+  }
+}
+@media (min-width: 605px) {
+  .account #notaccordion .ui-accordion-content {
+    padding-left: 48px;
+  }
+}
+.account #notaccordion .ui-accordion-content p {
+  margin-top: 0px;
+  line-height: 1.5;
+}
+.account #notaccordion .tooltip-inline-content {
+  margin-left: -48px;
+  padding-left: 48px;
+  margin-bottom: 5px;
+}
+.account #notaccordion .tooltip-inline-content.last {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+#defaultAuthSelect_outer {
+  clear: both;
+  margin-bottom: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+#defaultAuthSelect_outer .customSelectContainer_inner {
+  display: inline;
+  position: absolute;
+}
+#defaultAuthSelect_outer .customSelectContainer_inner .customSelectList li {
+  padding-left: 5px;
+}
+#defaultAuthSelect_outer .customSelectContainer .selected {
+  margin: 0;
+  padding: 0;
+}
+#defaultAuthSelect_outer .customSelectContainer .selected span {
+  line-height: 30px;
+}
+#defaultAuthSelect_outer .customSelectContainer .selected span.icomoon-icon {
+  margin-top: 0;
+  color: white;
+  width: 16px;
+  line-height: 1.5;
+}
+#defaultAuthSelect_outer .customSelectContainer .icomoon-icon {
+  margin-right: 10px;
+}
+#defaultAuthSelect_outer .customSelectContainer .authDefault {
+  display: none !important;
+}
+#defaultAuthSelect_outer .customSelectContainer .authDefaultOpt {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+#authDefault {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding-left: 115px;
+}
+
+#authDefaultOpt {
+  display: none;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+#emailChangeDialog .dialogButtons, #passwordChangeDialog .dialogButtons {
+  margin-top: 5px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+#emailChangeDialog .error, #passwordChangeDialog .error {
+  display: none;
+}
+#emailChangeDialog .passwordMatch, #passwordChangeDialog .passwordMatch {
+  float: right;
+  margin-top: 0;
+}
+#emailChangeDialog .notice, #passwordChangeDialog .notice {
+  margin-top: -15px;
+  margin-bottom: 0;
+}
+#emailChangeDialog .sectionSeparator, #passwordChangeDialog .sectionSeparator {
+  margin-bottom: 15px;
+}
+
+#passwordChangeDialog .passwordSuccess {
+  display: none;
+}
+
+#emailLeakDialog .button {
+  text-align: center;
+}
+#emailLeakDialog .emailLeakText {
+  height: 250px;
+  overflow-y: scroll;
+  padding: 5px 5px 5px 0px;
+  width: 99%;
+  overflow: auto;
+}
+
+.orgRow {
+  margin-top: 15px;
+}
+.orgRow:first-child {
+  margin-top: 0;
+}
+
+#emailSuccess {
+  background-color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  display: none;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  margin-top: 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 15px 0px 15px;
+}
+@media (min-width: 605px) {
+  #emailSuccess {
+    padding: 15px 25px 0px 25px;
+  }
+}
+#emailSuccess .panelHeader {
+  margin-bottom: 15px;
+}
+#emailSuccess .newEmail {
+  font-weight: bold;
+}
+#emailSuccess .icon-checkmark {
+  color: #27ae60;
+  font-size: 100px;
+  position: absolute;
+  top: -10px;
+  left: 43%;
+}
+#emailSuccess .sectionSeparator {
+  margin-bottom: 0;
+}
+#emailSuccess .toggleContent {
+  text-align: left;
+  padding-bottom: 15px;
+}
+#emailSuccess .allowRetry {
+  display: none;
+}
+#emailSuccess .disallowRetry {
+  display: inline;
+}
+
+.preGrid {
+  padding: 15px 15px 0 15px;
+}
+@media (min-width: 605px) {
+  .preGrid {
+    padding: 15px 25px 0 25px;
+  }
+}
+
+.linkContent,
+.notifyRow {
+  margin-top: 10px;
+}
+
+.linkStatus .wideOnly {
+  display: none;
+}
+@media (min-width: 605px) {
+  .linkStatus .wideOnly {
+    display: inline;
+  }
+}
+@media (min-width: 605px) {
+  .linkStatus .narrowOnly {
+    display: none;
+  }
+}
+
+.nicknameHelp {
+  border-top: 1px solid #bdbdbd;
+}
+
+.editLabelLink,
+.nickname .link {
+  padding: 0;
+  margin: 0;
+}
+
+.gridFilterBack {
+  margin-bottom: 10px;
+}
+
+.gridFilter {
+  width: 250px;
+  border: 1px solid #bdbdbd;
+  vertical-align: top;
+  height: 30px;
+  white-space: nowrap;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.gridFilter.focus {
+  border-color: #27ae60;
+}
+.gridFilter.focus .filterSpiner, .gridFilter.focus .icon-filter {
+  background-color: #27ae60;
+}
+.gridFilter.clearHover {
+  border-color: #e67e22;
+}
+.gridFilter.clearHover .filterSpiner, .gridFilter.clearHover .icon-filter {
+  background-color: #e67e22;
+}
+.gridFilter input[type=text] {
+  border: 0 none;
+  height: 28px;
+  width: 220px;
+  padding-right: 30px;
+  background-color: transparent;
+}
+.gridFilter .filterSpiner,
+.gridFilter .icon-filter {
+  float: left;
+  font-size: 14px;
+  height: 24px;
+  margin-left: -1px;
+  padding: 4px 7px 0;
+}
+.gridFilter .icon-cancel {
+  cursor: pointer;
+  margin-left: -25px;
+  color: #bdbdbd;
+}
+.gridFilter .icon-cancel:hover {
+  color: #e67e22;
+}
+
+.detailsLink {
+  margin-top: 15px;
+}
+
+.linkAuth {
+  width: 170px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+.notificationsLink a {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px dotted #3f6998;
+}
+
+#sortGrid_outer {
+  width: 130px;
+  float: left;
+  margin-bottom: 10px;
+}
+@media (min-width: 605px) {
+  #sortGrid_outer {
+    margin-bottom: 0;
+  }
+}
+
+#refreshBtnContainer {
+  float: right;
+}
+#refreshBtnContainer .wideOnly {
+  display: none;
+}
+@media (min-width: 605px) {
+  #refreshBtnContainer .wideOnly {
+    display: inline-block;
+  }
+}
+#refreshBtnContainer .refreshBtn {
+  width: auto;
+  height: 30px;
+  padding-top: 5px;
+}
+@media (min-width: 605px) {
+  #refreshBtnContainer .refreshBtn {
+    width: 100px;
+    height: 23px;
+    padding-top: 0;
+  }
+}
+
+.linkRowMenu {
+  position: absolute;
+  background-color: white;
+  white-space: nowrap;
+  text-align: left;
+  padding: 5px 10px;
+  z-index: 99;
+  font-size: 15px;
+  left: auto;
+  line-height: 1.8;
+  -webkit-box-shadow: 0px 0px 18px 0px #999999;
+  -moz-box-shadow: 0px 0px 18px 0px #999999;
+  box-shadow: 0px 0px 18px 0px #999999;
+  border: 1px solid #bdbdbd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+@media (max-width: 930px) {
+  .linkRowMenu {
+    right: 15px;
+  }
+}
+.linkRowMenu a {
+  display: block;
+  margin: 0 -10px;
+  padding: 0 10px;
+}
+.linkRowMenu a:hover {
+  color: white;
+  background-color: #3f6998;
+}
+
+.backgrid table {
+  width: 100%;
+  font-size: 12px;
+}
+.backgrid > thead {
+  display: none;
+}
+.backgrid th, .backgrid td {
+  border-color: #bdbdbd;
+}
+.backgrid tbody tr.empty td {
+  display: table-cell;
+  text-align: center;
+  white-space: normal;
+  overflow: visible;
+  font-style: normal;
+  padding: 25px 15px;
+  color: #3f3f3f;
+}
+@media (min-width: 605px) {
+  .backgrid tbody tr.empty td {
+    padding: 90px 25px 110px;
+  }
+}
+.backgrid tbody tr.empty td strong {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-bottom: 10px;
+}
+.backgrid tbody tr.empty td .wideOnly {
+  display: none;
+}
+@media (min-width: 605px) {
+  .backgrid tbody tr.empty td .wideOnly {
+    display: inline;
+  }
+}
+
+.editLabelLink {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#loadLinkHistory,
+#hideLinkHistory {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.linkDetails {
+  line-height: 1.5;
+}
+.linkDetails th, .linkDetails td {
+  border: 0 none;
+  padding: 0;
+}
+.linkDetails thead th {
+  background-color: transparent;
+  text-align: left;
+}
+.linkDetails .header {
+  text-transform: uppercase;
+  color: #7c7c7c;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  white-space: pre-line;
+}
+
+@media (min-width: 605px) {
+  td.when {
+    width: 35%;
+    padding-right: 5%;
+  }
+}
+
+#editTimezoneLink {
+  margin-left: 0;
+  font-size: 9px;
+}
+
+#changeTzDefaults label {
+  font-size: 12px;
+}
+
+#accountLinksGrid {
+  overflow: visible;
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+}
+#accountLinksGrid td.string-cell,
+#accountLinksGrid td.handleCell {
+  background-color: #d9d9d9;
+  padding: 15px 15px 15px 15px;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: background-color 0.5s ease-in-out 0;
+  -o-transition: background-color 0.5s ease-in-out 0;
+  transition: background-color 0.5s ease-in-out 0;
+}
+@media (min-width: 605px) {
+  #accountLinksGrid td.string-cell,
+  #accountLinksGrid td.handleCell {
+    padding: 15px 25px 15px 25px;
+  }
+}
+#accountLinksGrid td.activeLink {
+  background-color: #ddf7e8;
+}
+#accountLinksGrid td.highlightActive {
+  background-color: #fffdcf;
+}
+#accountLinksGrid td.string-cell {
+  padding-right: 0;
+}
+#accountLinksGrid td.handleCell {
+  padding-left: 0;
+  width: 5px;
+  cursor: pointer;
+  color: #3f6998;
+  vertical-align: top;
+  text-align: center;
+}
+#accountLinksGrid .fileName {
+  padding-right: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
+#accountLinksGrid .fileSize {
+  color: #7c7c7c;
+}
+#accountLinksGrid .historyTable .when, #accountLinksGrid .historyTable .what {
+  width: 40%;
+}
+
+.handleCell div:hover {
+  color: #5282b8;
+}
+
+.linksGridLoad {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  display: none;
+}
+.linksGridLoad .spinkitSpinner > div,
+.linksGridLoad .spinkitSpinner > span {
+  width: 20px;
+  height: 20px;
+}
+
+.blockLinkHistory .linksGrid {
+  display: block;
+}
+
+.linkContent.short {
+  display: block;
+}
+@media (min-width: 460px) {
+  .linkContent.short {
+    width: 194px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+  }
+}
+.linkContent ol {
+  margin: 0 0 10px;
+  padding: 0 0 0 18px;
+  font-size: 12px;
+}
+.linkContent ol.single {
+  list-style-type: none;
+  padding-left: 0;
+}
+.linkContent .icon-disk, .linkContent .icon-blocked {
+  font-size: 11px;
+  margin-left: 15px;
+}
+.linkContent .nameHidden {
+  list-style-type: none;
+}
+
+tr.highlightActive td {
+  background-color: #fffdcf;
+}
+
+.emptyFilter,
+.nolinks {
+  border: 0 none;
+}
+.emptyFilter .nicknameHelp,
+.emptyFilter .toggleContent,
+.nolinks .nicknameHelp,
+.nolinks .toggleContent {
+  display: none !important;
+}
+
+.nolinks .gridTimezone,
+.nolinks #refreshBtnContainer,
+.nolinks .gridCount,
+.nolinks .gridFilter {
+  display: none;
+}
+.nolinks .gridFilter {
+  margin-bottom: 15px;
+}
+
+.linkRemaining {
+  white-space: normal;
+}
+@media (min-width: 605px) {
+  .linkRemaining .narrowOnly {
+    display: none;
+  }
+}
+.linkRemaining .wideOnly {
+  display: none;
+}
+@media (min-width: 605px) {
+  .linkRemaining .wideOnly {
+    display: inline;
+  }
+}
+
+.linkId {
+  color: #bdbdbd;
+  margin-left: 15px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+.linkIdd {
+  white-space: normal;
+}
+.linkIdd span {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-right: 25px;
+}
+.linkIdd .created {
+  width: 170px;
+}
+.linkIdd .linkid {
+  width: 195px;
+}
+
+.linkName {
+  width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#sortGrid_outer.customSelectContainer_outer .customSelectContainer .icon-arrow-down {
+  padding: 0 0 0 7px;
+  float: left;
+  color: #bdbdbd;
+  background-color: white;
+}
+#sortGrid_outer.customSelectContainer_outer .customSelectContainer_inner .customSelectList li {
+  padding-left: 26px;
+}
+
+.gridNameTime {
+  margin-top: 5px;
+}
+
+.gridCount {
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+  font-size: 12px;
+}
+.gridCount .wideOnly {
+  display: none;
+}
+@media (min-width: 605px) {
+  .gridCount .wideOnly {
+    display: inline;
+  }
+}
+
+.gridTimezone {
+  margin-bottom: 5px;
+  font-size: 12px;
+  float: right;
+  padding: 0;
+  white-space: nowrap;
+}
+.gridTimezone .wideOnly {
+  display: none;
+}
+@media (min-width: 605px) {
+  .gridTimezone .wideOnly {
+    display: inline;
+  }
+  .gridTimezone .narrowOnly {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 605px), (min-device-width: 605px) and (max-device-width: 605px) {
+  #accountLinksGrid .historyTable {
+    display: block;
+    width: 100%;
+  }
+  #accountLinksGrid .historyTable tbody {
+    display: block;
+  }
+  #accountLinksGrid .historyTable tr {
+    padding: 5px 0;
+    display: block;
+  }
+  #accountLinksGrid .historyTable tr:nth-child(even) {
+    border-top: 1px dashed #bdbdbd;
+  }
+  #accountLinksGrid .historyTable td.renderable {
+    border: none;
+    position: relative;
+    padding-left: 55px;
+    text-align: left;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+  #accountLinksGrid .historyTable td.renderable:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  #accountLinksGrid .historyTable thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .historyTable td:nth-of-type(1):before {
+    content: "When:";
+  }
+  .historyTable td:nth-of-type(2):before {
+    content: "What:";
+  }
+  .historyTable td:nth-of-type(3):before {
+    content: "IP:";
+  }
+}
+body.accountlinks-disable .gridConstrain {
+  width: 595px;
+}
+body.accountlinks-disable .column {
+  background-color: white;
+  width: 595px !important;
+}
+body.accountlinks-disable .sidebar {
+  display: none !important;
+}
+body.accountlinks-disable #fixedHeader {
+  background-color: white;
+}
+body.accountlinks-disable #scrollBody {
+  margin-top: 25px;
+}
+body.accountlinks-disable .ui-tooltip.ui-tooltip-default {
+  width: auto;
+  max-width: 450px;
+}
+body.accountlinks-disable #ui-tooltip-3 {
+  max-width: 290px;
+}
+body.accountlinks-disable .dataTables_wrapper {
+  padding: 0;
+  width: 100%;
+  min-height: 0px;
+  margin-bottom: 25px;
+  position: relative;
+  margin: 0;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-header-wrapper {
+  width: 593px;
+  margin: 0 auto;
+  z-index: 99;
+  display: none;
+  background-color: #d9d9d9;
+  padding: 15px 0 0;
+  border-bottom: 0 none;
+  position: absolute;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-header-wrapper.fixed {
+  position: fixed;
+  top: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-header table {
+  float: left;
+  border-bottom: 1px solid white;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-header thead {
+  width: 593px;
+  background-color: #e8e8e8;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 15px 0 0;
+}
+body.accountlinks-disable .dataTables_wrapper #refreshBtnContainer {
+  float: right;
+  margin: 7px 15px 0 0;
+}
+@media (min-width: 605px) {
+  body.accountlinks-disable .dataTables_wrapper #refreshBtnContainer {
+    margin-right: 25px;
+  }
+}
+body.accountlinks-disable .dataTables_wrapper #headerTzContainer {
+  float: left;
+  font-size: 12px;
+  margin: 5px 15px 0;
+  text-align: right;
+  white-space: nowrap;
+  width: 279px;
+}
+body.accountlinks-disable .dataTables_wrapper #headerTzContainer.withFilter {
+  float: left;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  text-align: center;
+  margin: 8px 0 0 0;
+}
+body.accountlinks-disable .dataTables_wrapper #headerTzChange {
+  font-size: 9px;
+  margin-left: 0;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_filter {
+  font-family: Arial, sans-serif;
+  -webkit-appearance: none;
+  border: 1px solid #bdbdbd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 0 0 15px;
+  display: none;
+  float: left;
+  height: 23px;
+  min-height: 23px;
+  background-color: white;
+}
+@media (min-width: 605px) {
+  body.accountlinks-disable .dataTables_wrapper #my_links_filter {
+    margin-left: 25px;
+  }
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_filter input[type=text] {
+  height: 17px;
+  font-size: 15px;
+  background-color: transparent;
+  border: 0 none;
+  width: 105px;
+  float: left;
+  background: none 0 0 transparent;
+  filter: none;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_filter .filterIcon,
+body.accountlinks-disable .dataTables_wrapper #my_links_filter .filterSpiner {
+  float: left;
+  font-size: 14px;
+  height: 25px;
+  margin-left: -1px;
+  margin-top: -6px;
+  padding: 4px 7px 0;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_filter.active, body.accountlinks-disable .dataTables_wrapper #my_links_filter:hover {
+  border-color: #27ae60;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_filter.active .prependItem, body.accountlinks-disable .dataTables_wrapper #my_links_filter:hover .prependItem {
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_filter.clearHover {
+  border-color: #e67e22;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_filter.clearHover .prependItem {
+  color: white;
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_filter.clearHover .filterIcon.loading {
+  color: transparent;
+}
+body.accountlinks-disable .dataTables_wrapper #filterClear {
+  cursor: pointer;
+  float: right;
+  font-size: 12px;
+  position: relative;
+  margin: 0 5px 0 0;
+  color: #7c7c7c;
+}
+body.accountlinks-disable .dataTables_wrapper #filterClear:hover {
+  color: #e67e22;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-table {
+  overflow: hidden;
+  height: auto;
+  clear: both;
+  min-height: 360px;
+  margin: 0 auto;
+  position: relative;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-table.norecord {
+  border-bottom: 1px solid #bdbdbd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-table.norecord .dataTables_empty {
+  bottom: 5px;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-table.norecord .dataTables_empty p {
+  text-align: left;
+  padding-left: 30px;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-footer-wrapper {
+  margin: -1px auto 0;
+  display: none;
+  position: relative;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_length {
+  display: none;
+  float: none;
+  font-size: 15px;
+  margin: 0;
+  width: auto;
+  margin-top: 5px;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_length .spinkitSpinner > div,
+body.accountlinks-disable .dataTables_wrapper #my_links_length .spinkitSpinner > span {
+  width: 5px;
+  height: 5px;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_length .spinkitSpinner {
+  margin-left: 10px;
+  line-height: 1;
+  vertical-align: top;
+  float: right;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_length .smallBriefLoading {
+  margin-left: 5px;
+  vertical-align: middle;
+  float: right;
+  margin-top: -3px;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_length label {
+  color: #3f3f3f !important;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_paginate {
+  width: auto;
+  float: right;
+  font-size: 15px;
+  display: none;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_paginate div {
+  cursor: pointer;
+  width: 21px;
+  height: 20px;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_paginate .ui-button {
+  border-right: 1px solid #7c7c7c;
+  padding: 3px 7px;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_paginate .ui-button.ui-button:hover {
+  color: #FFFFFF;
+  background-color: #3f6998;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_paginate .ui-button.ui-state-disabled, body.accountlinks-disable .dataTables_wrapper #my_links_paginate .ui-button.ui-state-disabled:hover {
+  font-weight: bold;
+  cursor: default;
+  border-color: transparent;
+  background-color: #18223d;
+  margin-left: -1px;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_paginate .ui-button.next {
+  border-right: 0 none;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_paginate .ui-button.prev {
+  border-left: 0 none;
+}
+body.accountlinks-disable .dataTables_wrapper #my_links_first,
+body.accountlinks-disable .dataTables_wrapper #my_links_last {
+  display: none;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-footer {
+  width: 566px;
+  background-color: #e8e8e8;
+  padding: 5px 2px 10px 25px;
+  border-top: 1px solid white;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+body.accountlinks-disable .dataTables_wrapper .myLinks-footer .dataTables_info {
+  font-size: 15px;
+  float: left;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 5px 5px 0 0;
+}
+body.accountlinks-disable .my_links {
+  margin-top: 60px;
+  clear: both;
+  font-size: 12px;
+  width: 593px;
+  table-layout: fixed;
+}
+body.accountlinks-disable .my_links thead {
+  display: none;
+}
+body.accountlinks-disable .my_links tbody {
+  display: none;
+}
+body.accountlinks-disable .my_links tbody tbody {
+  display: block;
+}
+body.accountlinks-disable tr:hover td.dataTables_empty {
+  cursor: default;
+}
+body.accountlinks-disable tr.odd, body.accountlinks-disable tr.even {
+  background-color: transparent;
+}
+body.accountlinks-disable tr.main_row:hover td, body.accountlinks-disable tr.main_row.activeHover td {
+  background-color: white;
+  cursor: pointer;
+}
+body.accountlinks-disable tr.main_row:hover .addNickname, body.accountlinks-disable tr.main_row.activeHover .addNickname {
+  visibility: visible;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+body.accountlinks-disable tr.main_row.detailsOpen td, body.accountlinks-disable tr.main_row.detailsOpen th {
+  background-color: white;
+}
+body.accountlinks-disable tr.expired td {
+  background-color: #d9d9d9;
+}
+body.accountlinks-disable tr.expired td.expireBtn .expireLink {
+  display: none;
+}
+body.accountlinks-disable tr.active td {
+  background-color: #EBFFDF;
+}
+body.accountlinks-disable tr.active .linkStatus {
+  color: #27ae60;
+}
+body.accountlinks-disable tr.activeDetails td, body.accountlinks-disable tr.activeDetails th {
+  background-color: #EBFFDF;
+}
+body.accountlinks-disable tr.activeDetails:hover td, body.accountlinks-disable tr.activeDetails:hover th {
+  background-color: white;
+}
+body.accountlinks-disable tr.expireDetails td, body.accountlinks-disable tr.expireDetails th {
+  background-color: #D2D2D2;
+}
+body.accountlinks-disable tr.expireDetails:hover td, body.accountlinks-disable tr.expireDetails:hover th {
+  background-color: white;
+}
+body.accountlinks-disable .expireBtn .expireLink {
+  cursor: pointer;
+  padding: 10px;
+  margin: -10px;
+}
+body.accountlinks-disable .expireBtn .expireLink:hover {
+  color: #e67e22;
+}
+body.accountlinks-disable .deleteBtn .deleteLink {
+  cursor: pointer;
+  padding: 10px;
+  margin: -10px;
+}
+body.accountlinks-disable .deleteBtn .deleteLink:hover {
+  color: #e67e22;
+}
+body.accountlinks-disable #notifyInstruction {
+  display: block;
+  margin: 60px auto -75px;
+  text-align: center;
+  width: 80%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+body.accountlinks-disable #resetLogView {
+  text-align: center;
+  clear: both;
+}
+body.accountlinks-disable #resetLogView a {
+  padding: 4px 0;
+  background-color: #e8e8e8;
+  border-top: 1px solid #bdbdbd;
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  right: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+body.accountlinks-disable #changeTzDialog #tzoneSelect_outer {
+  width: 100%;
+}
+body.accountlinks-disable #changeTzDialog .timezoneSelect .customSelectContainer {
+  width: 100%;
+}
+body.accountlinks-disable #changeTzDialog .timezoneSelect .customSelectList {
+  max-height: 225px;
+  overflow-y: scroll;
+}
+body.accountlinks-disable #changeTzDialog #changeTzDefaults {
+  margin: 5px 0 0 0;
+  display: none;
+}
+body.accountlinks-disable #changeTzDialog #changeTzDefaults label {
+  font-size: 12px;
+}
+body.accountlinks-disable #changeTzDialog #uniform-saveTzDefaults {
+  margin-top: -1px;
+  float: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+body.accountlinks-disable #changeTzDialog .dialogButtons {
+  margin-top: 15px;
+}
+
+#changeTzDefaults {
+  margin-top: 5px;
+}
+
+#nicknameDialog .dialogButtons {
+  margin-top: 15px;
+}
+#nicknameDialog #nicknameContainer {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+#nicknameDialog #nicknameContainer .nickname.inputBlured {
+  color: #18223d;
+}
+#nicknameDialog input[type="text"] {
+  margin-bottom: 3px;
+}
+#nicknameDialog .icon-help {
+  margin-top: -7px;
+}
+#nicknameDialog .btnSaveNickname {
+  width: 97px;
+  text-align: center;
+}
+#nicknameDialog .btnSaveNickname.disable {
+  background-color: #d9d9d9;
+  border-color: #c2c2c2;
+}
+#nicknameDialog .linkNickname .nicknameMeta {
+  float: none;
+  margin-right: 0;
+  padding: 0;
+}
+#nicknameDialog .linkNickname .nicknameMeta .nicknameNote {
+  float: left;
+}
+
+#btnDelNickname {
+  color: #7c7c7c;
+  font-size: 12px;
+  margin-top: 10px;
+  display: none;
+}
+#btnDelNickname:hover {
+  color: #656565;
+  cursor: pointer;
+}
+#btnDelNickname .icon-cancel {
+  margin-right: 1px;
+}
+
+.my_links td {
+  padding: 10px 3px;
+  text-align: center;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.my_links td.detail-toggle {
+  color: #3f6998 !important;
+}
+.my_links td.detail-toggle:hover {
+  color: #5282b8;
+}
+.my_links td.detail-toggle:active {
+  color: #e67e22;
+}
+.my_links td.meta-public_id-nickname {
+  overflow-x: hidden;
+}
+.my_links td.meta-public_id-nickname .innerData {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.my_links td.meta-public_id-nickname .innerData .left {
+  float: left;
+  margin-top: 3px;
+}
+.my_links td.meta-public_id-nickname .innerData .left a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.my_links td.meta-public_id-nickname .innerData .right {
+  float: right;
+  width: 105px;
+  text-align: left;
+}
+.my_links td.meta-public_id-nickname .addNickname {
+  font-size: 12px;
+  color: #3f6998;
+  display: block;
+  visibility: hidden;
+  cursor: pointer;
+  clear: both;
+  padding: 0 5px;
+}
+.my_links td.meta-public_id-nickname .addNickname:hover {
+  color: #5282b8;
+}
+.my_links td.meta-public_id-nickname .addNickname:active {
+  color: #e67e22;
+}
+.my_links td.meta-public_id-nickname .nicknameCell {
+  display: block;
+  padding: 0 5px;
+  cursor: pointer;
+  color: #3f6998;
+  white-space: nowrap;
+  margin-left: -20px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+}
+.my_links td.meta-public_id-nickname .nicknameCell:hover {
+  background-color: #5282b8;
+  color: white;
+}
+.my_links td.meta-public_id-nickname .nicknameCell:hover .elipsis {
+  color: white;
+}
+.my_links td.meta-public_id-nickname .nicknameCell:active {
+  color: #e67e22;
+}
+.my_links td.meta-public_id-nickname .nicknameCell .elipsis {
+  padding: 0;
+}
+.my_links td.meta-public_id-nickname .publicIdCell {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding: 0 5px;
+  margin: 5px 0;
+}
+.my_links td.meta-public_id-nickname .metaIcon {
+  float: left;
+  margin: 0;
+}
+.my_links td.time span {
+  white-space: nowrap;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.my_links td.time .remainingLbl {
+  margin-right: 2px;
+}
+.my_links td.time .remainingViews .remainingVal {
+  margin-right: 2px;
+}
+.my_links td.deleteBtn {
+  border-right: 0 none;
+}
+.my_links td.notify {
+  padding: 5px 3px;
+  line-height: 1.3;
+}
+.my_links td.notify span {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 37px;
+  padding: 2px 0;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.my_links td.notify span.trueOver {
+  background-color: #e67e22;
+  color: white;
+  border: 1px solid #c46816;
+}
+.my_links td.notify span.falseOver {
+  border: 1px solid #1f894b;
+  background-color: #27ae60;
+  color: white;
+}
+.my_links td.auth, .my_links td.options {
+  display: none;
+}
+.my_links td.details {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 528px;
+  border-width: 0;
+  padding: 15px 15px 15px 30px;
+  font-size: 15px;
+  text-align: left;
+  border-bottom: 1px solid white;
+  background-color: white;
+}
+.my_links td.details .header {
+  text-transform: uppercase;
+  color: #7c7c7c;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+.my_links td.details .header:first-child {
+  margin-top: 0;
+}
+.my_links td.details .subHeader {
+  font-size: 12px;
+  color: #7c7c7c;
+  font-weight: bold;
+}
+.my_links td.details .detailRow {
+  margin: 5px 0 10px;
+}
+.my_links td.details .fileName {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  max-width: 475px;
+  padding-right: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.my_links td.details .fileSize {
+  color: #7c7c7c;
+  text-align: center;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.my_links td.details thead {
+  display: block;
+}
+.my_links td.details .optionExpire,
+.my_links td.details .optionCopy,
+.my_links td.details .optionPrint {
+  margin-right: 15px;
+}
+.my_links td.details .linkDetails {
+  border-left: 1px solid #7c7c7c;
+  border-right: 1px solid #7c7c7c;
+  border-top: 1px solid #7c7c7c;
+  padding: 10px 0;
+  width: 663px;
+  text-align: left;
+  margin: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.my_links td.details .linkDetails span {
+  margin-left: 15px;
+}
+.my_links td.details td.delete .icon-cancel {
+  cursor: pointer;
+  padding: 10px;
+  margin: -10px;
+}
+.my_links td.details td.delete .icon-cancel:hover {
+  color: #e67e22;
+}
+.my_links td.details table {
+  width: 100%;
+}
+.my_links td.details table tr {
+  width: 100%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.my_links td.details table td, .my_links td.details table th {
+  text-align: left;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.my_links td.details table th {
+  font-size: 12px;
+}
+.my_links td.details table .when {
+  width: 220px;
+}
+.my_links td.details table .what {
+  width: 250px;
+}
+.my_links td.details table .ip {
+  width: 100px;
+}
+.my_links td.options span {
+  font-size: 29px;
+  line-height: 1;
+  margin: 0 10px;
+  color: #18223d;
+}
+.my_links td.dataTables_empty {
+  text-align: center;
+  border-right: 0 none;
+  font-size: 15px;
+  background-color: white;
+  position: absolute;
+  border-bottom: 0 none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.my_links td.dataTables_empty.nolinks {
+  bottom: 65px;
+}
+.my_links td.dataTables_empty #noLinks {
+  font-size: 19px;
+  position: relative;
+  z-index: 2;
+}
+.my_links td.dataTables_empty .icon-link {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  font-size: 150px;
+  z-index: 0;
+  color: #e8e8e8;
+}
+.my_links td.dataTables_empty ul {
+  margin: 0;
+  padding: 0 15px 0 32px;
+  text-align: left;
+}
+.my_links td.dataTables_empty .icon-link-add {
+  margin-right: 1px;
+}
+
+.accountlinks th {
+  text-decoration: none;
+  cursor: default;
+  vertical-align: middle;
+  font-size: 12px;
+  height: 25px;
+  cursor: pointer;
+  line-height: 1.3;
+  padding-top: 0;
+}
+.accountlinks th .headerIcon {
+  margin: 0 5px;
+}
+.accountlinks th:hover {
+  cursor: default;
+}
+.accountlinks th.sortHeader {
+  background-color: #c3c3c3;
+}
+.accountlinks th.detail-toggle .icomoon-icon {
+  margin-top: 5px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.accountlinks th.deleteBtn .icomoon-icon {
+  margin-top: 8px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.accountlinks th.expireBtn .icomoon-icon {
+  margin-top: 5px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.accountlinks th.meta-public_id-nickname .nicknameHelp {
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 9px;
+  color: #7c7c7c;
+  font-weight: normal;
+  border-bottom: 1px dotted #7c7c7c;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  cursor: help;
+  margin-top: 5px;
+}
+.accountlinks th.meta-public_id-nickname .nicknameHelp:hover {
+  color: #656565;
+  border-bottom: 1px dotted #656565;
+}
+.accountlinks th.deleteBtn {
+  border-right: 0 none;
+}
+.accountlinks th .DataTables_sort_wrapper {
+  height: 35px;
+  padding-top: 5px;
+}
+.accountlinks th .smallFont {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  text-decoration: none;
+  margin-top: 3px;
+}
+.accountlinks th .sorting_asc {
+  background-repeat: no-repeat;
+  color: #3f3f3f;
+}
+.accountlinks th .sorting_desc {
+  background-repeat: no-repeat;
+  color: #3f3f3f;
+}
+.accountlinks th .ui-icon {
+  margin: 0 0 0 -10px;
+  float: right;
+  height: 16px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.linkDetails .settingGroup {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+.linkDetails .settingGroup li {
+  list-style-type: none;
+  padding: 0;
+}
+.linkDetails .regularLabel {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 260px;
+  padding-right: 15px;
+  word-break: break-all;
+}
+.linkDetails .regularLabel.block {
+  display: block;
+  clear: both;
+}
+.linkDetails table#events {
+  font-size: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.linkDetails table#events th {
+  text-align: left;
+  border-bottom: 1px solid #7c7c7c;
+}
+.linkDetails #logEntries .logRow {
+  padding: 5px;
+}
+.linkDetails #logEntries .logRow:nth-child(even) {
+  background: #FFFFFF;
+}
+.linkDetails #logEntries .logRow:nth-child(odd) {
+  background: #d9d9d9;
+}

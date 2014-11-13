@@ -1,0 +1,20 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "media/scripts/background.js" ]
+      }
+   },
+   "description": "Securely send private info to anyone. It's easy as sharing a Lockify Link using your existing email/chat/SMS/etc.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDoay7jq9tjevtd05RxWdO81r/bqs496lVCkNNhteKs6mnwMnoxe+FINj48k5ZsV11x8dwgB0rzktSHaadCrZkAOf11nsoNrTV2R3VjKIP39cKni0GGF9pDkDVuCkkCI8P07tukrEzF67tR+kdVhuyawcJBzcH4AAUXAGvaayxqrQIDAQAB",
+   "manifest_version": 2,
+   "name": "Lockify",
+   "optional_permissions": [ "videoCapture" ],
+   "permissions": [ "https://lockify.com/", "clipboardWrite", "storage", "fileSystem", "fileSystem.write", "webview" ],
+   "short_name": "Lockify",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.9.36.562"
+}

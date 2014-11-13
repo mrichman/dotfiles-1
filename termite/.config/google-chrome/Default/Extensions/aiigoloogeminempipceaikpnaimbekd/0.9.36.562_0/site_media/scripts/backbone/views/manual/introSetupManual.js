@@ -1,0 +1,1 @@
+var IntroSetupManualView=Backbone.View.extend({initialize:function(){this.bind('showSetupUI',this.showSetupUI);},events:{"click #setup":"showSetupUI"},showSetupUI:function(){$('#setup').show();$('#encrypt').hide();$('#decrypt').hide();$("#setupTab").addClass("active");$("#encryptTab").removeClass("active");$("#decryptTab").removeClass("active");}});

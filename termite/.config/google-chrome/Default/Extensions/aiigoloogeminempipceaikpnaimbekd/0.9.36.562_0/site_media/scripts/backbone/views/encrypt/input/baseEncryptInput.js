@@ -1,0 +1,2 @@
+var BaseEncryptInputView=Backbone.View.extend({initialize:function(){$(document).bind('clearErrors',this.clearErrors);$(document).bind('linkExpired',this.handleLinkExpiration);},appendError:function(elem,errorText,input){$('<span class="error"></span>').text(errorText).appendTo(elem);if(input){if(input.length>1){$(input).each(function(){$(this).addClass('validationError');});}
+else{$(input).addClass('validationError');}}},clearErrors:function(){$('.validationErrors > .error').remove();$('.validationError').removeClass('validationError');}});

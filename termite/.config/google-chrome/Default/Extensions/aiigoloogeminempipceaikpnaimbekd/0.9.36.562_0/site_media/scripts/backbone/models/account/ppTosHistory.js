@@ -1,0 +1,1 @@
+var PpTosHistoryModel=Backbone.Model.extend({url:'/account/ppTos/accept'});

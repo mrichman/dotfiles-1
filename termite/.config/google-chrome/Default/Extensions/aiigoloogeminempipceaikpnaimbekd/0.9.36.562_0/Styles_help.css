@@ -1,0 +1,703 @@
+/*
+Lockify Inc.
+Copyright 2009 - 2014
+www.Lockify.com
+-----------------------------------
+*/
+#osNote.end {
+  margin-bottom: -15px;
+}
+#osNote ol {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+#osNote ul {
+  padding: 0 0 0 20px;
+}
+#osNote .toggleContent {
+  padding-bottom: 15px;
+}
+#osNote .sectionSeparator {
+  margin-bottom: 0;
+}
+
+.sidebar ul.menu {
+  padding: 0 0 0 25px;
+  margin: 5px 0 0;
+}
+.sidebar ul.menu li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+.sidebar ul.menu li .icon-arrow-left {
+  margin-left: -25px;
+  margin-right: 12px;
+  color: #18223d;
+}
+.sidebar ul.menu li .current {
+  color: #18223d;
+  font-weight: bold;
+}
+
+.withMenu .menu li .icon-arrow-left {
+  display: none;
+}
+
+.browser-info .sectionSeparator {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.browser-info .ui-accordion-header {
+  font-size: 19px;
+}
+.browser-info .helpContentPanel {
+  padding-bottom: 10px;
+}
+.browser-info .browserTable table {
+  margin-left: 23px;
+}
+.browser-info .browserTable td {
+  padding: 5px 0;
+}
+.browser-info .browserTable a {
+  margin: 0;
+  padding: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.browser-info .browserTable .smallFont {
+  line-height: 1;
+}
+.browser-info .browserTable .iconColumn {
+  width: 55px;
+}
+.browser-info .browserTable .extraColumn {
+  width: 0;
+}
+.browser-info .browserTable .browserIcon {
+  font-size: 24px;
+  color: #18223d;
+}
+.browser-info .browserTable .browserName {
+  width: 283px;
+}
+.browser-info .browserTable .browserName .name {
+  font-size: 19px;
+  color: #18223d;
+}
+.browser-info .browserTable .browserName .newWinTrigger,
+.browser-info .browserTable .browserName .newWinExtra {
+  float: right;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+.browser-info .browserTable .browserName .newWinTrigger .newWinTrigger,
+.browser-info .browserTable .browserName .newWinExtra .newWinTrigger {
+  float: none;
+  margin: 0;
+}
+.browser-info .browserTable .browserName .string {
+  color: #7c7c7c;
+  font-size: 9px;
+  white-space: nowrap;
+  display: block;
+}
+
+.checksumming .fileList {
+  font-size: 12px;
+  padding-left: 0;
+}
+.checksumming .fileList li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+.checksumming .fileList li .checkFileName {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  font-family: Arial, sans-serif;
+}
+.checksumming .smallFont {
+  color: #7c7c7c;
+}
+.checksumming .icon-github {
+  margin-left: 15px;
+}
+.checksumming img {
+  vertical-align: middle;
+}
+
+.chromeExtContent.prod {
+  margin: 0 auto;
+}
+.chromeExtContent.prod > div .appClientColumn {
+  width: 50%;
+  clear: right;
+  float: left;
+  margin-left: 0;
+  margin-right: 0%;
+}
+.chromeExtContent.prod > div .extClientColumn {
+  width: 50%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+.chromeExtContent.prod .headerRow, .chromeExtContent.prod .chromeExtContent.iffy .featureGroup, .chromeExtContent.iffy .chromeExtContent.prod .featureGroup {
+  font-weight: bold;
+}
+.chromeExtContent.prod .chromeClientInstall,
+.chromeExtContent.prod .nonchromeClientInstall {
+  padding: 15px 0;
+}
+
+.chromeExtContent.iffy {
+  margin: 0 auto;
+}
+.chromeExtContent.iffy > div .featureColumn {
+  padding-left: 0;
+  width: 50%;
+  clear: right;
+  float: left;
+  margin-left: 0;
+  margin-right: 0%;
+}
+.chromeExtContent.iffy > div .appClientColumn {
+  width: 25%;
+  clear: right;
+  float: left;
+}
+.chromeExtContent.iffy > div .extClientColumn {
+  width: 25%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+.chromeExtContent.iffy > div .detailsRow, .chromeExtContent.iffy > div .headerRow, .chromeExtContent.iffy > div .featureGroup {
+  width: 100%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+.chromeExtContent.iffy .featureRow {
+  padding: 15px 0 0;
+}
+.chromeExtContent.iffy .headerRow, .chromeExtContent.iffy .featureGroup {
+  font-weight: bold;
+}
+.chromeExtContent.iffy .featureGroup {
+  font-style: italic;
+  padding-top: 15px;
+}
+.chromeExtContent.iffy .detailsRowText {
+  padding-left: 20px;
+}
+.chromeExtContent.iffy .detailsTrigger {
+  padding-left: 0;
+  margin-left: 0;
+}
+.chromeExtContent.iffy .detailsTrigger .icomoon-icon {
+  margin-right: 3px;
+}
+.chromeExtContent.iffy .comingsoon {
+  font-size: 12px;
+  color: #7c7c7c;
+}
+.chromeExtContent.iffy .detailsTrigger {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.chromeExtContent.iffy .icon-checkmark {
+  color: #27ae60;
+  font-size: 18px;
+}
+
+.chromeExtContent button.large {
+  padding: 0 15px;
+}
+@media (min-width: 605px) {
+  .chromeExtContent button.large {
+    padding: 0 30px;
+  }
+}
+.chromeExtContent button.large.installing .spinMe {
+  font-size: 18px;
+  margin-left: -7px;
+  top: 1px;
+}
+
+h1 .icomoon-icon {
+  font-size: 16px;
+}
+@media (min-width: 605px) {
+  h1 .icomoon-icon {
+    font-size: 24px;
+  }
+}
+
+.installSuccess {
+  color: #27ae60;
+  white-space: nowrap;
+  font-size: 12px;
+  padding-top: 8px;
+}
+
+.appClientColumn,
+.extClientColumn {
+  text-align: center;
+}
+
+.extDetected,
+.notAllowed,
+.wrongBrowser {
+  display: none;
+}
+
+.openssl #manualLoading .spinkitSpinner > div,
+.openssl #manualLoading .spinkitSpinner > span {
+  width: 20px;
+  height: 20px;
+}
+.openssl #manualLoading .spinkitSpinner {
+  margin: 75px auto;
+}
+.openssl .briefLoading {
+  padding-top: 50px;
+  height: 199px;
+}
+.openssl kbd {
+  cursor: text;
+  word-break: break-all;
+}
+.openssl .instructions {
+  margin: 15px 0;
+}
+.openssl #hmac_output {
+  margin-top: 15px;
+}
+.openssl #entropyEncryptContainer {
+  margin-bottom: 15px;
+  float: left;
+  width: 142px;
+  height: 30px;
+}
+.openssl #entropyEncryptContainer #entropyMeterEncrypt {
+  height: 13px;
+  width: 121px;
+}
+.openssl #entropyEncryptTip {
+  margin: 0 -15px 15px -57px;
+  padding-left: 57px;
+}
+.openssl #passphraseLoading {
+  display: block;
+  width: 16px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+}
+.openssl .stepHeaders .mediumFont {
+  color: #7c7c7c;
+}
+.openssl #openssl_form {
+  margin-top: 15px;
+  display: none;
+}
+.openssl #openssl_form .tabContainer {
+  background-color: transparent;
+}
+@media (min-width: 605px) {
+  .openssl .sectionSeparator.narrowOnly {
+    display: none;
+  }
+}
+.openssl .versionTabContent #encryptOutput {
+  position: relative;
+  margin-top: 10px;
+}
+.openssl .versionTabContent #plaintext_output {
+  clear: both;
+  white-space: pre-wrap;
+  color: #27ae60;
+  height: auto;
+  background-color: white;
+  padding: 3px 10px;
+  cursor: text;
+  font-size: 15px;
+  color: #3f3f3f;
+  padding: 5px 10px;
+  margin: 0;
+  width: 100% !important;
+  font-family: Arial, sans-serif;
+  background-color: #e8e8e8;
+  -webkit-appearance: none;
+  border: 1px solid #bdbdbd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.openssl .versionTabContent input[type=text] {
+  width: 100%;
+}
+.openssl .versionTabContent textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 130px;
+}
+.openssl .versionTabContent #decrypt_ciphertext,
+.openssl .versionTabContent #decrypt_input_plaintext,
+.openssl .versionTabContent #data {
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.openssl .versionTabContent #decrypt_input_plaintext,
+.openssl .versionTabContent #data,
+.openssl .versionTabContent #plaintext_output {
+  color: #27ae60;
+}
+.openssl .versionTabContent #decrypt_passphrase {
+  color: #e67e22;
+  height: auto;
+}
+.openssl .versionTabContent .section {
+  margin-bottom: 25px;
+}
+.openssl .versionTabContent .key {
+  color: #e67e22;
+}
+.openssl .versionTabContent .message {
+  color: #27ae60;
+}
+.openssl .versionTabContent .hmac,
+.openssl .versionTabContent #encrypt_command_hmac {
+  color: #b232b2;
+  cursor: text;
+  word-break: break-all;
+}
+.openssl .versionTabContent .stepNumber {
+  width: 15px;
+  float: left;
+  font-size: 19px;
+  margin-right: 3px;
+}
+@media (min-width: 605px) {
+  .openssl .versionTabContent .stepNumber {
+    font-size: 37px;
+    line-height: 37px;
+    color: #d9d9d9;
+    font-family: Arial, sans-serif;
+    margin: 0 8px 0 0;
+    width: 26px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 605px) {
+  .openssl .versionTabContent .stepNumber .narrowOnly {
+    display: none;
+  }
+}
+.openssl .versionTabContent .sectionHeader {
+  margin-bottom: 10px;
+  white-space: normal;
+}
+.openssl .versionTabContent .instructionText {
+  font-size: 12px;
+  font-style: italic;
+}
+.openssl .versionTabContent .stepContent {
+  position: relative;
+}
+@media (min-width: 605px) {
+  .openssl .versionTabContent .stepContent {
+    margin-left: 35px;
+  }
+}
+.openssl .versionTabContent .stepResult {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+.openssl .versionTabContent .staticCharCounter {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.openssl .versionTabContent #openSSL_command_decrypt, .openssl .versionTabContent #openSSL_command_encrypt {
+  overflow: auto;
+  font-family: monospace;
+}
+.openssl .versionTabContent #ciphertext_output, .openssl .versionTabContent #encrypt_passphrase {
+  font-family: monospace;
+  cursor: text;
+  word-break: break-all;
+}
+.openssl .versionTabContent .decryptOutputElement.hidden {
+  display: none !important;
+}
+.openssl .versionTabContent #encrypt_command_ciphertext,
+.openssl .versionTabContent #encrypt_command_ciphertext2,
+.openssl .versionTabContent #decrypt_command_plaintext {
+  word-wrap: break-word;
+  width: 385px;
+  display: inline;
+}
+
+#serverlessTabs {
+  overflow: hidden;
+  margin: 15px 0 0;
+  margin: 0 -15px 0 -15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 605px) {
+  #serverlessTabs {
+    margin: 0 -25px 0 -25px;
+  }
+}
+#serverlessTabs #setupTab {
+  width: 25%;
+  clear: right;
+  float: left;
+  margin-left: 0;
+  margin-right: 0%;
+}
+#serverlessTabs #encryptTab {
+  width: 37.5%;
+  clear: right;
+  float: left;
+}
+#serverlessTabs #decryptTab {
+  width: 37.5%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+#serverlessTabs .wideOnly {
+  display: none;
+}
+@media (min-width: 625px) {
+  #serverlessTabs .wideOnly {
+    display: inline;
+  }
+}
+#serverlessTabs .middleOnly {
+  display: none;
+}
+@media (min-width: 350px) {
+  #serverlessTabs .middleOnly {
+    display: inline;
+  }
+}
+
+.random-number-testing .centerQuote {
+  padding-right: 40px;
+  text-align: right;
+}
+.random-number-testing .qtip.qtip-default {
+  -webkit-box-shadow: 0px 0px 0px 0px transparent;
+  -moz-box-shadow: 0px 0px 0px 0px transparent;
+  box-shadow: 0px 0px 0px 0px transparent;
+}
+.random-number-testing #prngExplain .sectionSeparator {
+  margin-bottom: 0;
+}
+.random-number-testing #prngExplain .toggleContent {
+  padding-bottom: 15px;
+}
+.random-number-testing #prngContainer {
+  padding: 15px;
+  background-color: #8e9fab;
+  color: white;
+  margin: 15px 0 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.random-number-testing #prngContainer button {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+  margin-top: 1px;
+}
+.random-number-testing #prngContainer .testTypeRow {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 370px;
+  vertical-align: middle;
+  padding-right: 7px;
+}
+.random-number-testing #prngContainer label:hover {
+  color: #e67e22;
+}
+.random-number-testing #prngContainer .testHeader {
+  margin-bottom: 15px;
+}
+.random-number-testing #prngContainer #entropyEncryptContainer {
+  height: 18px;
+}
+.random-number-testing #prngContainer #entropyEncryptContainer .smallFont {
+  font-size: 9px;
+  text-align: left;
+  margin-top: -3px;
+  float: right;
+}
+.random-number-testing .icon-refresh {
+  padding-top: 10px;
+}
+.random-number-testing .icon-refresh:hover {
+  cursor: pointer;
+  color: #e67e22;
+}
+.random-number-testing #prngRunning .spinMe {
+  float: left;
+  font-size: 40px;
+  margin-top: -35px;
+}
+.random-number-testing .spinkitSpinner > div,
+.random-number-testing .spinkitSpinner > span {
+  width: 20px;
+  height: 20px;
+}
+.random-number-testing #prngRunning .spinkitSpinner {
+  float: left;
+  margin-top: -25px;
+  margin-left: 5px;
+}
+.random-number-testing #prngRunning .spinkitSpinner .container1 > div,
+.random-number-testing #prngRunning .spinkitSpinner .container2 > div,
+.random-number-testing #prngRunning .spinkitSpinner .container3 > div {
+  background-color: white;
+}
+.random-number-testing #prngComplete .icon-checkmark {
+  font-size: 40px;
+  float: left;
+  margin-top: -35px;
+}
+.random-number-testing #prngComplete button {
+  margin-top: -8px;
+  float: right;
+}
+.random-number-testing #cancelPrngTest {
+  float: right;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.random-number-testing #cancelPrngTest:hover {
+  color: #e67e22;
+}
+.random-number-testing #prngTestResults,
+.random-number-testing #prngRunCount {
+  width: 235px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.random-number-testing #chi2sRaw {
+  height: 150px;
+  overflow-y: scroll;
+  border: 1px solid #9f9f9f;
+  margin: 0 0 15px;
+  padding: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.random-number-testing #rawToggle.toggleTrigger {
+  float: right;
+  font-size: 12px;
+  margin-top: 12px;
+}
+.random-number-testing canvas {
+  width: 555px;
+  display: block;
+  margin: 0 auto;
+}
+.random-number-testing #prngTests {
+  margin-top: 15px;
+}
+.random-number-testing #prngTests.testComplete .runValue {
+  visibility: hidden;
+}
+.random-number-testing #prngTests.testComplete .avgValue {
+  font-weight: bold;
+}
+.random-number-testing #prngTests .loadOpen .triggerClose {
+  display: block;
+}
+.random-number-testing #prngTests .loadOpen .triggerOpen {
+  display: none;
+}
+.random-number-testing #prngTests .toggleContent.loadOpen {
+  display: block;
+  padding-left: 28px;
+}
+.random-number-testing .runValue {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  line-height: 1;
+  width: 183px;
+  white-space: nowrap;
+  font-size: 12px;
+  margin: 15px 0;
+}
+.random-number-testing .byteSize {
+  background-color: white;
+}
+.random-number-testing .testDetails {
+  margin: 15px 0;
+  text-align: center;
+}
+.random-number-testing .chi {
+  font-family: Georgia;
+}
+.random-number-testing #entropyEncryptContainer #entropyMeterEncrypt {
+  height: 15px;
+  width: 190px;
+  margin: 0 5px 0 20px;
+}
+.random-number-testing #entropyEncryptContainer .ui-progressbar .ui-progressbar-value {
+  background: white;
+}
+.random-number-testing #chiSquareGraph {
+  margin-bottom: -15px;
+}
+.random-number-testing #chiSquareGraph .sectionSeparator {
+  margin-bottom: 0;
+}
+.random-number-testing #chiSquareGraph .toggleContent {
+  padding-bottom: 15px;
+}

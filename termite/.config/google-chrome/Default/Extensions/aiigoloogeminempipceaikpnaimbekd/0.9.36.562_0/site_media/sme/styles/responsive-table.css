@@ -1,0 +1,64 @@
+@media only screen and (max-width: 605px), (min-device-width: 605px) and (max-device-width: 605px) {
+  table, thead, tbody, th, .backgrid td.renderable, tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border-bottom: 1px solid #bdbdbd;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .backgrid td.renderable {
+    border: none;
+    position: relative;
+    padding-left: 140px;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .backgrid td.doubleLine {
+    height: 40px;
+  }
+
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    white-space: nowrap;
+  }
+
+  .backgrid tr td {
+    padding-top: 0;
+    padding-right: 15px;
+  }
+
+  #memberGrid table td:nth-of-type(1):before {
+    content: "Member:";
+  }
+  #memberGrid table td:nth-of-type(2):before {
+    content: "Role:";
+  }
+  #memberGrid table td:nth-of-type(3):before {
+    content: "Status:";
+  }
+  #memberGrid table td:nth-of-type(4):before {
+    content: "Actions:";
+  }
+
+  #activityGrid table td:nth-of-type(1):before {
+    content: "Time:";
+  }
+  #activityGrid table td:nth-of-type(2):before {
+    content: "User:";
+  }
+  #activityGrid table td:nth-of-type(3):before {
+    content: "Action:";
+  }
+}

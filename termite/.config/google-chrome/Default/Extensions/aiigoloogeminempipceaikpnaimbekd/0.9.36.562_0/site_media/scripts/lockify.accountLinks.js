@@ -1,0 +1,1 @@
+$(document).ready(function(){new AccountLinksView({el:$('body'),model:new AccountLinksModel()});});

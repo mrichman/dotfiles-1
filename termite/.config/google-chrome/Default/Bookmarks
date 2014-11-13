@@ -1,0 +1,1801 @@
+{
+   "checksum": "575872cd3e93f758c646b94ecbf36ea7",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13060322596126131",
+            "id": "6",
+            "meta_info": {
+               "stars.id": "ssc_d5df84382c4eb0d2",
+               "stars.isSynced": "true"
+            },
+            "name": "Read Later",
+            "type": "url",
+            "url": "javascript:function%20iprl5(){var%20d=document,z=d.createElement('scr'+'ipt'),b=d.body,l=d.location;try{if(!b)throw(0);d.title='(Saving...)%20'+d.title;z.setAttribute('src',l.protocol+'//www.instapaper.com/j/Ur05uR0KOMrp?u='+encodeURIComponent(l.href)+'&t='+(new%20Date().getTime()));b.appendChild(z);}catch(e){alert('Please%20wait%20until%20the%20page%20has%20loaded.');}}iprl5();void(0)"
+         }, {
+            "date_added": "13056926157126054",
+            "id": "7",
+            "meta_info": {
+               "stars.id": "ssc_ae8271c6388bbc98",
+               "stars.isSynced": "true"
+            },
+            "name": "XOR Go Convey",
+            "type": "url",
+            "url": "http://localhost:8080/"
+         }, {
+            "date_added": "13059069634011713",
+            "id": "8",
+            "meta_info": {
+               "stars.id": "ssc_5969eb2fc92b5116",
+               "stars.isSynced": "true"
+            },
+            "name": "Access – 10 Minute Pentatonics — Blues Guitar Master",
+            "type": "url",
+            "url": "https://bluesguitarmaster.com/access-10-minute-pentatonics/"
+         }, {
+            "date_added": "13058404972874191",
+            "id": "9",
+            "meta_info": {
+               "stars.id": "ssc_a3f10459f38e190b",
+               "stars.isSynced": "true"
+            },
+            "name": "DevOps News",
+            "type": "url",
+            "url": "http://news.centurylinklabs.com/"
+         }, {
+            "date_added": "13059028312666228",
+            "id": "10",
+            "meta_info": {
+               "stars.id": "ssc_399160bf52f3fadc",
+               "stars.isSynced": "true"
+            },
+            "name": "i3: i3 User’s Guide",
+            "type": "url",
+            "url": "http://i3wm.org/docs/userguide.html#_toggling_fullscreen_mode_for_a_window"
+         }, {
+            "children": [ {
+               "date_added": "13055428491922499",
+               "id": "176",
+               "meta_info": {
+                  "stars.id": "ssc_9bc52e0642c9c35e",
+                  "stars.isSynced": "true"
+               },
+               "name": "Build Dashboard - Atlassian Bamboo",
+               "type": "url",
+               "url": "https://bamboo.xordataexchange.com/"
+            }, {
+               "date_added": "13055428503583898",
+               "id": "177",
+               "meta_info": {
+                  "stars.id": "ssc_f1b2697282f5325c",
+                  "stars.isSynced": "true"
+               },
+               "name": "System Dashboard - XOR Jira",
+               "type": "url",
+               "url": "https://jira.xordataexchange.com/secure/Dashboard.jspa"
+            }, {
+               "date_added": "13055428514273503",
+               "id": "178",
+               "meta_info": {
+                  "stars.id": "ssc_bc917668bbe2c70e",
+                  "stars.isSynced": "true"
+               },
+               "name": "Projects - Stash",
+               "type": "url",
+               "url": "https://source.xordataexchange.com/projects"
+            }, {
+               "date_added": "13055428530654653",
+               "id": "179",
+               "meta_info": {
+                  "stars.id": "ssc_c3376c4095704379",
+                  "stars.isSynced": "true"
+               },
+               "name": "Dashboard - Confluence",
+               "type": "url",
+               "url": "https://confluence.xordataexchange.com/dashboard.action"
+            } ],
+            "date_added": "13055428483677380",
+            "date_modified": "13060322596127191",
+            "id": "11",
+            "meta_info": {
+               "stars.id": "ssf_97f9520899265ba5",
+               "stars.isSynced": "true"
+            },
+            "name": "Atlassian Suite",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13055887494833963",
+               "id": "173",
+               "meta_info": {
+                  "stars.id": "ssc_2328fd140daf527d",
+                  "stars.isSynced": "true"
+               },
+               "name": "All Systems — Papertrail",
+               "type": "url",
+               "url": "https://papertrailapp.com/groups/903433/events?r=450789594615820292-450789810840580103"
+            }, {
+               "date_added": "13056132189833658",
+               "id": "174",
+               "meta_info": {
+                  "stars.id": "ssc_71142f63328b3c59",
+                  "stars.isSynced": "true"
+               },
+               "name": "Cloud Monitoring as a Service | Datadog",
+               "type": "url",
+               "url": "https://www.datadoghq.com/"
+            }, {
+               "date_added": "13058227099484042",
+               "id": "175",
+               "meta_info": {
+                  "stars.id": "ssc_2dca26055793471b",
+                  "stars.isSynced": "true"
+               },
+               "name": "Applications · CoreOS",
+               "type": "url",
+               "url": "https://xordataexchange.update.core-os.net/cp/apps"
+            } ],
+            "date_added": "13056132173103187",
+            "date_modified": "13060322596127327",
+            "id": "12",
+            "meta_info": {
+               "stars.id": "ssf_a52378d6dae1e56a",
+               "stars.isSynced": "true"
+            },
+            "name": "Monitoring and Logging",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13039802942468546",
+               "id": "133",
+               "meta_info": {
+                  "stars.id": "ssc_46dfddd686943915",
+                  "stars.isSynced": "true"
+               },
+               "name": "Brian Ketelsen - Outlook Web App",
+               "type": "url",
+               "url": "https://outlook.office365.com/owa/?realm=xordataexchange.com&wa=wsignin1.0#path=/mail"
+            }, {
+               "date_added": "13035399876199638",
+               "id": "134",
+               "meta_info": {
+                  "stars.id": "ssc_e5c43653e5edbfd8",
+                  "stars.isSynced": "true"
+               },
+               "name": "10 Things We Forgot to Monitor",
+               "type": "url",
+               "url": "http://word.bitly.com/post/74839060954/ten-things-to-monitor"
+            }, {
+               "date_added": "13038944939923734",
+               "id": "135",
+               "meta_info": {
+                  "stars.id": "ssc_43db1289d4daf72c",
+                  "stars.isSynced": "true"
+               },
+               "name": "SamSaffron/graphite_docker",
+               "type": "url",
+               "url": "https://github.com/SamSaffron/graphite_docker"
+            }, {
+               "date_added": "13039214710681359",
+               "id": "136",
+               "meta_info": {
+                  "stars.id": "ssc_ec614aa122893803",
+                  "stars.isSynced": "true"
+               },
+               "name": "Authentication for a Docker Registry - bitJudo",
+               "type": "url",
+               "url": "http://bitjudo.com/blog/2014/03/12/authentication-for-a-docker-registry/"
+            }, {
+               "date_added": "13039436279565269",
+               "id": "137",
+               "meta_info": {
+                  "stars.id": "ssc_4a4e7643e30e5249",
+                  "stars.isSynced": "true"
+               },
+               "name": "CoreOS Monitoring with Diamond and Graphite at Nuxeo Blogs",
+               "type": "url",
+               "url": "http://www.nuxeo.com/blog/development/2014/03/coreos-monitoring-diamond-graphite/"
+            }, {
+               "date_added": "13038503191537052",
+               "id": "138",
+               "meta_info": {
+                  "stars.id": "ssc_062f41ac2d8d2981",
+                  "stars.isSynced": "true"
+               },
+               "name": "Conceptual Overview",
+               "type": "url",
+               "url": "https://www.gliffy.com/go/html5/5438329?app=1b5094b0-6042-11e2-bcfd-0800200c9a66"
+            }, {
+               "date_added": "13036615545280669",
+               "id": "139",
+               "meta_info": {
+                  "stars.id": "ssc_082a77fea54cd10d",
+                  "stars.isSynced": "true"
+               },
+               "name": "Projects",
+               "type": "url",
+               "url": "https://basecamp.com/2548566/"
+            }, {
+               "date_added": "13040962144443510",
+               "id": "140",
+               "meta_info": {
+                  "stars.id": "ssc_26987db767344e8b",
+                  "stars.isSynced": "true"
+               },
+               "name": "qnib/graphite Repository | Docker Index",
+               "type": "url",
+               "url": "https://index.docker.io/u/qnib/graphite/"
+            }, {
+               "date_added": "13041348786922236",
+               "id": "141",
+               "meta_info": {
+                  "stars.id": "ssc_3365aec93b7682ad",
+                  "stars.isSynced": "true"
+               },
+               "name": "Rackspace Setup - Google Drive",
+               "type": "url",
+               "url": "https://docs.google.com/document/d/1Swa8N3TegjSs0Vwr07hzMnASA8mkeeI5psSkeEOUpfY/edit#"
+            }, {
+               "date_added": "13041616103520623",
+               "id": "142",
+               "meta_info": {
+                  "stars.id": "ssc_79bc5cca7a1705ed",
+                  "stars.isSynced": "true"
+               },
+               "name": "etcd dashboard",
+               "type": "url",
+               "url": "http://10.176.166.61:4001/mod/dashboard/"
+            }, {
+               "date_added": "13042146521018786",
+               "id": "143",
+               "meta_info": {
+                  "stars.id": "ssc_e834c34f87cd12cc",
+                  "stars.isSynced": "true"
+               },
+               "name": "Issues · hueniverse/hawk",
+               "type": "url",
+               "url": "https://github.com/hueniverse/hawk/issues?labels=port&state=closed"
+            }, {
+               "date_added": "13042507306133228",
+               "id": "144",
+               "meta_info": {
+                  "stars.id": "ssc_59e5f38e0fd1e612",
+                  "stars.isSynced": "true"
+               },
+               "name": "0xdata",
+               "type": "url",
+               "url": "http://0xdata.com/about/"
+            }, {
+               "date_added": "13043864954181386",
+               "id": "145",
+               "meta_info": {
+                  "stars.id": "ssc_e0f10daa9473b016",
+                  "stars.isSynced": "true"
+               },
+               "name": "Stream de-duplication « Dave Gardner – PHP Developer",
+               "type": "url",
+               "url": "http://www.davegardner.me.uk/blog/2012/11/06/stream-de-duplication/"
+            }, {
+               "date_added": "13041637288555478",
+               "id": "146",
+               "meta_info": {
+                  "stars.id": "ssc_7506772abcac69af",
+                  "stars.isSynced": "true"
+               },
+               "name": "XOR | LOGIN",
+               "type": "url",
+               "url": "http://10.176.166.61:3000/login.html"
+            }, {
+               "date_added": "13041014082841155",
+               "id": "147",
+               "meta_info": {
+                  "stars.id": "ssc_7ce8c34502c8abd8",
+                  "stars.isSynced": "true"
+               },
+               "name": "Basic service discovery with HTTP health check",
+               "type": "url",
+               "url": "https://gist.github.com/jamessharp/0feeca62e2cddecb4da6"
+            }, {
+               "date_added": "13047168344680379",
+               "id": "148",
+               "meta_info": {
+                  "stars.id": "ssc_6bfea4a76530fc59",
+                  "stars.isSynced": "true"
+               },
+               "name": "matchr - GoDoc",
+               "type": "url",
+               "url": "http://godoc.org/github.com/antzucaro/matchr"
+            }, {
+               "date_added": "13048720675306656",
+               "id": "149",
+               "meta_info": {
+                  "stars.id": "ssc_d74ba78e04a982bd",
+                  "stars.isSynced": "true"
+               },
+               "name": "Grafana - Docs - InfluxDB",
+               "type": "url",
+               "url": "http://grafana.org/docs/features/influxdb/"
+            }, {
+               "date_added": "13051150103528177",
+               "id": "150",
+               "meta_info": {
+                  "stars.id": "ssc_451e9e5828fa8b2d",
+                  "stars.isSynced": "true"
+               },
+               "name": "Vistar Media Labs: Hadoop and Go",
+               "type": "url",
+               "url": "http://labs.vistarmedia.com/2014/07/29/hadoop-and-go.html"
+            }, {
+               "date_added": "13049409801054865",
+               "id": "151",
+               "meta_info": {
+                  "stars.id": "ssc_cc07f0a3ecc9b2ec",
+                  "stars.isSynced": "true"
+               },
+               "name": "The best PGP tutorial for Mac OS X, ever | Jerzy's Notes",
+               "type": "url",
+               "url": "http://notes.jerzygangi.com/the-best-pgp-tutorial-for-mac-os-x-ever/"
+            }, {
+               "date_added": "13053639244482940",
+               "id": "152",
+               "meta_info": {
+                  "stars.id": "ssc_513d6d5ce451b230",
+                  "stars.isSynced": "true"
+               },
+               "name": "How to Setup Chroot SFTP in Linux (Allow Only SFTP, not SSH)",
+               "type": "url",
+               "url": "http://www.thegeekstuff.com/2012/03/chroot-sftp-setup/"
+            }, {
+               "date_added": "13053648986039111",
+               "id": "153",
+               "meta_info": {
+                  "stars.id": "ssc_e3b94bd643837d5f",
+                  "stars.isSynced": "true"
+               },
+               "name": "Tyk - Open Source API Gateway",
+               "type": "url",
+               "url": "http://tyk.io/"
+            }, {
+               "date_added": "13053649133207509",
+               "id": "154",
+               "meta_info": {
+                  "stars.id": "ssc_a626ab575b0de877",
+                  "stars.isSynced": "true"
+               },
+               "name": "Step 1. Install the heat Client - Rackspace Cloud Orchestration Getting Started Guide - API v1.0",
+               "type": "url",
+               "url": "http://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Install_Heat_Client.html"
+            }, {
+               "date_added": "13054227707194287",
+               "id": "155",
+               "meta_info": {
+                  "stars.id": "ssc_05fa497ce7c7b4dd",
+                  "stars.isSynced": "true"
+               },
+               "name": "progrium/registrator",
+               "type": "url",
+               "url": "https://github.com/progrium/registrator"
+            }, {
+               "date_added": "13054227712624511",
+               "id": "156",
+               "meta_info": {
+                  "stars.id": "ssc_27727cfeceadc154",
+                  "stars.isSynced": "true"
+               },
+               "name": "progrium/docker-consul",
+               "type": "url",
+               "url": "https://github.com/progrium/docker-consul"
+            }, {
+               "date_added": "13054654427536404",
+               "id": "157",
+               "meta_info": {
+                  "stars.id": "ssc_ea6e4dca67202291",
+                  "stars.isSynced": "true"
+               },
+               "name": "progrium/logspout",
+               "type": "url",
+               "url": "https://github.com/progrium/logspout"
+            }, {
+               "date_added": "13041972086845273",
+               "id": "158",
+               "meta_info": {
+                  "stars.id": "ssc_e37724932d7f79d7",
+                  "stars.isSynced": "true"
+               },
+               "name": "Create a new branch with git and manage branches · Kunena/Kunena-Forum Wiki",
+               "type": "url",
+               "url": "https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches"
+            }, {
+               "date_added": "13055829399399950",
+               "id": "159",
+               "meta_info": {
+                  "stars.id": "ssc_a0ffe7fe5913ba53",
+                  "stars.isSynced": "true"
+               },
+               "name": "NSQ Nodes",
+               "type": "url",
+               "url": "http://10.176.9.15:14171/nodes"
+            }, {
+               "date_added": "13055864740344452",
+               "id": "160",
+               "meta_info": {
+                  "stars.id": "ssc_6bfb6f7e86ec3054",
+                  "stars.isSynced": "true"
+               },
+               "name": "Red October: CloudFlare’s Open Source Implementation of the Two-Man Rule",
+               "type": "url",
+               "url": "http://blog.cloudflare.com/red-october-cloudflares-open-source-implementation-of-the-two-man-rule/"
+            }, {
+               "date_added": "13055914843697188",
+               "id": "161",
+               "meta_info": {
+                  "stars.id": "ssc_a114057cea768ea4",
+                  "stars.isSynced": "true"
+               },
+               "name": "TipsAndTricks",
+               "type": "url",
+               "url": "http://www.freedesktop.org/wiki/Software/systemd/TipsAndTricks/"
+            }, {
+               "date_added": "13055942779418799",
+               "id": "162",
+               "meta_info": {
+                  "stars.id": "ssc_7ed8a151aba6b00c",
+                  "stars.isSynced": "true"
+               },
+               "name": "Easy Kubernetes on CoreOS",
+               "type": "url",
+               "url": "https://gist.github.com/soellman/d52cb24080b1982a9b0e"
+            }, {
+               "date_added": "13055996507049913",
+               "id": "163",
+               "meta_info": {
+                  "stars.id": "ssc_c8dfba2ade874594",
+                  "stars.isSynced": "true"
+               },
+               "name": "Cassandra Sizing",
+               "type": "url",
+               "url": "http://btoddb-cass-storage.blogspot.com/"
+            }, {
+               "date_added": "13056123150475352",
+               "id": "164",
+               "meta_info": {
+                  "stars.id": "ssc_e4c47e7300cea83a",
+                  "stars.isSynced": "true"
+               },
+               "name": "How To Use Google Logging Library (glog)",
+               "type": "url",
+               "url": "https://google-glog.googlecode.com/svn/trunk/doc/glog.html"
+            }, {
+               "date_added": "13056464680017669",
+               "id": "165",
+               "meta_info": {
+                  "stars.id": "ssc_f9b83bd95d8cc87e",
+                  "stars.isSynced": "true"
+               },
+               "name": "RelOps / cqlc",
+               "type": "url",
+               "url": "http://relops.com/cqlc/"
+            }, {
+               "date_added": "13056508173513846",
+               "id": "166",
+               "meta_info": {
+                  "stars.id": "ssc_fe6c685e45117cde",
+                  "stars.isSynced": "true"
+               },
+               "name": "Google Compute Engine",
+               "type": "url",
+               "url": "https://coreos.com/docs/running-coreos/cloud-providers/google-compute-engine/"
+            }, {
+               "date_added": "13056784729200064",
+               "id": "167",
+               "meta_info": {
+                  "stars.id": "ssc_808e7255a0006415",
+                  "stars.isSynced": "true"
+               },
+               "name": "Cloud-Config Validator",
+               "type": "url",
+               "url": "https://coreos.com/validate/"
+            }, {
+               "date_added": "13057251437227841",
+               "id": "168",
+               "meta_info": {
+                  "stars.id": "ssc_b9f3650a532ce8cc",
+                  "stars.isSynced": "true"
+               },
+               "name": "Postman Docs | Jetpacks | Newman",
+               "type": "url",
+               "url": "https://www.getpostman.com/docs/newman_intro"
+            }, {
+               "date_added": "13057265853378157",
+               "id": "169",
+               "meta_info": {
+                  "stars.id": "ssc_3c7aec2242767e9b",
+                  "stars.isSynced": "true"
+               },
+               "name": "jteeuwen/go-bindata",
+               "type": "url",
+               "url": "https://github.com/jteeuwen/go-bindata"
+            }, {
+               "date_added": "13058228672312794",
+               "id": "170",
+               "meta_info": {
+                  "stars.id": "ssc_ba4e3d3adee65381",
+                  "stars.isSynced": "true"
+               },
+               "name": "Configure Machines to Use CoreUpdate",
+               "type": "url",
+               "url": "https://coreos.com/docs/coreupdate/coreos/coreupdate-configure-machines/"
+            }, {
+               "date_added": "13058297905003366",
+               "id": "171",
+               "meta_info": {
+                  "stars.id": "ssc_58fde9267a5750a6",
+                  "stars.isSynced": "true"
+               },
+               "name": "kimono : Turn websites into structured APIs from your browser in seconds",
+               "type": "url",
+               "url": "https://www.kimonolabs.com/"
+            }, {
+               "date_added": "13058480783358348",
+               "id": "172",
+               "meta_info": {
+                  "stars.id": "ssc_3447076961a0d075",
+                  "stars.isSynced": "true"
+               },
+               "name": "Eight Docker Development Patterns",
+               "type": "url",
+               "url": "http://www.hokstad.com/docker/patterns"
+            } ],
+            "date_added": "13040755007772404",
+            "date_modified": "13060322596127428",
+            "id": "13",
+            "meta_info": {
+               "stars.id": "ssf_1631b5483436056a",
+               "stars.isSynced": "true"
+            },
+            "name": "XOR",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13057432275375920",
+               "id": "130",
+               "meta_info": {
+                  "stars.id": "ssc_5412d87cde28cc30",
+                  "stars.isSynced": "true"
+               },
+               "name": "Boomset - Event Guest List App",
+               "type": "url",
+               "url": "https://boomset.com/guest-list-app"
+            }, {
+               "date_added": "13059430294493513",
+               "id": "131",
+               "meta_info": {
+                  "stars.id": "ssc_e464109a817a1f60",
+                  "stars.isSynced": "true"
+               },
+               "name": "Not Your 'Traditional Hacker Camp': Inside Electromagnetic Field Festival | Motherboard",
+               "type": "url",
+               "url": "http://motherboard.vice.com/read/inside-uks-electromagnetic-field-festival"
+            }, {
+               "date_added": "13059430299987456",
+               "id": "132",
+               "meta_info": {
+                  "stars.id": "ssc_02afb46ed1b8f8b9",
+                  "stars.isSynced": "true"
+               },
+               "name": "Strange Loop thoughts | Bridget",
+               "type": "url",
+               "url": "http://bridgetconsulting.com/?p=131"
+            } ],
+            "date_added": "13057432262514236",
+            "date_modified": "13060322596127521",
+            "id": "14",
+            "meta_info": {
+               "stars.id": "ssf_87b535f7f970650a",
+               "stars.isSynced": "true"
+            },
+            "name": "Gophercon 2015",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "12974240542198515",
+               "id": "98",
+               "meta_info": {
+                  "stars.id": "ssc_c3c15297706dd452",
+                  "stars.isSynced": "true"
+               },
+               "name": "Go - GitHub",
+               "type": "url",
+               "url": "https://github.com/languages/Go"
+            }, {
+               "date_added": "12974240542198858",
+               "id": "99",
+               "meta_info": {
+                  "stars.id": "ssc_68d736da4931da1e",
+                  "stars.isSynced": "true"
+               },
+               "name": "The Go Programming Language",
+               "type": "url",
+               "url": "http://www.reddit.com/r/golang"
+            }, {
+               "date_added": "12974240542199163",
+               "id": "100",
+               "meta_info": {
+                  "stars.id": "ssc_8c80642b0e695269",
+                  "stars.isSynced": "true"
+               },
+               "name": "Documentation - The Go Programming Language",
+               "type": "url",
+               "url": "http://golang.org/doc/docs.html"
+            }, {
+               "date_added": "12974240542200410",
+               "id": "101",
+               "meta_info": {
+                  "stars.id": "ssc_3cc3a753c59ec8d0",
+                  "stars.isSynced": "true"
+               },
+               "name": "go snippets - cute bits of go code",
+               "type": "url",
+               "url": "http://gosnip.posterous.com/"
+            }, {
+               "date_added": "12974240542200710",
+               "id": "102",
+               "meta_info": {
+                  "stars.id": "ssc_f0f9286e6a3095aa",
+                  "stars.isSynced": "true"
+               },
+               "name": "golang-nuts | Google Groups",
+               "type": "url",
+               "url": "http://groups.google.com/group/golang-nuts"
+            }, {
+               "date_added": "12974240542201008",
+               "id": "103",
+               "meta_info": {
+                  "stars.id": "ssc_695604dd613c1c74",
+                  "stars.isSynced": "true"
+               },
+               "name": "Wiki Pages - go-wiki - Go Language Community Wiki - Google Project Hosting",
+               "type": "url",
+               "url": "http://code.google.com/p/go-wiki/w/list"
+            }, {
+               "date_added": "12974240542201323",
+               "id": "104",
+               "meta_info": {
+                  "stars.id": "ssc_02476e3742fa2305",
+                  "stars.isSynced": "true"
+               },
+               "name": "Tutorial - go-router - a Go package for publish/subscribe message passing - Google Project Hosting",
+               "type": "url",
+               "url": "http://code.google.com/p/go-router/wiki/Tutorial"
+            }, {
+               "date_added": "12974240542201650",
+               "id": "105",
+               "meta_info": {
+                  "stars.id": "ssc_7c3df2c7107a6d7e",
+                  "stars.isSynced": "true"
+               },
+               "name": "How to Write Go Code - The Go Programming Language",
+               "type": "url",
+               "url": "http://tip.golang.org/doc/code.html#New_package"
+            }, {
+               "date_added": "13060322596131574",
+               "id": "106",
+               "meta_info": {
+                  "stars.id": "ssc_6f6ea1e276290416",
+                  "stars.isSynced": "true"
+               },
+               "name": "Learn Code The Hard Way -- Books And Courses To Learn To Code",
+               "type": "url",
+               "url": "http://c.learncodethehardway.org/"
+            }, {
+               "date_added": "12976745766654671",
+               "id": "107",
+               "meta_info": {
+                  "stars.id": "ssc_d674fb724ce2be62",
+                  "stars.isSynced": "true"
+               },
+               "name": "Librato Metrics",
+               "type": "url",
+               "url": "https://metrics.librato.com/"
+            }, {
+               "date_added": "12974240542185006",
+               "id": "108",
+               "meta_info": {
+                  "stars.id": "ssc_58d7c66105e71a2b",
+                  "stars.isSynced": "true"
+               },
+               "name": "Multiple goroutines waiting for event - Google Groups",
+               "type": "url",
+               "url": "https://groups.google.com/forum/#!msg/golang-nuts/M-uggX3Ikdg/T5sEHN-pma0J"
+            }, {
+               "date_added": "12974240542184063",
+               "id": "109",
+               "meta_info": {
+                  "stars.id": "ssc_5057204a75e97fa3",
+                  "stars.isSynced": "true"
+               },
+               "name": "Johan Euphrosine - Google+ - 0xc things I like about #golang: Sharing an unordered list…",
+               "type": "url",
+               "url": "https://plus.google.com/111042085517496880918/posts/3hMj5cQsujG"
+            }, {
+               "date_added": "12998435795254850",
+               "id": "110",
+               "meta_info": {
+                  "stars.id": "ssc_e6c01ee37260df3b",
+                  "stars.isSynced": "true"
+               },
+               "name": "Go by Example",
+               "type": "url",
+               "url": "https://gobyexample.com/"
+            }, {
+               "date_added": "13060322596131780",
+               "id": "111",
+               "meta_info": {
+                  "stars.id": "ssc_5eb85033963f84a2",
+                  "stars.isSynced": "true"
+               },
+               "name": "My eBook build process and some PDF, EPUB and MOBI tips - Pat Shaughnessy",
+               "type": "url",
+               "url": "http://patshaughnessy.net/2012/11/27/my-ebook-build-process-and-some-pdf-epub-and-mobi-tips"
+            }, {
+               "date_added": "13060322596131813",
+               "id": "112",
+               "meta_info": {
+                  "stars.id": "ssc_4265807f9cb42fd6",
+                  "stars.isSynced": "true"
+               },
+               "name": "2013.01.04 Tech Talk on Go Language | Big Nerd Ranch",
+               "type": "url",
+               "url": "http://learn.bignerdranch.com/videos/2013-01-04-tech-talk-on-go-language"
+            }, {
+               "date_added": "13011185384716376",
+               "id": "113",
+               "meta_info": {
+                  "stars.id": "ssc_7caca0edbd5b22ed",
+                  "stars.isSynced": "true"
+               },
+               "name": "Go'Circuit: Paradigm for developing and sustaining Big Data apps",
+               "type": "url",
+               "url": "http://www.gocircuit.org/"
+            }, {
+               "date_added": "13014399044949717",
+               "id": "114",
+               "meta_info": {
+                  "stars.id": "ssc_b405b00439e26a26",
+                  "stars.isSynced": "true"
+               },
+               "name": "GoUsers - go-wiki - A list of organizations that use Go. - Go Language Community Wiki - Google Project Hosting",
+               "type": "url",
+               "url": "https://code.google.com/p/go-wiki/wiki/GoUsers"
+            }, {
+               "date_added": "13028225488666219",
+               "id": "115",
+               "meta_info": {
+                  "stars.id": "ssc_d8027def29725a8c",
+                  "stars.isSynced": "true"
+               },
+               "name": "Search · stars:>1",
+               "type": "url",
+               "url": "https://github.com/search?l=go&q=stars%3A%3E1&s=updated&type=Repositories"
+            }, {
+               "date_added": "13038118585514349",
+               "id": "116",
+               "meta_info": {
+                  "stars.id": "ssc_80156943a79a7782",
+                  "stars.isSynced": "true"
+               },
+               "name": "gist:7866706",
+               "type": "url",
+               "url": "https://gist.github.com/philips/7866706"
+            }, {
+               "date_added": "13040490463800456",
+               "id": "117",
+               "meta_info": {
+                  "stars.id": "ssc_f260e7c1ca797394",
+                  "stars.isSynced": "true"
+               },
+               "name": "Peity • progressive \u003Csvg> pie charts",
+               "type": "url",
+               "url": "http://benpickles.github.io/peity/"
+            }, {
+               "date_added": "13040754968640257",
+               "id": "118",
+               "meta_info": {
+                  "stars.id": "ssc_ad335703c8cf46e7",
+                  "stars.isSynced": "true"
+               },
+               "name": "ffjson: faster JSON serialization for Golang",
+               "type": "url",
+               "url": "https://journal.paul.querna.org/articles/2014/03/31/ffjson-faster-json-in-go/"
+            }, {
+               "date_added": "13037295727424508",
+               "id": "119",
+               "meta_info": {
+                  "stars.id": "ssc_07689420f4f9c7a7",
+                  "stars.isSynced": "true"
+               },
+               "name": "jinzhu/gorm",
+               "type": "url",
+               "url": "https://github.com/jinzhu/gorm"
+            }, {
+               "date_added": "13037310467369835",
+               "id": "120",
+               "meta_info": {
+                  "stars.id": "ssc_2b2ca00e3de724f6",
+                  "stars.isSynced": "true"
+               },
+               "name": "Get Going with Gorm and Sqlite",
+               "type": "url",
+               "url": "http://levi.guru/get-going-with-gorm-and-sqlite/"
+            }, {
+               "date_added": "13044279480352059",
+               "id": "121",
+               "meta_info": {
+                  "stars.id": "ssc_27cb2837c9f1f05a",
+                  "stars.isSynced": "true"
+               },
+               "name": "Debugging performance issues in Go programs",
+               "type": "url",
+               "url": "https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs"
+            }, {
+               "date_added": "13044709821693191",
+               "id": "122",
+               "meta_info": {
+                  "stars.id": "ssc_7e3d9de178f0fc8b",
+                  "stars.isSynced": "true"
+               },
+               "name": "JSON-to-Go -- Convert JSON to Go type definitions",
+               "type": "url",
+               "url": "http://mholt.github.io/json-to-go/"
+            }, {
+               "date_added": "13045940398903836",
+               "id": "123",
+               "meta_info": {
+                  "stars.id": "ssc_6ee96cb56e4f84d9",
+                  "stars.isSynced": "true"
+               },
+               "name": "AdminLTE Preview - Almsaeed Studio",
+               "type": "url",
+               "url": "http://www.almsaeedstudio.com/preview"
+            }, {
+               "date_added": "13045940669508467",
+               "id": "124",
+               "meta_info": {
+                  "stars.id": "ssc_a71d90708cee33ee",
+                  "stars.isSynced": "true"
+               },
+               "name": "example of using JWT for http authentication in go",
+               "type": "url",
+               "url": "https://gist.github.com/cryptix/45c33ecf0ae54828e63b"
+            }, {
+               "date_added": "13045940676735336",
+               "id": "125",
+               "meta_info": {
+                  "stars.id": "ssc_0b035577a0ee94a7",
+                  "stars.isSynced": "true"
+               },
+               "name": "Cookies vs Tokens. Getting auth right with Angular.JS",
+               "type": "url",
+               "url": "https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/"
+            }, {
+               "date_added": "13054318772403156",
+               "id": "126",
+               "meta_info": {
+                  "stars.id": "ssc_6d0e1af2b95c9a56",
+                  "stars.isSynced": "true"
+               },
+               "name": "Setting up a development machine with Ubuntu 14.04 (Trusty Tahr) | erikaheidi",
+               "type": "url",
+               "url": "http://www.erikaheidi.com/blog/setting-up-a-development-machine-with-ubuntu-1404-trusty-tahr"
+            }, {
+               "date_added": "13056401254838824",
+               "id": "127",
+               "meta_info": {
+                  "stars.id": "ssc_5ef70665dc8f4a21",
+                  "stars.isSynced": "true"
+               },
+               "name": "vim-go/go.snippets at master · fatih/vim-go",
+               "type": "url",
+               "url": "https://github.com/fatih/vim-go/blob/master/gosnippets/UltiSnips/go.snippets"
+            }, {
+               "date_added": "13057688451737915",
+               "id": "128",
+               "meta_info": {
+                  "stars.id": "ssc_5a47d47968d24a54",
+                  "stars.isSynced": "true"
+               },
+               "name": "Kickstart a Cassandra cluster with Docker",
+               "type": "url",
+               "url": "http://www.hnwatcher.com/r/1416363/Kickstart-a-Cassandra-cluster-with-Docker"
+            }, {
+               "date_added": "13058053544473343",
+               "id": "129",
+               "meta_info": {
+                  "stars.id": "ssc_2fb1599e8ea10370",
+                  "stars.isSynced": "true"
+               },
+               "name": "gifs/api: files",
+               "type": "url",
+               "url": "http://code.secondbit.org/gifs/api/file/tip/gifsd"
+            } ],
+            "date_added": "13060322596127623",
+            "date_modified": "13060322596131813",
+            "id": "15",
+            "meta_info": {
+               "stars.id": "ssf_fa473c743f26c234",
+               "stars.isSynced": "true"
+            },
+            "name": "Go",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "12974240542202250",
+               "id": "77",
+               "meta_info": {
+                  "stars.id": "ssc_ca44ddf0c0200d58",
+                  "stars.isSynced": "true"
+               },
+               "name": "Gibson Guitar: Free Song Lessons - Reelin' In the Years by Steely Dan",
+               "type": "url",
+               "url": "http://www2.gibson.com/Lessons/Skills-House/Songs/2011/Reelin-In-the-Years.aspx"
+            }, {
+               "date_added": "12980549130306767",
+               "id": "78",
+               "meta_info": {
+                  "stars.id": "ssc_e595a09b3c204289",
+                  "stars.isSynced": "true"
+               },
+               "name": "Blues Guitar Lesson - Major and Minor Pentatonics by Dan Holton",
+               "type": "url",
+               "url": "http://www.guitarnoize.com/blues-guitar-lesson-major-and-minor-pentatonics/"
+            }, {
+               "date_added": "12974240542188498",
+               "id": "79",
+               "meta_info": {
+                  "stars.id": "ssc_7e4ffb75eac9b841",
+                  "stars.isSynced": "true"
+               },
+               "name": "Blues Solo 1",
+               "type": "url",
+               "url": "http://www.youtube.com/v/4fAUTrCE5UI&autoplay=1&amp;hl=en_GB&amp;fs=1&amp;border=1"
+            }, {
+               "date_added": "13027108904988247",
+               "id": "80",
+               "meta_info": {
+                  "stars.id": "ssc_0affec2deec6c28e",
+                  "stars.isSynced": "true"
+               },
+               "name": "Free Total Blues Jam Track Downloads - JamTrackCentral",
+               "type": "url",
+               "url": "http://www.jamtrackcentral.com/free_total.php"
+            }, {
+               "date_added": "12974240542194532",
+               "id": "81",
+               "meta_info": {
+                  "stars.id": "ssc_c8779420b109aad2",
+                  "stars.isSynced": "true"
+               },
+               "name": "Guitar Instruction with Roger Keplinger - Home",
+               "type": "url",
+               "url": "http://www.rogerkeplinger.com/"
+            }, {
+               "date_added": "12974240542194846",
+               "id": "82",
+               "meta_info": {
+                  "stars.id": "ssc_bad5626f0d900f0d",
+                  "stars.isSynced": "true"
+               },
+               "name": "I Love Practicing And You Should To, Heres How | Guitar Columns @ Ultimate-Guitar.Com",
+               "type": "url",
+               "url": "http://www.ultimate-guitar.com/columns/general_music/i_love_practicing_and_you_should_to_heres_how.html?no_takeover"
+            }, {
+               "date_added": "12976932961580920",
+               "id": "83",
+               "meta_info": {
+                  "stars.id": "ssc_ab01d644dcb55cec",
+                  "stars.isSynced": "true"
+               },
+               "name": "Blog - trials and tribulations of making dance metal music at home",
+               "type": "url",
+               "url": "http://www.infinitefiremusic.com/blog"
+            }, {
+               "date_added": "12974240542183529",
+               "id": "84",
+               "meta_info": {
+                  "stars.id": "ssc_60ddcb2777e2ff2f",
+                  "stars.isSynced": "true"
+               },
+               "name": "Gibson Guitar: Electric, Acoustic and Bass Guitars, Baldwin Pianos",
+               "type": "url",
+               "url": "http://www2.gibson.com/Lessons/Skills-House.aspx"
+            }, {
+               "date_added": "13060322596130729",
+               "id": "85",
+               "meta_info": {
+                  "stars.id": "ssc_1c2a1b81b9c51168",
+                  "stars.isSynced": "true"
+               },
+               "name": "Guitar Solo - Scales, Chops, Licks, Technique, Improvisation, Guitar Lessons",
+               "type": "url",
+               "url": "http://www.myguitarsolo.com/"
+            }, {
+               "date_added": "12983656880706225",
+               "id": "86",
+               "meta_info": {
+                  "stars.id": "ssc_671edac627dad049",
+                  "stars.isSynced": "true"
+               },
+               "name": "Dream Theater - Home Guitar Tab | Songsterr Guitar Tabs and Chords",
+               "type": "url",
+               "url": "http://www.songsterr.com/a/wsa/dream-theater-home-guitar-tab-s5445t0"
+            }, {
+               "date_added": "13006439283369994",
+               "id": "87",
+               "meta_info": {
+                  "stars.id": "ssc_d0fb8594704f7a0b",
+                  "stars.isSynced": "true"
+               },
+               "name": "Tips For Practicing Effectively, And Safely | Guitars Player - Learn How To Rock on The Guitar Like A Pro",
+               "type": "url",
+               "url": "http://guitarsplayer.com/guitar-player-tips/tips-for-practicing-effectively-and-safely/"
+            }, {
+               "date_added": "13006293961434031",
+               "id": "88",
+               "meta_info": {
+                  "stars.id": "ssc_3d6c5328ad4c81e4",
+                  "stars.isSynced": "true"
+               },
+               "name": "How to Use the POD HD500 as a MIDI Controller for the Axe-FX II",
+               "type": "url",
+               "url": "http://forum.fractalaudio.com/other-midi-controllers/38443-how-use-pod-hd500-midi-controller-axe-fx-ii.html"
+            }, {
+               "date_added": "13006607208747357",
+               "id": "89",
+               "meta_info": {
+                  "stars.id": "ssc_95b0719d22ef15b1",
+                  "stars.isSynced": "true"
+               },
+               "name": "Jam Tracks | Guitar Music Theory",
+               "type": "url",
+               "url": "http://www.guitar-music-theory.com/fretboard-theory/jam-tracks/"
+            }, {
+               "date_added": "13006902150290789",
+               "id": "90",
+               "meta_info": {
+                  "stars.id": "ssc_67abfeaf16fd0fc0",
+                  "stars.isSynced": "true"
+               },
+               "name": "Learn How to Play the Guitar on Youtube • Blues Guitar Institute",
+               "type": "url",
+               "url": "http://www.bluesguitarinstitute.com/learn-how-to-play-the-guitar-on-youtube?utm_source=bit.ly&utm_medium=linker&utm_campaign=bitlylinks"
+            }, {
+               "date_added": "13007225819998557",
+               "id": "91",
+               "meta_info": {
+                  "stars.id": "ssc_d45892d2f677de02",
+                  "stars.isSynced": "true"
+               },
+               "name": "Photograph Tab by Def Leppard @ Ultimate-Guitar.Com",
+               "type": "url",
+               "url": "http://tabs.ultimate-guitar.com/d/def_leppard/photograph_tab.htm"
+            }, {
+               "date_added": "13007558179149279",
+               "id": "92",
+               "meta_info": {
+                  "stars.id": "ssc_2d003d3a4b034c14",
+                  "stars.isSynced": "true"
+               },
+               "name": "- Clone Tones",
+               "type": "url",
+               "url": "http://www.silentundergroundstudio.com/clone-tones"
+            }, {
+               "date_added": "13008793038758744",
+               "id": "93",
+               "meta_info": {
+                  "stars.id": "ssc_825fcd4bc6e660e0",
+                  "stars.isSynced": "true"
+               },
+               "name": "Metal For Life: Killer Runs to Sharpen Your Pick-Hand and Fret-Hand Skills | Guitar World",
+               "type": "url",
+               "url": "http://www.guitarworld.com/metal-life-killer-runs-sharpen-your-pick-hand-and-fret-hand-skills"
+            }, {
+               "date_added": "13014494225967296",
+               "id": "94",
+               "meta_info": {
+                  "stars.id": "ssc_22f02fa4eb819fd7",
+                  "stars.isSynced": "true"
+               },
+               "name": "Those Fast SRV Circular Licks | StevieSnacks Free Lessons",
+               "type": "url",
+               "url": "http://steviesnacks.com/free-lessons/those-fast-srv-circular-licks"
+            }, {
+               "date_added": "13021583996284651",
+               "id": "95",
+               "meta_info": {
+                  "stars.id": "ssc_bfc0a1f942c3b159",
+                  "stars.isSynced": "true"
+               },
+               "name": "Video and Photo Gallery: How to Replace the Strings on an Electric Guitar | Guitar World",
+               "type": "url",
+               "url": "http://www.guitarworld.com/video-and-photo-gallery-how-replace-strings-electric-guitar"
+            }, {
+               "date_added": "13006997141302260",
+               "id": "96",
+               "meta_info": {
+                  "stars.id": "ssc_b4d2994e05415770",
+                  "stars.isSynced": "true"
+               },
+               "name": "Welcome to Jamorama™ - Learn How To Play Guitar With Jamorama Guitar Lessons™",
+               "type": "url",
+               "url": "http://www.jamorama.com/"
+            }, {
+               "date_added": "13031417619947394",
+               "id": "97",
+               "meta_info": {
+                  "stars.id": "ssc_b49bcd2ca5e3efe7",
+                  "stars.isSynced": "true"
+               },
+               "name": "Tyler Grund's Axe Fx 2 Website",
+               "type": "url",
+               "url": "http://www.tylergrund.com/axefx2_7.0.html"
+            } ],
+            "date_added": "13060322596127723",
+            "date_modified": "13060322596130729",
+            "id": "16",
+            "meta_info": {
+               "stars.id": "ssf_09dd1446ed98b022",
+               "stars.isSynced": "true"
+            },
+            "name": "Guitar",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13060322596130362",
+                  "id": "75",
+                  "meta_info": {
+                     "stars.id": "ssc_a2a5912a40e557a1",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "Clark/Nikdel/Powell: Projects",
+                  "type": "url",
+                  "url": "http://cnpweb.grouphub.com/clients"
+               }, {
+                  "date_added": "12974240542195818",
+                  "id": "76",
+                  "meta_info": {
+                     "stars.id": "ssc_b9b7b91265bd033a",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "phpAdmin",
+                  "type": "url",
+                  "url": "http://209.20.74.173/dbadmin/"
+               } ],
+               "date_added": "13060322596128890",
+               "date_modified": "13060322596130362",
+               "id": "29",
+               "meta_info": {
+                  "stars.id": "ssf_4636dbe62df793d4",
+                  "stars.isSynced": "true"
+               },
+               "name": "CNP",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "12974240542195176",
+                  "id": "74",
+                  "meta_info": {
+                     "stars.id": "ssc_a7c0d7db26fc9729",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "Open Gym « The Dance and Gymnastics Academy of Tampa",
+                  "type": "url",
+                  "url": "http://dgatampa.com/?page_id=45"
+               } ],
+               "date_added": "13060322596128906",
+               "date_modified": "13060322596128906",
+               "id": "30",
+               "meta_info": {
+                  "stars.id": "ssf_d6a0d5becde7cde7",
+                  "stars.isSynced": "true"
+               },
+               "name": "Kids",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "12974240542190876",
+                  "id": "62",
+                  "meta_info": {
+                     "stars.id": "ssc_38728a2d20ee5483",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "CNN",
+                  "type": "url",
+                  "url": "http://www.cnn.com/"
+               }, {
+                  "date_added": "12974240542191165",
+                  "id": "63",
+                  "meta_info": {
+                     "stars.id": "ssc_43f4b82e7fa066c3",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "The New York Times",
+                  "type": "url",
+                  "url": "http://www.nytimes.com/"
+               }, {
+                  "date_added": "12974240542191450",
+                  "id": "64",
+                  "meta_info": {
+                     "stars.id": "ssc_20b8a3cc57635bf7",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "Google News",
+                  "type": "url",
+                  "url": "http://news.google.com/"
+               }, {
+                  "date_added": "13060322596130092",
+                  "id": "65",
+                  "meta_info": {
+                     "stars.id": "ssc_2cad43caf3dd52a3",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "Google News",
+                  "type": "url",
+                  "url": "feed://news.google.com/?output=rss"
+               }, {
+                  "date_added": "13060322596130118",
+                  "id": "66",
+                  "meta_info": {
+                     "stars.id": "ssc_588f420b36431ed4",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "CNET News.com",
+                  "type": "url",
+                  "url": "http://news.com.com/"
+               }, {
+                  "date_added": "13060322596130141",
+                  "id": "67",
+                  "meta_info": {
+                     "stars.id": "ssc_876df2c0c980c0ba",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "ESPN",
+                  "type": "url",
+                  "url": "http://espn.go.com/"
+               }, {
+                  "date_added": "13060322596130163",
+                  "id": "68",
+                  "meta_info": {
+                     "stars.id": "ssc_02c01e76395447d8",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "BBC News",
+                  "type": "url",
+                  "url": "http://news.bbc.co.uk/"
+               }, {
+                  "date_added": "13060322596130189",
+                  "id": "69",
+                  "meta_info": {
+                     "stars.id": "ssc_883ec6c274d4ba40",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "Los Angeles Times",
+                  "type": "url",
+                  "url": "http://www.latimes.com/"
+               }, {
+                  "date_added": "12974240542193103",
+                  "id": "70",
+                  "meta_info": {
+                     "stars.id": "ssc_3cbe91e312d138d3",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "NPR",
+                  "type": "url",
+                  "url": "http://www.npr.org/"
+               }, {
+                  "date_added": "13060322596130239",
+                  "id": "71",
+                  "meta_info": {
+                     "stars.id": "ssc_9165aefafce29f90",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "Washington Post",
+                  "type": "url",
+                  "url": "feed://www.washingtonpost.com/wp-dyn/rss/print/asection/index.xml"
+               }, {
+                  "date_added": "12974240542193675",
+                  "id": "72",
+                  "meta_info": {
+                     "stars.id": "ssc_701a65a139c1762a",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "USA Today",
+                  "type": "url",
+                  "url": "http://www.usatoday.com/"
+               }, {
+                  "date_added": "12974240542193941",
+                  "id": "73",
+                  "meta_info": {
+                     "stars.id": "ssc_378795ededf0d046",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "YouTube - Dream Theater - Forsaken",
+                  "type": "url",
+                  "url": "http://www.youtube.com/watch?v=OijZuvGjets"
+               } ],
+               "date_added": "13060322596128924",
+               "date_modified": "13060322596130239",
+               "id": "31",
+               "meta_info": {
+                  "stars.id": "ssf_4ecbef36e0821aea",
+                  "stars.isSynced": "true"
+               },
+               "name": "News",
+               "type": "folder"
+            }, {
+               "date_added": "13060322596128938",
+               "id": "32",
+               "meta_info": {
+                  "stars.id": "ssc_0d2ca4c5529314de",
+                  "stars.isSynced": "true"
+               },
+               "name": "Schlage",
+               "type": "url",
+               "url": "https://www.schlagelink.com/houses/39891/security"
+            }, {
+               "date_added": "13060322596128975",
+               "id": "33",
+               "meta_info": {
+                  "stars.id": "ssc_a2145f955cd87500",
+                  "stars.isSynced": "true"
+               },
+               "name": "Home - Clarity Services",
+               "type": "url",
+               "url": "https://remote.clarityservices.com:987/default.aspx"
+            }, {
+               "date_added": "12974240542189336",
+               "id": "34",
+               "meta_info": {
+                  "stars.id": "ssc_e5bc045fef67b526",
+                  "stars.isSynced": "true"
+               },
+               "name": "Todo Online",
+               "type": "url",
+               "url": "https://appigotodo.appspot.com/index.html#/listAll"
+            }, {
+               "date_added": "12974240542189936",
+               "id": "35",
+               "meta_info": {
+                  "stars.id": "ssc_031a881f8aadaae0",
+                  "stars.isSynced": "true"
+               },
+               "name": "Markdown cheat sheet",
+               "type": "url",
+               "url": "http://warpedvisions.org/projects/markdown-cheat-sheet/"
+            }, {
+               "date_added": "12974240542190247",
+               "id": "36",
+               "meta_info": {
+                  "stars.id": "ssc_6fa532ba825cfca9",
+                  "stars.isSynced": "true"
+               },
+               "name": "Skeleton: Beautiful Boilerplate for Responsive, Mobile-Friendly Development",
+               "type": "url",
+               "url": "http://www.getskeleton.com/?utm_medium=twitter&utm_campaign=delicious&utm_source=twitterfeed#"
+            }, {
+               "date_added": "12974240542190563",
+               "id": "37",
+               "meta_info": {
+                  "stars.id": "ssc_29133314f4519f82",
+                  "stars.isSynced": "true"
+               },
+               "name": "Instapaper: Save interesting web pages for reading later",
+               "type": "url",
+               "url": "http://www.instapaper.com/"
+            }, {
+               "date_added": "12974240542185924",
+               "id": "38",
+               "meta_info": {
+                  "stars.id": "ssc_660aefb25b747a67",
+                  "stars.isSynced": "true"
+               },
+               "name": "Guest Post: How I Went From Writing 2,000 Words a Day to 10,000 Words a Day",
+               "type": "url",
+               "url": "http://www.sfwa.org/2011/12/guest-post-how-i-went-from-writing-2000-words-a-day-to-10000-words-a-day/"
+            }, {
+               "date_added": "12976138046830087",
+               "id": "39",
+               "meta_info": {
+                  "stars.id": "ssc_aca268c281a78ee2",
+                  "stars.isSynced": "true"
+               },
+               "name": "Subtle Patterns | Free textures for your next web project",
+               "type": "url",
+               "url": "http://subtlepatterns.com/"
+            }, {
+               "date_added": "13060322596129218",
+               "id": "40",
+               "meta_info": {
+                  "stars.id": "ssc_9cf671a66ca65052",
+                  "stars.isSynced": "true"
+               },
+               "name": "The Scotsman",
+               "type": "url",
+               "url": "http://www.allerdice.net/scotsman-song.htm"
+            }, {
+               "date_added": "13008106542003940",
+               "id": "41",
+               "meta_info": {
+                  "stars.id": "ssc_7b9ae599a0065fb3",
+                  "stars.isSynced": "true"
+               },
+               "name": "Porsche Boxster S: 2013 Autoweek Best of the Best/Car - Autoweek",
+               "type": "url",
+               "url": "http://www.autoweek.com/article/20121211/CARNEWS/121219995"
+            }, {
+               "date_added": "13010259126756029",
+               "id": "42",
+               "meta_info": {
+                  "stars.id": "ssc_732cc3134901649d",
+                  "stars.isSynced": "true"
+               },
+               "name": "Upgrade to Windows 8 with only a product key - Microsoft Windows",
+               "type": "url",
+               "url": "http://windows.microsoft.com/en-US/windows-8/upgrade-product-key-only"
+            }, {
+               "date_added": "12988141225901981",
+               "id": "43",
+               "meta_info": {
+                  "stars.id": "ssc_11b0da76e8589a68",
+                  "stars.isSynced": "true"
+               },
+               "name": "Raspberry Pi | An ARM GNU/Linux box for $25. Take a byte!",
+               "type": "url",
+               "url": "http://www.raspberrypi.org/"
+            }, {
+               "date_added": "12994954495468003",
+               "id": "44",
+               "meta_info": {
+                  "stars.id": "ssc_2bfa8d16e90c9678",
+                  "stars.isSynced": "true"
+               },
+               "name": "MacHeist » Order receipt",
+               "type": "url",
+               "url": "http://macheist.com/order/mh4/RBJH7C524F665CE42/"
+            }, {
+               "children": [ {
+                  "date_added": "12974240542196763",
+                  "id": "59",
+                  "meta_info": {
+                     "stars.id": "ssc_e5cd108e6aae002d",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "Harvard WebMail",
+                  "type": "url",
+                  "url": "https://webmail.fas.harvard.edu/"
+               }, {
+                  "date_added": "12974240542197065",
+                  "id": "60",
+                  "meta_info": {
+                     "stars.id": "ssc_24fa075310028e0c",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "My Harvard",
+                  "type": "url",
+                  "url": "http://my.harvard.edu/"
+               }, {
+                  "date_added": "13060322596129943",
+                  "id": "61",
+                  "meta_info": {
+                     "stars.id": "ssc_3269ff6ecb4493a1",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "CSCI E-170 Site Index",
+                  "type": "url",
+                  "url": "http://www.sobco.com/e.170/index.html"
+               } ],
+               "date_added": "13060322596129442",
+               "date_modified": "13060322596129943",
+               "id": "45",
+               "meta_info": {
+                  "stars.id": "ssf_98aab7c46e2323e7",
+                  "stars.isSynced": "true"
+               },
+               "name": "Harvard",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13011804767279634",
+                  "id": "57",
+                  "meta_info": {
+                     "stars.id": "ssc_83b4e3283b7c870b",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "Captira Toolkit",
+                  "type": "url",
+                  "url": "http://captira.com/captira.php?act=toolkit"
+               }, {
+                  "date_added": "13011804772023048",
+                  "id": "58",
+                  "meta_info": {
+                     "stars.id": "ssc_9b2db5c5e685d4a4",
+                     "stars.isSynced": "true"
+                  },
+                  "name": "bailbooks home",
+                  "type": "url",
+                  "url": "http://www.bailbooks.com/screenshots.aspx"
+               } ],
+               "date_added": "13011804759473658",
+               "date_modified": "13060322596129459",
+               "id": "46",
+               "meta_info": {
+                  "stars.id": "ssf_fc25bb69d01486b5",
+                  "stars.isSynced": "true"
+               },
+               "name": "Bonds",
+               "type": "folder"
+            }, {
+               "date_added": "13037548146760703",
+               "id": "47",
+               "meta_info": {
+                  "stars.id": "ssc_b00b5298756d1b87",
+                  "stars.isSynced": "true"
+               },
+               "name": "Learning To Be Stressed | Psychology Today",
+               "type": "url",
+               "url": "http://www.psychologytoday.com/blog/memory-medic/201308/learning-be-stressed-1?utm_content=buffer460e6&utm_source=buffer&utm_medium=twitter&utm_campaign=Buffer"
+            }, {
+               "date_added": "13037740075709268",
+               "id": "48",
+               "meta_info": {
+                  "stars.id": "ssc_059aaa4dfe3678cc",
+                  "stars.isSynced": "true"
+               },
+               "name": "Easily Remove Image Backgrounds Online - Clipping Magic",
+               "type": "url",
+               "url": "http://clippingmagic.com/"
+            }, {
+               "date_added": "13038944823778406",
+               "id": "49",
+               "meta_info": {
+                  "stars.id": "ssc_58e6ea60fbf5219f",
+                  "stars.isSynced": "true"
+               },
+               "name": "2048",
+               "type": "url",
+               "url": "http://gabrielecirulli.github.io/2048/"
+            }, {
+               "date_added": "13039529098677559",
+               "id": "50",
+               "meta_info": {
+                  "stars.id": "ssc_8d9bec1c7f0a9850",
+                  "stars.isSynced": "true"
+               },
+               "name": "Squirt",
+               "type": "url",
+               "url": "javascript:(function()%7Bif(window.sq)%7Bwindow.sq.closed%26%26window.document.dispatchEvent(new%20Event(%27squirt.again%27))%3B%7Delse%7Bwindow.sq%3D%7B%7D%3Bwindow.sq.userId%3D%27d74cd070-587c-4231-8fb2-03f950636364%27%3Bs%3Ddocument.createElement(%27script%27)%3Bs.src%3D%27//www.squirt.io/bm/squirt.js%27%3Bs.s%3Dwindow.location.search%3Bs.idx%3Ds.s.indexOf(%27sq-dev%27)%3Bif(s.idx!%3D-1)%7Bs.ampIdx%3Ds.s.indexOf(%27%26%27,s.idx)%3Bs.host%3Ds.s.substring(s.idx%2B7,s.ampIdx%3D%3D-1%3Fs.s.length:s.ampIdx)%3Bs.src%3D%27//%27%2B(s.host%3Fs.host:%27localhost%27)%2B%27:4000/bm/squirt.js%27%3B%7Ddocument.body.appendChild(s)%3B%7D%7D)()%3B"
+            }, {
+               "date_added": "13039587041963985",
+               "id": "51",
+               "meta_info": {
+                  "stars.id": "ssc_fa0490f607b6a0ea",
+                  "stars.isSynced": "true"
+               },
+               "name": "spf13/spf13-vim",
+               "type": "url",
+               "url": "https://github.com/spf13/spf13-vim"
+            }, {
+               "date_added": "13012047553736958",
+               "id": "52",
+               "meta_info": {
+                  "stars.id": "ssc_8a35385efced2cc9",
+                  "stars.isSynced": "true"
+               },
+               "name": "Syncing a fork · GitHub Help",
+               "type": "url",
+               "url": "https://help.github.com/articles/syncing-a-fork"
+            }, {
+               "date_added": "13044588543813658",
+               "id": "53",
+               "meta_info": {
+                  "stars.id": "ssc_b1ae642865ff5156",
+                  "stars.isSynced": "true"
+               },
+               "name": "Stop Trying to Be Happy and Start Working Towards Your Ideal Self",
+               "type": "url",
+               "url": "http://lifehacker.com/stop-trying-to-be-happy-and-start-working-towards-your-1572537899?utm_content=bufferb6a85&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer"
+            }, {
+               "date_added": "13049334792016358",
+               "id": "54",
+               "meta_info": {
+                  "stars.id": "ssc_4dc3af7bda1f00d4",
+                  "stars.isSynced": "true"
+               },
+               "name": "Team Traeger | The King of BBQ: Traeger's Burnt Ends",
+               "type": "url",
+               "url": "http://www.traegergrills.com/teamtraeger/post/2014/07/03/The-King-of-BBQ-Burnt-Ends.aspx#.U7x6j9NdVqt"
+            }, {
+               "date_added": "13050602666599276",
+               "id": "55",
+               "meta_info": {
+                  "stars.id": "ssc_8b6200295b8503f9",
+                  "stars.isSynced": "true"
+               },
+               "name": "SiriusXM - Favorite Channels",
+               "type": "url",
+               "url": "https://www.siriusxm.com/player/#view=favorites"
+            }, {
+               "date_added": "13059755827995964",
+               "id": "56",
+               "meta_info": {
+                  "stars.id": "ssc_397da58f691e9270",
+                  "stars.imageData": "Cg5mWmUyMy1OVTdUckZKTRI9CjVodHRwczovL2F2YXRhcnMxLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzgxMzkyMT9zPTE0MBCkAxikAxpjCltodHRwOi8vdDEuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1R3Ul90UTJudEtvYlliaFNXWmJVLVZFbHpWendhM0R1SG1ZNnhDaTVxeEJOekVhRTFyEOEBGOEBIh8IARDhARjhASCTGUIGEgSSSgD/SgppbWFnZS9qcGVn",
+                  "stars.isSynced": "true",
+                  "stars.pageData": "Ig5ON2twVlhXdWNQNGJ2TQ==",
+                  "stars.type": "2"
+               },
+               "name": "dwm on os x [work in progress!]",
+               "sync_transaction_version": "2",
+               "type": "url",
+               "url": "https://gist.github.com/vangberg/311377"
+            } ],
+            "date_added": "13060322596127806",
+            "date_modified": "13060322596129218",
+            "id": "17",
+            "meta_info": {
+               "stars.id": "ssf_92efeb2f02945b39",
+               "stars.isSynced": "true"
+            },
+            "name": "Personal",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13015169600157203",
+               "id": "27",
+               "meta_info": {
+                  "stars.id": "ssc_85df8f0c62c12727",
+                  "stars.isSynced": "true"
+               },
+               "name": "Gregor",
+               "type": "url",
+               "url": "http://gregor.manning.com/gregor/explorerTreeAjax.action?xx=1310018&redirectCms=1370695862500&crudId=-1"
+            }, {
+               "date_added": "13040246431885290",
+               "id": "28",
+               "meta_info": {
+                  "stars.id": "ssc_24d843b0913b8e6a",
+                  "stars.isSynced": "true"
+               },
+               "name": "Manning Forums: Go in Action",
+               "type": "url",
+               "url": "http://www.manning-sandbox.com/forum.jspa?forumID=908"
+            } ],
+            "date_added": "13022261261675524",
+            "date_modified": "13060322596127887",
+            "id": "18",
+            "meta_info": {
+               "stars.id": "ssf_795a4eab140f155f",
+               "stars.isSynced": "true"
+            },
+            "name": "Book",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13040498538100386",
+               "id": "26",
+               "meta_info": {
+                  "stars.id": "ssc_04db14da5dd72812",
+                  "stars.isSynced": "true"
+               },
+               "name": "Notes on tech, mostly... : How to Enter a Docker Container without SSH",
+               "type": "url",
+               "url": "http://www.colliernotes.com/2014/03/how-to-enter-docker-container-without.html"
+            } ],
+            "date_added": "13040754989448958",
+            "date_modified": "13060322596127970",
+            "id": "19",
+            "meta_info": {
+               "stars.id": "ssf_7c25bc544e077a1a",
+               "stars.isSynced": "true"
+            },
+            "name": "Docker",
+            "type": "folder"
+         }, {
+            "children": [  ],
+            "date_added": "13040755013521067",
+            "date_modified": "13060322596128080",
+            "id": "20",
+            "meta_info": {
+               "stars.id": "ssf_72e380c8a19a5441",
+               "stars.isSynced": "true"
+            },
+            "name": "Book",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13035344023624870",
+               "id": "25",
+               "meta_info": {
+                  "stars.id": "ssc_8c96669d93273208",
+                  "stars.isSynced": "true"
+               },
+               "name": "Julia Child's Easy Blender Hollandaise Sauce",
+               "type": "url",
+               "url": "http://theshiksa.com/2012/03/14/julia-childs-easy-blender-hollandaise-sauce/"
+            } ],
+            "date_added": "13035344053002839",
+            "date_modified": "13060322596128162",
+            "id": "21",
+            "meta_info": {
+               "stars.id": "ssf_c2a53bafd2f5f587",
+               "stars.isSynced": "true"
+            },
+            "name": "Recipes",
+            "type": "folder"
+         }, {
+            "date_added": "13055611247360439",
+            "id": "22",
+            "meta_info": {
+               "stars.id": "ssc_26b70d29d5ab4c8f",
+               "stars.isSynced": "true"
+            },
+            "name": "YAMLlint - The YAML Validator",
+            "type": "url",
+            "url": "http://yamllint.com/"
+         }, {
+            "date_added": "13055653745318838",
+            "id": "23",
+            "meta_info": {
+               "stars.id": "ssc_7c66272c254c8cff",
+               "stars.isSynced": "true"
+            },
+            "name": "Real time insights into LinkedIn's performance using Apache Samza | LinkedIn Engineering",
+            "type": "url",
+            "url": "http://engineering.linkedin.com/samza/real-time-insights-linkedins-performance-using-apache-samza#"
+         }, {
+            "date_added": "13057030169300606",
+            "id": "24",
+            "meta_info": {
+               "stars.id": "ssc_ff6ce33ca566534c",
+               "stars.isSynced": "true"
+            },
+            "name": "avelino/vim-bootstrap",
+            "type": "url",
+            "url": "https://github.com/avelino/vim-bootstrap#installation"
+         } ],
+         "date_added": "13060322557885400",
+         "date_modified": "13060322596126131",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13011288222720675",
+            "id": "5",
+            "meta_info": {
+               "stars.id": "ssc_47cd991ce66e788c",
+               "stars.isSynced": "true"
+            },
+            "name": "Netflix/Hystrix · GitHub",
+            "type": "url",
+            "url": "https://github.com/Netflix/Hystrix"
+         } ],
+         "date_added": "13060322557885409",
+         "date_modified": "13011288222720675",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "sync_transaction_version": "2",
+      "synced": {
+         "children": [  ],
+         "date_added": "13060322557885410",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

@@ -1,0 +1,1460 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+    <title>Lockify</title>
+    <base target="_self">
+    <meta name="webapp_equiv_path" content="/account/links" />
+    <link href="icomoon_style.css" rel="stylesheet" type="text/css">
+    <link href="jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="jquery.tooltipster.css" rel="stylesheet" type="text/css">
+    <link href="Styles_base.css" rel="stylesheet" type="text/css">
+    <link href="Styles_logregpass.css" rel="stylesheet" type="text/css">
+    <link href="modernizrControl.css" rel="stylesheet" type="text/css">
+    <link href="spinkit.css" rel="stylesheet" type="text/css">
+    <link href="progressBars.css" rel="stylesheet" type="text/css">
+    <link href="shame.css" rel="stylesheet" type="text/css">
+    <link href="print.css" rel="stylesheet" type="text/css" media="print">
+    
+<link href="Styles_logregpass.css" rel="stylesheet" type="text/css">
+<link href="Styles_accounts.css" rel="stylesheet" type="text/css">
+
+    <link href="Styles_native.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="media/scripts/lockify.suppressUnloadEvents.js"></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/modernizr.custom.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lockify.load.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lockify.screen.js" ></script>
+    
+</head>
+<body class="lockify_page account account_page">
+    
+    <div id="loadingCover">
+        <div class="center">
+        	<div class="spinkitSpinner">
+	<div class="bounce1"></div>
+	<div class="bounce2"></div>
+	<div class="bounce3"></div>
+</div>
+            <span class="spinkitText">Lockify</span><span id="loadElipsis">...</span>
+        </div>
+        <span class="icon-arrow-down icomoon-icon" aria-hidden="true"></span>
+    </div>
+
+
+    
+    
+<div id="cameraOverlay" class="defaultHide">
+    <div id="cameraLoading" class="defaultHide">
+        <div class="spinkitSpinner">
+	<div class="bounce1"></div>
+	<div class="bounce2"></div>
+	<div class="bounce3"></div>
+</div>
+    </div>
+    <div id="cameraFlash" class="defaultHide"></div>
+    <div id="cameraError" class="defaultHide">
+        <p class="first">Sorry, this device either doesn't have a camera or Lockify can't access it.</p>
+        <p>You will need to take any pictures with a different application/camera and attach them with the &quot;Select file...&quot; button.</p>
+        <p class="last cf">
+            <button type="button" id="closeError" class="button button-primary button-medium">
+Okay, got it.</button>
+        </p>
+    </div>
+    <video autoplay></video>
+    <div id="cameraButtons" class="videoButtons">
+	    <span id="cancel" class="button button-obscure button-medium defaultHide">Cancel</span><span id="capture" class="button button-primary button-medium defaultHide">Take Photo</span>
+	</div>
+    <div id="photoButtons" class="videoButtons defaultHide">
+        <span id="rejectCapture" class="button button-obscure button-medium">Reject Photo</span><span id="acceptCapture" class="button button-primary button-medium">Accept Photo</span>
+    </div>
+</div>
+    <div id="page" class="animated">
+        <div id="bottom_fade"></div>
+        <div id="container" class="cf">
+            <div id="autoLaunchCover">
+    <p class="first largeFont">Hey, why did Chrome launch the Lockify App?</p>
+    <p>When you followed the Lockify Link, Chrome detected that you have the Lockify App installed. This App provides additional security and features beyond that of the Lockify web application, so we auto-launched it for you.</p>
+    <p class="buttonDiv"><button class="button button-primary button-medium" type="button">Okay, got it. Continue ...</button></p>
+    <p><input type="checkbox"/> <label class="smallFont">Don't show this message again.</label></p>
+    <div class="toggleTrigger">
+        <span class="triggerOpen">
+            <span class='icon-plus icomoon-icon small' aria-hidden='true'></span> Instructions for disabling the auto-launching of the App
+        </span>
+        <span class="triggerClose">
+            <span class='icon-minus icomoon-icon small' aria-hidden='true'></span> Instructions for disabling the auto-launching of the App
+        </span>
+    </div>
+    <div class="toggleContent">
+        Instructions will go here.
+    </div>
+</div>
+            <div id="fixedHeader">
+                
+<div id="header" class="cf">
+	<div class="inner">
+        
+<div id="topNavbar" class="cf">
+    <div id="userDropdown" class="utilityDropdown authenticatedUserOnly">
+    <div class="trigger">
+        <div class="wideOnly"><span class="usernameLabel"></span> <span aria-hidden="true" class="icon-cog icomoon-icon small"></span></div>
+        <span aria-hidden="true" class="icon-cog icomoon-icon narrowOnly"></span>
+    </div>
+    <div class="menu">
+        <div class="menuAccount narrowOnly">
+            <div class="usernameSign">Signed in as:</div>
+            <div class="usernameLabel"></div>
+            <ul>
+            
+                <li class="first"><span class="link sign_out">Sign out</span></li>
+            
+            </ul>
+        </div>
+        <div class="sectionSeparator reduce narrowOnly"></div>
+        <ul>
+            <li class="first"><a href="settings.html" target="_self">Your Account</a></li>
+            
+
+            
+            
+            
+            <li><a href="" class="smeMembershipLink">Manage Team</a></li>
+            
+            
+            
+            <li class="wideOnly">
+                
+                <span class="link sign_out">Sign out</span>
+                
+            </li>
+        </ul>
+    </div>
+    <div class="cf"></div>
+</div>
+
+    <div class="utilityLinks nonauthenticatedUserOnly">
+        <span class="expressInvite">
+            <span class="wideOnly">Join Wait List</span>
+            <span class="narrowOnly">Wait List</span>
+        </span>
+        <span class="expressSignIn utilBtn">Sign In</span>
+        
+    </div>
+</div>
+
+        <div class="logoColumn">
+        	
+<div id="menuDropdown" class="utilitySlideMenu">
+    <div class="slideMenu">
+        <span aria-hidden="true" class="icon-cancel closer icomoon-icon"></span>
+        
+        <ul class="linkList largeFont">
+            <li class="first">
+                <a href="popup.html">Make a Lockify Link</a>
+            </li>
+            <li class="authenticatedUserOnly">
+                <a href="links.html">Track Your Links</a>
+            </li>
+            <li>
+                <a href="decrypt.html">Access a Lockify Link</a>
+            </li>
+            <li>
+                <span class="openFeedbackDialog link">Give Us Feedback</span>
+            </li>
+        </ul>
+        <div class="bottomLinks">
+            <div class="linkSection">
+                Learn:
+            </div>
+            <ul class="linkList">
+                <li>
+                    <span class="newWinTrigger"><a href="https://aboutlockify.com/security" target="_blank" class="noExitLink">How Lockify works <span aria-hidden="true" class="icon-out icomoon-icon small"></span></a></span>
+                </li>
+                <li>
+                    <span class="newWinTrigger"><a href="https://aboutlockify.com/security/need-something-even-more-secure-than-lockify" target="_blank" class="noExitLink">How Lockify can (&amp; can't) protect you <span aria-hidden="true" class="icon-out icomoon-icon small"></span></a></span>
+                </li>
+                <li>
+                    <a href="openssl.html">
+                        About Lockify's OpenSSL Interoperability
+                    </a>
+                </li>
+                
+            </ul>
+            <ul class="linkGrid">
+                <li>
+                    <span class="newWinTrigger"><a href="https://aboutlockify.com/contact-us" target="_blank" class="noExitLink">Contact <span aria-hidden="true" class="icon-out icomoon-icon small"></span></a></span>
+                </li>
+                <li>
+                    <span class="newWinTrigger"><a href="https://aboutlockify.com/about-us" target="_blank" class="noExitLink">About Us <span aria-hidden="true" class="icon-out icomoon-icon small"></span></a></span>
+                </li>
+                <li>
+                    <a href="info.html">About Lockify</a>
+                </li>
+                <li>
+                    <span class="newWinTrigger">
+                        <a href="https://www.site24x7.com/sv.do?id=zzRpuMYGumNVFQmKH%2FeSh5rzT4Rp%2FlIOD1OhAqEK7NdYjjq17Z38wGyY4kj%2FBi7g9NGVS4p7VRKK%0AQDzVXxYG93oiIFDuVU4z" class="noExitLink -tv-ignore:E500" target="_blank">System Status <span aria-hidden="true" class="icon-out icomoon-icon tiny"></span></a>
+                    </span>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+    <div class="trigger">
+        <span aria-hidden="true" class="icon-menu icomoon-icon"></span>
+    </div>
+    <div class="cf"></div>
+</div>
+<div id="menuOverlay" class="ui-widget-overlay defaultHide"></div>
+        	
+<a id="logo" class="cf -tv-ignore:P871" href="popup.html">
+    <span aria-hidden="true" class="icon-lockify-full icomoon-icon wideOnly"></span>
+    <span aria-hidden="true" class="icon-lockify icomoon-icon narrowOnly"></span>
+</a>
+        </div>
+        
+	</div>
+</div>
+
+            </div>
+            <div id="main">
+                <div id="content" class="cf">
+                    
+<div class="panelShadowTop">
+    
+<div id="accountHeader">
+    <h1>Your Account</h1>
+    
+    <div class="cf"></div>
+    <div id="accountBtns">
+        <button id="aoaBtn" class="enabled aocToggle button button-secondary button-small" type="button"><span aria-hidden="true" class="icon-plus icomoon-icon"></span> Open all</button> &nbsp; <button id="acaBtn" class="disabled aocToggle button button-secondary button-small" type="button"><span aria-hidden="true" class="icon-minus icomoon-icon"></span> Close all</button>
+    </div>
+</div>
+<div id="notaccordion">
+    <div class="sectionSeparator reduce"></div>
+    <div class="accountSettingsPanel">
+    <h3 id="accountSettingsTab"><a href="#">Account settings</a></h3>
+        <div id="accountSettingsContent">
+            <div class="content-inner">
+                <div class="settingSection">
+                    
+    		            <div class="regularLabel">
+                            Account ID
+                        </div>
+    		            <div class="settingData withSplit" id="usernameDisplay"></div>
+                        
+    		        
+	            </div>
+                <div class="settingSection">
+                    <div class="regularLabel">
+                        Email address
+                    </div>
+                    <div id="emailDisplay" class="settingData withSplit"></div>
+                    
+                    <div class="settingLink">
+                        <span class="link smallFont" id="changeEmailBtn"><span class="icon-pencil icomoon-icon"></span> Change</span></div>
+                    
+                </div>
+                
+                <div class="settingSection">
+                    <div class="regularLabel">
+                        Password
+                    </div>
+                    <div class="settingData withSplit">*...*</div>
+                    <div class="settingLink">
+                        <span class="link smallFont" id="changePasswordBtn"><span class="icon-pencil icomoon-icon"></span> Change</span>
+                    </div>
+                </div>
+                <div class="settingSection">
+                    <div class="regularLabel">
+                        Account type
+                    </div>
+                    <div class="settingData withSplit">Free <span class="accountTeam"></span></div>
+                    
+                </div>
+                <div class="settingSection">
+                    <div class="regularLabel">Time Zone</div>
+                    <div class="settingData">
+                    
+<div class="timezoneViewWrapper">
+    <label class="uniformLabel" for="toggleTimezones"><input id="toggleTimezones" name="toggleTimezones" type="checkbox" />Show all time zones</label><br>
+    <div class="timezoneSelect customSelectContainer_outer">
+        <div class="customSelectContainer_inner">
+            <ul class="customSelectList">
+                
+            </ul>
+        </div>
+        <div class="customSelectContainer global-border" tabindex="0">
+            <span aria-hidden="true" class="icon-clock icomoon-icon"></span>
+            <span class="selected"></span>
+            <span class="icon-arrow-down"></span>
+        </div>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+                <div class="settingSection">
+                    <div class="regularLabel">Your start screen</div>
+                    <div class="settingData">
+                        <div id="startScreenSelect_outer" class="customSelectContainer_outer">
+                            <div id="startScreenSelect_inner" class="customSelectContainer_inner">
+                                <ul id="startScreenSelect_options" class="customSelectList">
+                                    <li data-value="index_encrypt"><span>Make a Lockify Link</span></li>
+                                    <li data-value="account_settings"><span>Your Account</span></li>
+                                    <li data-value="account_links"><span>Track Links</span></li>
+                                </ul>
+                            </div>
+                            <div id="startScreenSelect" class="customSelectContainer global-border" tabindex="0">
+                                <span aria-hidden="true" class="icon-screen icomoon-icon"></span>
+                                <span class="selected"></span>
+                                <span class="icon-arrow-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <div  id="userPrefsSection" class="accountSettingsPanel">
+        <div class="sectionSeparator reduce"></div>
+        <h3 id="lockificationsDefaultsTab"><a href="#">Lockify Link Defaults</a></h3>
+        <div>
+            <div class="content-inner">
+                <div class="settingSection expireLimits">
+                    
+                    <div class="regularLabel">Expiration Limits</div>
+                    <div class="settingData">
+                        <div id="viewingsContainer_outer" class="customSelectContainer_outer">
+                            <div id="viewingsContainer_inner" class="customSelectContainer_inner">
+                                <ul id="viewingsSelect_options" class="customSelectList" data-initial-value="1">
+                                    
+                                    
+                                        <li data-value="1"><span>1 viewing</span></li>
+                                    
+                                    
+                                    
+                                        <li data-value="2"><span>2 viewings</span></li>
+                                    
+                                    
+                                    
+                                        <li data-value="3"><span>3 viewings</span></li>
+                                    
+                                    
+                                    
+                                        <li data-value="10"><span>10 viewings</span></li>
+                                    
+                                    
+                                    
+                                        <li data-value="30"><span>30 viewings</span></li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </ul>
+                            </div>
+                            <div id="viewingsSelect" class="customSelectContainer global-border" tabindex="0">
+                                <div class="icon-eye icomoon-icon"></div>
+                                <span class="selected"></span>
+                                <span class="icon-arrow-down"></span>
+                            </div>
+                        </div>
+                        <span class="expireOr">or</span>
+                        <div id="timerContainer_outer" class="customSelectContainer_outer">
+                            <div id="timerContainer_inner" class="customSelectContainer_inner">
+                                <ul id="timerSelect_options" class="customSelectList" data-initial-value="4320">
+                                    <li data-value="1"    ><span>1 min</span></li>
+                                    <li data-value="10"   ><span>10 mins</span></li>
+                                    <li data-value="60"   ><span>1 hour</span></li>
+                                    <li data-value="180"  ><span>3 hours</span></li>
+                                    <li data-value="720"  ><span>12 hours</span></li>
+                                    <li data-value="1440" ><span>1 day</span></li>
+                                    <li data-value="4320" ><span>3 days</span></li>
+                                    <li data-value="10080"><span>1 week</span></li>
+                                    <li data-value="30240"><span>3 weeks</span></li>
+                                    
+                                </ul>
+                            </div>
+                            <div id="timerSelect" class="customSelectContainer global-border" tabindex="0">
+                                <div class="icon-hourglass icomoon-icon"></div>
+                                <span class="selected"></span>
+                                <span class="icon-arrow-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div>
+                        <input id="id_enableExpire" data-name="allow_manual_expiration" name="enableExpire" type="checkbox">
+                        <label for="id_enableExpire" class="uniformLabel">
+                            <span aria-hidden="true" class="icon-link-expired icomoon-icon"></span> Allow recipient to early-expire Links
+                        </label><span class="icon-help icomoon-icon inline tooltip-inline" aria-hidden="true" tabindex="0" data-content-sel='#enableExpireTip'></span>
+                    </div>
+                    <div id="enableExpireTip" class="tooltip-inline-content"><div class="content-inner">
+Early expiring a Link makes it expire for everyone. Therefore, be careful when enabling this feature for Links you share with multiple recipients. One recipient could be done with a Link, and early-expire it before the other recipients have even accessed at it.</div></div>
+                    
+                </div>
+
+                
+
+                
+                <div class="settingSection viewerOptions">
+                    <div class="settingData entryDefaults">
+                        
+                        
+                        
+                        <div class="entryOption">
+                            <input id="id_decryptWithWebApp" data-name="decryptWithWebApp" name="decryptWithWebApp" type="checkbox">
+                            <label for="id_decryptWithWebApp" class="uniformLabel">
+                                <span aria-hidden="true" class="icon-no-window icomoon-icon"></span> <span class="wideOnly">Don't allow recipient to use web app</span><span class="narrowOnly">Don't allow web app use</span>
+                            </label><span class="icon-help icomoon-icon inline tooltip-inline" aria-hidden="true" tabindex="0" data-content-sel='#decryptWithTip'></span>
+                            <div class="accessTip">(for Links made w/ Chrome App or Extension)</div>
+                        </div>
+                        <div id="decryptWithTip" class="tooltip-inline-content"><div class="content-inner">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu magna velit. Aliquam erat volutpat. Etiam bibendum eros eget orci pulvinar eu sollicitudin.</div></div>
+                        
+                    </div>
+                </div>
+                
+
+                
+
+                
+
+                
+                <div class="settingSection">
+                    <div class="regularLabel">Notifications</div>
+                    <div id="notifyContainer" class="entryOption">
+                        <input id="id_notify" data-name="receive_notifications" name="notify" type="checkbox"> <label for="id_notify" class="uniformLabel"><span aria-hidden="true" class="icon-no-mail icomoon-icon"></span> <span class="wideOnly">Don't send you email notifications about Links</span><span class="narrowOnly">Don't email you notifications</span></label>
+                        <span class="icon-help icomoon-icon inline tooltip-inline" aria-hidden="true" tabindex="0" data-content-sel='#notifyTip'></span>
+                    </div>
+                    <div id="notifyTip" class="tooltip-inline-content"><div class="content-inner">
+When significant things happen to your Lockify Link &mdash; e.g. it is accessed, it expires, etc. &mdash; you will receive an email notification at <span class="usernameLabel"></span>.
+</div></div>
+                </div>
+                
+
+                <div class="settingSection">
+                    <span class="regularLabel">Encryption Strength</span>
+                    <div id="shortLinkContainer" class="entryOption">
+                        <input type="checkbox" id="id_shortLinkCheckbox">
+                        <label for="id_shortLinkCheckbox" class="uniformLabel">
+                            <span aria-hidden="true" class="icon-link icomoon-icon"></span> Make shorter Links</label><span class="icon-help icomoon-icon inline tooltip-inline" aria-hidden="true" tabindex="0" data-content-sel='#shortLinkTip'></span>
+                        <div class="accessTip">(uses weaker encryption)</div>
+                    </div>
+                    <div id="shortLinkTip" class="tooltip-inline-content"><div class="content-inner">
+
+<p class="first">
+	By default, Lockify protects your private info using 256-bit AES end-to-end encryption. This produces Lockify Links that are 65 characters long. For example:
+</p>
+<p class="center">
+	https://lockify.com/d#p4GdvihjObnsx1FvzvOYcCvUiCR3Fq15AfkDIBSksnI
+</p>
+<p>
+	Because we recommend that you don't shorten your Links, we offer the option to use a weaker level of encryption &mdash; 128-bit. This produces shorter Links that are 44 characters long. For example:
+</p>
+<p class="last center">
+	https://lockify.com/d#3jiBNAtSvPh0zIq5TRsB6w
+</p>
+
+</div></div>
+                </div>
+
+                
+                <div class="settingSection">
+                    <span class="regularLabel">Copying</span>
+                    <div class="entryOption">
+                        <input type="checkbox" id="id_flashCopyCheckbox">
+                        <label for="id_flashCopyCheckbox" class="uniformLabel">
+                            <span aria-hidden="true" class="icon-no-flash icomoon-icon"></span> <span class="narrowOnly">Don't use Flash for copying Links</span><span class="wideOnly">Don't use Flash for easy copying of Links</span>
+                        </label><span class="icon-help icomoon-icon inline tooltip-inline" aria-hidden="true" tabindex="0" data-content-sel='#flashCopyTip'></span>
+                        <div class="accessTip">(only applicable to desktop web app)</div>
+                    </div>
+                    <div id="flashCopyTip" class="tooltip-inline-content"><div class="content-inner">
+<p class="first">
+	If this box is unchecked, when you make a Lockify Link, you will have the option of using a Flash-based "Copy Lockify Link" button, which with you can easily copy the Lockify Link.
+</p>
+<p>
+	However, for added security, you may want to uncheck this box. By doing so you can protect Lockify from potential vulnerabilities in the Flash plugin.
+</p>
+<p class="last">
+	Note that <span class="newWinTrigger"><a target="_blank" href="https://chrome.google.com/webstore/detail/aiigoloogeminempipceaikpnaimbekd">Lockify Chrome App <span class="icon-out icomoon-icon small" aria-hidden="true"></span></a></span> offers the best of both worlds: easy copying without using Flash.
+</p>
+</div></div>
+                </div>
+                
+
+                
+            </div>
+        </div>
+        <div id="saveFileMetadataTip" class="tooltip-inline-content last"><div class="content-inner">
+
+<p class="first">If box is unchecked, you'll be able to see your filenames (and file sizes) in the "Track Links" section of your Lockify account. This can be helpful for remembering which file(s) was included in a Lockify Link.</p>
+
+<p class="last">If box is unchecked, the filenames will be encrypted end-to-end (same as we always encrypt the file's contents). You won't be able to see the filenames in "Track Links." This options provides more privacy, but is potentially less convenient.</p>
+</div></div>
+    </div>
+     
+    
+    
+    
+    
+    
+</div>
+
+<div class="cf"></div>
+
+
+
+    
+<div id="ajaxErrorDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">We Apologize for the Inconvenience</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+        <p>An error has occurred. We've logged it and engineers will fix the problem. Please try your request again later.</p>
+        <p><strong>Error Message</strong><br/><span class="ajaxErrorMessage"></span></p>
+        
+              </div>
+         </div>
+         
+         <div class="dialogFooter cf">
+             
+        <button class="button button-primary button-medium cancelLink" type="button">
+Okay, got it.</button>
+        
+         </div>
+         
+     </div>
+</div>
+
+
+    
+<div id="passwordChangeDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">Change your password</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+        <form  id="passwordChangeForm" autocomplete="off">
+            <div class="formRow">
+                <label class="regularLabel" for="id_old_password">Current password</label>
+                <div id="old_password_errors" class="error"></div>
+                <div class="toggleMask md">
+                    <input type="password" name="old_password" id="id_old_password" class="toggleMaskInput" autocomplete="off" /><span id="currentPassToggle" aria-hidden="true" class="icon-show icomoon-icon toggleMaskIcon"></span>
+                    <div class="cf"></div>
+                </div>
+            </div>
+            <div class="formRow">
+                <label class="regularLabel" for="id_new_password1">New password</label>
+                <div id="new_password1_errors" class="error"></div>
+                <div class="toggleMask md">
+                    <input type="password" name="new_password1" id="id_new_password1"  class="toggleMaskInput" autocomplete="off" /><span id="newPassToggle" aria-hidden="true" class="icon-show icomoon-icon toggleMaskIcon"></span>
+                    <div class="cf"></div>
+                </div>
+                <div class="passMeta requirements">
+    <div class="pwordCaseMsg narrowOnly">
+        Min.  chars. inc. 
+    </div>
+    <div class="pwordCaseMsg wideOnly">
+        Minimum  characters including 
+    </div>
+</div>
+
+            </div>
+            <div class="formRow last">
+                <label class="regularLabel" for="id_new_password2">New password (again)</label>
+                <div id="new_password2_errors" class="error"></div>
+                <input type="password" name="new_password2" id="id_new_password2"  class="global-border" autocomplete="off" />
+            </div>
+        </form>
+        <div id="passwordSuccess" class="passwordSuccess">
+            Your password has been changed. You will be receiving a confirmation email.
+        </div>
+        
+              </div>
+         </div>
+         
+         <div class="dialogFooter righty cf">
+             
+        <span id="passwordCancelButton" class="cancelLink">Cancel</span>
+        <span class="orCancel">or</span>
+        <button id="savePasswordButton" class="button button-primary button-medium" type="button">Change password</button>
+        
+         </div>
+         
+     </div>
+</div>
+
+
+    
+
+<div id="successPwordChange" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText"></span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent footerless">
+              <div>
+                
+    	Account password successfully changed.
+    
+              </div>
+         </div>
+         
+     </div>
+</div>
+
+
+    
+    
+<div id="emailChangeDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">Change your account email address</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+        <form  id="emailChangeForm" autocomplete="off">
+            <div class="notice reduce">
+                WARNING: The action will sign you out of your account until you can confirm ownership of the new email address. Please double check the new address, if you make a mistake you will need to contact <span class="newWinTrigger"><a href="mailto:support@lockify.com" target="_blank" class="noExitLink noicon">support@lockify.com</a></span> to regain access to your account.
+            </div>
+            <div class="sectionSeparator"></div>
+            <div class="formRow">
+                <label class="regularLabel" for="id_password">Password</label>
+                <div id="password_errors" class="error"></div>
+                <div class="toggleMask md">
+                    <input type="password" name="password" id="id_password"  class="toggleMaskInput" autocomplete="off"/><span aria-hidden="true" class="icon-show icomoon-icon toggleMaskIcon"></span>
+                    <div class="cf"></div>
+                </div>
+            </div>
+            <div class="formRow">
+                <label class="regularLabel" for="id_email">New email address</label>
+                <div id="email_errors" class="error"></div>
+                <input id="id_email" type="text" name="email"  class="global-border" autocomplete="off"/>
+            </div>
+            <div class="formRow last">
+                <label class="regularLabel" for="id_email_confirm">New email address (again)</label>
+                <div id="email_confirm_errors" class="error"></div>
+                <input id="id_email_confirm" type="text" name="email_confirm"  class="global-border" autocomplete="off"/>
+
+            </div>
+        </form>
+        
+        
+              </div>
+         </div>
+         
+         <div class="dialogFooter righty cf">
+             
+        <span id="emailCancelButton" class="cancelLink" tabindex="0">Cancel</span>
+        <span class="orCancel">or</span>
+        <button id="saveEmailButton" class="button button-primary button-medium" type="button">Change account email address</button>
+        
+         </div>
+         
+     </div>
+</div>
+
+    
+
+
+    
+
+    
+
+<div id="emailSuccess">
+    <div class="panelHeader">
+        <span class="state">You have been signed out</span>
+    </div>
+    <p class="first">IF the email <span class="newEmail"></span> is available on our system, an email change verification Link has been emailed to that address. Please find it and follow the instructions.</p>
+    <p>Please contact us at <span class="newWinTrigger"><a href="mailto:support@lockify.com" target="_blank" class="noExitLink noicon">support@lockify.com</a></span> if you need assistance.</p>
+    
+<div class="sectionSeparator"></div>
+<div class="emailTipContainer">
+    <div class="toggleTrigger">
+        <div class="triggerOpen"><span class="icon-plus icomoon-icon small" aria-hidden="true"></span> No email after 10 minutes?</div>
+        <div class="triggerClose"><span class="icon-minus icomoon-icon small" aria-hidden="true"></span> No email after 10 minutes?</div>
+    </div>
+    <ul class="toggleContent emailTips">
+        <li class="tip1">Make sure you're using the right email for your Lockify account.</li>
+        <li>Confirm that you've entered your email correctly.</li>
+        <li>Check your Spam filter.</li>
+        <li>
+            
+            Email us at support@lockify.com
+            
+        </li>
+    </ul>
+</div>
+
+    <div class="sectionSeparator"></div>
+<div>
+    <div class="toggleTrigger">
+        <div class="triggerOpen"><span class="icon-plus icomoon-icon small" aria-hidden="true"></span> What's with the "IF"?</div>
+        <div class="triggerClose"><span class="icon-minus icomoon-icon small" aria-hidden="true"></span> What's with the "IF"?</div>
+    </div>
+    <div class="toggleContent">
+        For your privacy and security, we don't reveal whether or not there's a Lockify account associated with your email address. If there is such an account, the system will send an email to that address. If not, nothing will happen.
+    </div>
+</div>
+
+</div>
+
+</div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="qrPrint">
+        Lockify Link QR Code
+        <div class="qrInstructions">
+            I made this QR code for you. Scan it and it will send you to a secure link at Lockify.com. <span></span>
+        </div>
+        <div class="qrcode"></div>
+    </div>
+    
+        <div id="extra">
+        
+        
+<div class="sendFeedbackContainer">
+    
+	
+	
+<div id="feedbackDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">Need help? Have feedback?</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent footerless">
+              <div>
+                
+	    
+<form action="#feedbackForm" id="feedbackForm" class="feedbackForm">
+    <label for="feedback" class="defaultHide">Need help? Have feedback?</label>
+    <div id="emptyErrorFeedback" class="error keepAlive">Field is blank. Please enter some text.</div>
+    <textarea class="global-border" rows="4" name="feedback" id="feedback" cols="19"></textarea>
+    <div class="smallFont">Please don't send us your Lockify Links. <span class="icon-help icomoon-icon inline tooltip-inline" aria-hidden="true" tabindex="0" data-content-sel='#dontSendTip'></span></div>
+    <div id="dontSendTip" class="tooltip-inline-content"><div class="content-inner">
+<p class="first">Your Lockify Links contain your decryption keys. Here's an example Lockify Link (expired) with the key highlighted in bold to illustrate:</p>
+<p class="center smallFont">https://lockify.com/d#<strong>FYJ9PDmoWoPD1FpCcDx1yqPh_auC3nyU2WbJ3Akfc</strong>
+<p>Lockify Links are made on your device. We never have nor want your Lockify Links, as we don't want to have your keys.</p>
+<p class="last">Therefore, please never send us Lockify Links unless you&apos;re using them to share confidential information with us.</p></div></div>
+    <div id="invalidEmailErrorFeedback" class="error keepAlive">Email not in valid format, e.g. you@example.com.</div>
+    <div id="feedbackEmailRequired" class="error keepAlive">Please enter a valid email, e.g. you@example.com.</div>
+    <label for="feedback_email" class="defaultHide">Email</label> 
+    <input type="text" class="nonauthenticatedUserOnly global-border" id="feedback_email" name="feedback_email"  maxlength="200" placeholder="Enter email (just so we can reply back)" />
+    <div class="cf"></div>
+    <div id="feedbackButtons">
+        <a name="feedbackForm"></a>
+        <span class="newWinTrigger"><a href="https://aboutlockify.com/contact" target="_blank" class="noExitLink">Other ways to contact us <span aria-hidden="true" class="icon-out icomoon-icon small"></span></a></span>
+        <button id="submitFeedback" type="button" class="button button-primary button-medium">Email us!</button>
+    </div>
+</form>
+	    
+              </div>
+         </div>
+         
+     </div>
+</div>
+
+	
+
+<div id="successFeedback" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText"></span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent footerless">
+              <div>
+                
+    <div id="withEmailMsg">Thank you. If your message requires a response,<br/>we'll be in touch within the next day.</div>
+    <div id="noEmailMsg">
+        <span class="nonauthenticatedUserOnly largeFont">Thank you</span>
+        <span class="authenticatedUserOnly">Thank you. If your message requires a response,<br/>we'll be in touch within the next day.</span>
+    </div>
+    
+              </div>
+         </div>
+         
+     </div>
+</div>
+
+</div>
+        
+
+
+<div id="serverErrorDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">Blech. An error occurred.</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+    <p>An error occurred on the Lockify server. It has been reported to our engineering team, who will address it ASAP.</p>
+    <ol>
+        <li>Please close this window and try again.</li>
+        <li>If that doesn't work please try again in several minutes.</li>
+        <li>If it still doesn't work and you'd like to contact us, please email us at support@lockify.com.</li>
+    </ol> 
+    <p>We apologize for the inconvenience, and appreciate your assistance.</p>
+    <p class="errorNote"><strong>Note:</strong> We never send your private info to the server.</p>
+    
+              </div>
+         </div>
+         
+         <div class="dialogFooter righty cf">
+             
+    <button class="button button-primary button-medium cancelLink" type="button">
+Okay, got it.</button>
+    
+         </div>
+         
+     </div>
+</div>
+
+    
+
+<div id="timeoutErrorDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">A network request has timed out.</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+    <div class="loggingAttempt">
+        <p>Have you lost your connection?</p>
+        <p>We are attempting to report this error to the server. This could take up to  seconds. Please let that amount of time pass before closing this modal.</p>
+        <div class="errorLoader">
+            <div class="spinkitSpinner">
+	<div class="bounce1"></div>
+	<div class="bounce2"></div>
+	<div class="bounce3"></div>
+</div>
+            <div class="briefLoading"></div>
+        </div>
+        <p>We apologize for the inconvenience, and appreciate your assistance.</p>
+    </div>
+    <div class="loggingSuccess defaultHide">
+        <p>The error was successfully reported. Please feel free to contact us at support@lockify.com.</p>
+        <p class="errorNote"><strong>Note:</strong> We never send your private info to the server.</p>
+    </div>
+    <div class="loggingFailure defaultHide">
+        <p>We were not able to report the error. If you like, we'd appreciate you taking a moment to tell us what happened. Please feel free to contact us at support@lockify.com.</p>
+    </div>
+    
+              </div>
+         </div>
+         
+         <div class="dialogFooter righty cf">
+             
+    <button class="button button-primary button-medium cancelLink" type="button">
+Okay, got it.</button>
+    
+         </div>
+         
+     </div>
+</div>
+
+    
+
+<div id="javascriptErrorDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">
+    <div class="wideOnly">Our apologies: An error occurred</div>
+    <div class="narrowOnly">An error occurred</div>
+    </span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+    <div class="loggingAttempt">
+        <p>
+            We're trying to report the error to our engineering team. This could take up to 20 seconds. Please let that amount of time pass before closing this modal.
+        </p>
+        <div class="errorLoader">
+            <div class="spinkitSpinner">
+	<div class="bounce1"></div>
+	<div class="bounce2"></div>
+	<div class="bounce3"></div>
+</div>
+            <div class="briefLoading"></div>
+        </div>
+        <p>We're sorry for any inconvenience, and really appreciate your help.</p>
+        <p class="errorNote"><strong>Note:</strong> We never send your private info to the server.</p>
+    </div>
+    <div class="loggingSuccess defaultHide">
+        <p>The error was successfully reported to our engineering team, who will start addressing it ASAP.</p>
+        <p>Please feel free to contact us at support@lockify.com at any time.</p>
+        <p>We're sorry for any inconvenience, and appreciate you using Lockify.</p>
+        <p class="errorNote"><strong>Note:</strong> We never send your private info to the server.</p>
+    </div>
+    <div class="loggingFailure defaultHide">
+        <p>We were not able to report the error to our engineering team.</p>
+        
+    </div>
+    
+              </div>
+         </div>
+         
+         <div class="dialogFooter righty cf">
+             
+    <button class="button button-primary button-medium cancelLink" type="button">
+Okay, got it.</button>
+    
+         </div>
+         
+     </div>
+</div>
+
+
+        
+
+<div id="noNetAccessDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">
+    App could not access the Internet</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+    <p>Please check your connection and try again</p>
+    
+              </div>
+         </div>
+         
+         <div class="dialogFooter righty cf">
+             
+    
+    <a href="/popup.html" class="button button-primary button-medium">Try again</a>
+    
+    
+         </div>
+         
+     </div>
+</div>
+
+
+        
+
+<div id="browserPerfDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">Warning: Your browser may fail to decrypt this Link!</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+    <div>We recommend reloading this link in a different browser.</div>
+    <div class="sectionHeader">What's the problem?</div>
+    <div class="message"></div>
+    
+              </div>
+         </div>
+         
+         <div class="dialogFooter righty cf">
+             
+    <span class="button button-secondary button-medium cancelLink">I'll risk it. Let me continue.</span> &nbsp;              
+    <a class="button button-primary button-secondary" href="/browsers">Help me find a different browser</a>
+    
+         </div>
+         
+     </div>
+</div>
+
+        
+
+<div id="betaListSubscribeDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">Wait list for free account</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent footerless">
+              <div>
+                
+    <div class="betaListContainer">
+        <form  class="betaListSubscribeForm"> 
+		    <div class="subscribe-responses">
+		        <div class="response subscribe-error-response"></div>
+		        <div class="response subscribe-success-response">
+		            <p>We&#39;ve emailed you a confirmation link at:</p>
+		            <div class="subscriber-email"></div>
+		            <p>Please click to complete your reservation for Lockify's Private Beta.</p>
+		            <p>
+		                In the meantime, you can still use this Lockify Chrome App in guest mode, i.e. not signed in.
+		            </p>
+		            <p class="last">
+		                <button class="button button-primary button-medium subscribeClose" type="button">
+Okay, got it.</button>
+		            </p>
+		            
+		        </div>
+		    </div>
+		    <div class="betaListForm successHide">
+		    	<p>For more Lockify features, join the wait list for a free account.</p>
+		        <label for="betaListEmail" class="defaultHide">Enter your email</label>
+		        <input type="email" placeholder="Enter your email" name="betaListEmail" id="betaListEmail" class="required email betaListEmail global-border" novalidate />		        
+		    </div>
+		    <div class="smallFont">
+		        We never spam. We never share.
+		    </div>
+		    <div class="betaListFooter successHide">
+			    <span class="subscribeClose link">Cancel</span><span class="orCancel">or</span><button class="button button-primary button-medium betaListBtn" type="button">Save Your Spot</button>
+			</div>
+		</form>
+    </div>
+    
+              </div>
+         </div>
+         
+     </div>
+</div>
+
+
+        
+
+<div id="expressBenefitsDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">Coming soon to Lockify</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent footerless">
+              <div>
+                
+    <p>The official Lockify launch will feature our <strong>full web application</strong> and new powers including:</p>
+    <table>
+        
+        <tr>
+            <td>
+                <span class="icon-binocular icomoon-icon"></span>
+            </td>
+            <td>Track everything that happens to your Lockify Links</td>
+        </tr>
+        <tr>
+            <td><span class="icon-mail icomoon-icon"></span></td>
+            <td>Get notified when your Links are accessed, expire, etc.</td>
+        </tr>
+        
+        <tr>
+            <td><span class="icon-link-expired icomoon-icon"></span></td>
+            <td>Change your Links' expiration limits</td>
+        </tr>
+        <tr>
+            <td><span class="icon-tag icomoon-icon"></span></td>
+            <td>Name your Links so you can easily tell them apart</td>
+        </tr>
+    </table>
+    <div class="registerButton">
+        <button type="button" class="button button-primary button-large expressInvite" tabindex="-1">
+            Reserve Your Spot
+        </button>
+        
+        <button type="button" class="button button-primary button-large openRegisterDialog defaultHide" tabindex="-1">
+            Close
+        </button>
+        
+    </div>
+
+              </div>
+         </div>
+         
+     </div>
+</div>
+
+
+        
+
+<div id="openRegisterDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">Welcome to Lockify's Chrome App</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+    <p>Use this App to create Lockify Links that you can share with whomever you like.</p>
+    <p>The full account-based Lockify experience is coming soon. Should we reserve a free spot for you? (<span class="link openExpressLearn">What's on tap?</span>)</p>
+    
+              </div>
+         </div>
+         
+         <div class="dialogFooter center cf">
+             
+    <button class="cancelLink button button-obscure button-medium" type="button">Not now, thanks.</button> <button class="expressInvite button button-primary button-medium" type="button">Yes, reserve my free spot.</button>
+    <div class="clear"></div>
+    <span class="cancelLink smallFont">If you're already part of Lockify's private beta, you can ignore this.</span>
+    
+         </div>
+         
+     </div>
+</div>
+
+
+        
+
+<div id="expressUtilityPanels" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText"><span class="dynamicText" data-signin="Sign in to Lockify" data-activationlink="Resend account activation link" data-passwordreset="Reset Account Password" data-register="Register for free account<sup>&#94;</sup>" data-checkemail="Check your email" data-twofa="Enter Verification Code"></span></span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent footerless">
+              <div>
+                
+    <div id="loginExtraInfo">
+        <div class="defaultHide loginRequiredNotice">
+            <div class="notice wideOnly">For your protection, the requested resource requires sign in.</div>
+            <div class="notice narrowOnly">Sign in to access this resource.</div>
+            <div class="sectionSeparator"></div>
+        </div>
+        <div class="versionNotice wideOnly">
+            Currently, you can use Lockify in "Guest Mode", i.e. without signing in. The account-based version is in Private Beta. <span class="link expressInvite">Join the wait list</span>.
+        </div>
+        <div class="versionNotice narrowOnly">
+            The account version is in Private Beta. <span class="rlb"><span class="link expressInvite unl">Join the wait list</span>.</span>
+        </div>
+    </div>
+    <div id="signInPanel" class="expressPanel">
+        <div id="signInUI">
+        
+
+<form  method="POST" id="login_form" class="logregForm" novalidate>
+
+<div id="firstLoginScreen">
+    <div id="decryptLoginRequiredMessage" class="notice defaultHide">
+        Your account is deactivated. We apologize for the inconvenience. Please email us at <span class="newWinTrigger"><a href="mailto:support@lockify.com" target="_blank" class="noExitLink noicon">support@lockify.com</a></span>
+    </div>
+    <div id="emailConfirmedMessage"  class="notice defaultHide">
+        Your email address has been confirmed.
+    </div>
+    <div id="loginRequiredMessage"  class="notice defaultHide">
+        Requested page requires sign in
+    </div>
+    <div class="form_errors error" id="__all___errors"></div>
+    <div class="cf"></div>
+    <div class="formRow">
+        
+        <label id="emailInputLabel" class="regularLabel" for="id_username" data-default-text="Email" data-gapp-text="Your <span class='orgName'></span> Google Apps Email">Email</label>
+        
+        
+        <div id="username_errors" class="error"></div>
+        <input type="email" id="id_username" name="username" size="33" class="global-border" tabindex="0"/>
+    </div>
+    <div class="formRow last">
+        <label class="regularLabel" for="id_password">Password</label>
+        <span class="showResendPanel defaultHide" tabindex="1">Need new activation link?</span>
+        <span class="link showPwordPanel">Forgot?</span>
+        <div id="password_errors" class="error"></div>
+        <div class="toggleMask md">
+            <input type="password" id="id_password" name="password" size="33" class="toggleMaskInput" tabindex="0" /><span aria-hidden="true" class="icon-show icomoon-icon toggleMaskIcon"></span>
+            <div class="cf"></div>
+        </div>
+    </div>
+    <div class="claimLink formRow">
+        <input type="checkbox" id="claimLinkLogin" class="claimLinkCb"> <label for="claimLinkLogin" class="checkLabel uniformLabel">Associate new Link with your account.</label> <span class="icon-help icomoon-icon inline tooltip-inline" aria-hidden="true" tabindex="0" data-content-sel='#claimLinkTip2'></span>
+        <div class="cf"></div>
+        <div id="claimLinkTip2" class="defaultHide">
+            
+Associating the Lockify Link you just made with your account will enable you to monitor and manage it.
+        </div>
+    </div>
+    <div class="loginActions">
+        <span class="rememberContainer">
+            <span class="icon-help icomoon-icon inline tooltip-inline" aria-hidden="true" tabindex="0" data-content-sel='.loginRememberMe'></span>
+            <input type="checkbox" id="id_remember_me" name="remember_me" value="true"> <label for="id_remember_me" class="uniformLabel">Stay signed in</label> 
+        </span>
+        <button id="loginButton" class="button button-primary button-medium" type="button">Sign in</button>
+        
+        <div class="cf"></div>
+    </div>
+    <div id="loginRememberMe" class="loginRememberMe tooltip-inline-content end"><div class="content-inner">
+ 
+Checking this box will keep you signed in on this machine for 2 weeks. Do not check when using a shared or public machine.
+
+</div></div>
+</div>
+
+
+</form>
+
+
+        </div>
+        <div id="forgotPwordUI">
+        
+
+<form  id="reset_password_form" class="logregForm" autocomplete="off">
+
+    <div class="versionNotice">
+        <span class="reset">We can email you a password reset link.</span>
+        <span class="resend">We can email you another account activation link.</span>
+    </div>
+    <div class="formRow last">
+        <label class="regularLabel" for="id_email">Email</label> 
+        <div class="form_errors error"></div>
+        <span id="resetPasswordError" class="errors error"></span>
+        <input type="text" id="id_email" name="email" size="33" class="global-border" />
+    </div>
+    <div class="loginActions">
+        <span class="link showLoginPanel">Cancel</span>
+        <span class="orCancel">or</span> 
+        <button id="resetSubmit" class="button button-primary button-medium" type="button">
+            <span class="reset">Send reset link</span>
+            <span class="resend">Send activation link</span>
+        </button> 
+    </div>
+
+</form>
+
+<div id="resetPasswordSubmitted" class="defaultHide">
+    <div class="pageHeader">Check your email</div>
+        
+	<div class="accountText">IF an account for <span class="submittedEmailAddress"></span> was found, we've emailed you <span class="reset">a password reset</span><span class="resend">an account activation</span>  link.</div>
+        
+    
+<div class="sectionSeparator"></div>
+<div class="emailTipContainer">
+    <div class="toggleTrigger">
+        <div class="triggerOpen"><span class="icon-plus icomoon-icon small" aria-hidden="true"></span> No email after 10 minutes?</div>
+        <div class="triggerClose"><span class="icon-minus icomoon-icon small" aria-hidden="true"></span> No email after 10 minutes?</div>
+    </div>
+    <ul class="toggleContent emailTips">
+        <li class="tip1">Make sure you're using the right email for your Lockify account.</li>
+        <li>Confirm that you've entered your email correctly.</li>
+        <li>Check your Spam filter.</li>
+        <li>
+            
+            Email us at support@lockify.com
+            
+        </li>
+    </ul>
+</div>
+
+    <div class="sectionSeparator"></div>
+<div>
+    <div class="toggleTrigger">
+        <div class="triggerOpen"><span class="icon-plus icomoon-icon small" aria-hidden="true"></span> What's with the "IF"?</div>
+        <div class="triggerClose"><span class="icon-minus icomoon-icon small" aria-hidden="true"></span> What's with the "IF"?</div>
+    </div>
+    <div class="toggleContent">
+        For your privacy and security, we don't reveal whether or not there's a Lockify account associated with your email address. If there is such an account, the system will send an email to that address. If not, nothing will happen.
+    </div>
+</div>
+
+</div>
+
+        </div>
+    </div>
+    
+    
+              </div>
+         </div>
+         
+     </div>
+</div>
+
+
+
+<div id="signInWarn" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText">You will lose entered info</span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent">
+              <div>
+                
+    Any information entered so far will be lost if you continue to sign in.
+    
+              </div>
+         </div>
+         
+         <div class="dialogFooter righty cf">
+             
+    <span class="cancelLink">Stay here</span>
+    <span class="orCancel">or</span>
+    <button class="continueSignIn button button-secondary button-medium" type="button">Continue</button>
+    
+         </div>
+         
+     </div>
+</div>
+
+
+
+
+<div id="userSignedIn" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText"></span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent footerless">
+              <div>
+                
+    <div class="largeFont">You are now signed in to Lockify</div>
+    
+              </div>
+         </div>
+         
+     </div>
+</div>
+
+        
+
+<div id="updateResultDialog" class="dialogContainer ui-helper-clearfix">
+    <div class="dialogSpacer">
+        <div class="dialogHeader">
+            <span class="headerText"></span> <span aria-hidden="true" class="dialogClose icon-cancel closer icomoon-icon"></span>
+            <div class="clear"></div>
+        </div>
+         <div class="dialogContent footerless">
+              <div>
+                
+    <div class="resultMessage largeFont"></div>
+    
+              </div>
+         </div>
+         
+     </div>
+</div>
+
+        
+     </div>
+    <script type="text/javascript" src="/site_media/scripts/lockify.globals.js" ></script>
+    
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery/jquery-from-backgrid-infinator.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery/jquery-migrate-1.2.1.min.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery/jquery-ui-1.10.4.custom.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery_plugins/jquery.json-2.3.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/json2.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/underscore.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/raven.min.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/backbone/backbone.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/backbone/backbone.paginator.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/showdown.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery_plugins/jquery.cookie.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/rAF.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/placeholders.min.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/jquery.waitButton.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/jquery.spinnerFont.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery_plugins/jquery.hoverIntent.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery_plugins/jquery.hotkeys-0.8.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lockify.errors.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lockify.rateLimitMessages.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lockify.utils.js" ></script>
+    <script type="text/javascript" src="/site_media/sme/scripts/lockify.utils.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lockify.base.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lockify.ajax.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/infoBanner.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/loginForm.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lockify.accounts.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/models/account/userInfo.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/models/account/ppTosHistory.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/models/misc/timezones.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/jquery.imageDropdown.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/emailFeedback.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/inviteRequest.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lockify.logregpass.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/inviteRequest.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/timezoneSelect.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/registration_activate.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/register.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/ppTosUpdate.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/ppTosDecline.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery_plugins/jquery.fastclick.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery_plugins/jquery.qtip.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery_plugins/jquery.requestAnimationFrame.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/chromeClientInstall.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/slideMenu.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/toggleCollapser.js" ></script>
+    
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/sjcl.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/aes.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/bitArray.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/codecBase64.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/codecBytes.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/codecHex.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/codecString.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/sha256.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/random.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/sjcl/hmac.js" ></script>
+    
+    <script type="text/javascript" src="/site_media/scripts/jquery.pluralize.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/models/account/urlPref.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery_plugins/jquery.keyfilter.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/jquery.toggleMask.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/jquery_plugins/jquery.truncate.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/utilityDropdown.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/userDropdown.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/lib/excanvas.compiled.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/jquery.disable.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/jquery.matchTest.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/jquery.noticeBox.js" ></script>
+    
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/utilityPanels.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/utilityLinks.js" ></script>
+    
+    <script type="text/javascript" src="/site_media/scripts/lockify.ajax.js"></script>
+    <script type="text/javascript" src="media/scripts/lockify.extension.js"></script>
+    <script type="text/javascript" src="media/scripts/backbone/views/decrypt/pasteLink.js"></script>
+    <script type="text/javascript" src="media/scripts/backbone/views/openRegisterDialog.js"></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/inviteRequest.js"></script>
+    <script type="text/javascript" src="media/scripts/lockify.common.js"></script>
+    
+<script type="text/javascript" src="/site_media/scripts/lockify.accountSettings.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/models/account/general.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/models/account/secondaryEmails.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/models/account/entryDefaults.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/models/account/mailingList.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/general.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/secondaryEmails.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/entryDefaults.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/mailingList.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/guestEncLink.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/encrypt/input/viewsAndTime.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/uniqueurl.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/models/uniqueurl.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/encrypt/input/uniqueurlBadge.js" ></script>
+    
+<script type="text/javascript" src="/site_media/scripts/jquery.matchTest.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/jquery.toggleMask.js" ></script>
+    <script type="text/javascript" src="/site_media/scripts/backbone/views/account/password_reset.js" ></script>
+    
+<script src="/media/scripts/settings.js" type="text/javascript"></script>
+
+
+</body>
+</html>
+

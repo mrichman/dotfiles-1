@@ -1,0 +1,1 @@
+var EntryDefaultsModel=Backbone.Model.extend({url:'/account/preference/save'});

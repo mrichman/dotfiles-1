@@ -1,0 +1,4 @@
+var create_url="https://lockify.com/e";var isUpdated=false;var pageInfo;function selectionOnClick(info,tab){if(info.menuItemId!='encrypt'){return;}
+pageInfo=info;chrome.tabs.create({url:"popup.html"});}
+var windowParams={minWidth:340,width:618,minHeight:562,height:562,top:150}
+chrome.runtime.onInstalled.addListener(function(details){switch(details.reason){case"install":chrome.storage.local.set({'firstRun':true});break;case"update":break;default:break;;}});var singletonWindow;chrome.app.runtime.onLaunched.addListener(function(launchData){if(singletonWindow&&!singletonWindow.contentWindow.closed){console.log('Focusing singleton window');singletonWindow.focus();}else{var page="popupExpress.html";chrome.app.window.create('main.html',windowParams,function(w){singletonWindow=w;});}});

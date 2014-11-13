@@ -1,0 +1,1 @@
+var loadInt=setInterval(function(){var elem=document.getElementById('loadElipsis');if(elem){var curText=elem.innerHTML;if(curText.indexOf('&nbsp;')!=-1){elem.innerHTML=curText.replace('&nbsp;','.');}else{elem.innerHTML='&nbsp;&nbsp;&nbsp;';}}},100);window.onload=function(){window.clearInterval(loadInt);};
