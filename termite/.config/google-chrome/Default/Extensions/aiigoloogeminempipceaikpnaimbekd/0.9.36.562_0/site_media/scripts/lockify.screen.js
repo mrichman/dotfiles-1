@@ -1,1 +1,0 @@
-if(screen.width<595){window.location=window.location.href.replace(window.location.origin,lockifyGlobals.mobileEquivUrl);}

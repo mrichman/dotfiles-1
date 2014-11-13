@@ -1,2 +1,0 @@
-var QrcodeEncryptView=BaseQrcodeEncryptView.extend({initialize:function(){if($.browser.version<"30"){this.noAppPrinting();}
-QrcodeEncryptView.__super__.initialize();},noAppPrinting:function(){$('#openQRPrint').remove();}});

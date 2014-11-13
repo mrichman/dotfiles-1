@@ -1,1 +1,0 @@
-var InfoBannerView=Backbone.View.extend({events:{"click .closeBanner":"handleHide"},initialize:function(options){this.options=$.extend({},this.defaults,options||{});this.$(".toggleTrigger").unbind('click');this.$(".toggleTrigger").click(function(){lockifyUtils.handleToggle(this);});},handleHide:function(){lockifyUtils.handleToggle('#previewBand .toggleTrigger');}});

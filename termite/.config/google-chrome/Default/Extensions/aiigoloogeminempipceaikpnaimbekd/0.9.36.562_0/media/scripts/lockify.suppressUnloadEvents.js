@@ -1,1 +1,0 @@
-var windowAddEventListener=Window.prototype.addEventListener;Window.prototype.addEventListener=function(type){if(type==='unload'||type==='beforeunload'){try{throw new Error('Do not use Window.addEventListener for '+type);}catch(e){}}else{return windowAddEventListener.apply(window,arguments);}};

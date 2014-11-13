@@ -1,1 +1,0 @@
-var OrganizationModel=Backbone.Model.extend({url:function(){return"/sme/organization_json/"+this.get('id');}});var OrganizationCollection=Backbone.Collection.extend({url:"/sme/organizations/",model:OrganizationModel});

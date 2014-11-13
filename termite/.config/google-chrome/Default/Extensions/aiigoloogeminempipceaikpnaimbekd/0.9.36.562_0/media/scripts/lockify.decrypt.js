@@ -1,1 +1,0 @@
-$(document).ready(function(){new PasteLinkView({el:$('.linkInput')});});

@@ -1,1 +1,0 @@
-var toggleCollapserView=Backbone.View.extend({events:{"click .toggleTrigger":"handleToggle"},initialize:function(){},handleToggle:function(e){var collapseSibling=$(this.el).data('collapsesibling');$(collapseSibling).slideToggle();$(this.el).find('.sectionSeparator').eq(0).toggle();}});

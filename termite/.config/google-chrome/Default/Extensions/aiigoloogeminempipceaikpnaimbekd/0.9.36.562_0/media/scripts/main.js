@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded',function(){if(window.page){document.querySelector('iframe').setAttribute("src",window.page);window.page=null;}else{document.querySelector('iframe').setAttribute("src","popupExpress.html");}});

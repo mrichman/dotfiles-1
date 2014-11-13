@@ -1,1 +1,0 @@
-var MailingListModel=Backbone.Model.extend({url:function(){return'/account/mailing_lists';}});

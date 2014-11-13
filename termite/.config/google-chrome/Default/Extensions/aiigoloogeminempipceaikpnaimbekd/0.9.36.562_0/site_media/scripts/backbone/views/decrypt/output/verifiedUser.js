@@ -1,5 +1,0 @@
-var VerifiedUserView=Backbone.View.extend({initialize:function(options){this.options=$.extend({},this.defaults,options||{});$('.userAccountId').text(this.options.verifiedName);if(this.options.verifiedImage){var imgSrc='/site_media/'+lockifyGlobals.UNIQUEURL_SUBPATH+'/verified/images/'+this.options.verifiedImage;if(typeof document.ajax_domain!='undefined'){imgSrc=$("<a>").attr("href",document.ajax_domain)[0].origin+imgSrc;}
-if(imgSrc){$('.user-pic .icon-user').remove();var verImg=$('.user-pic > img');if(typeof document.ajax_domain!='undefined'&&typeof chrome.extension=='undefined'){var xhr=new XMLHttpRequest();xhr.onreadystatechange=function(){if(this.readyState==4&&this.status==200){verImg[0].src=URL.createObjectURL(this.response);}};xhr.open('GET',imgSrc);xhr.responseType='blob';xhr.send();}else{verImg.attr('src',imgSrc);}
-verImg.show();}}
-if(this.options.organizations.length){$('.userOrgNames').html(this.options.organizations.join('<br/>'));$('#userWidget').addClass('orgUser');}
-if(this.options.verifiedName||this.options.verifiedImage){$('#userWidgetContainer').show();}else{$(this.el).hide();$('#decryptHeaderTip').addClass('vuAdjust');}}});

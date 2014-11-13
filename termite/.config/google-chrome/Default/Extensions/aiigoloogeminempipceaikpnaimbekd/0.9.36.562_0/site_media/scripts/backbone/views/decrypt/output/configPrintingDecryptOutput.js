@@ -1,2 +1,0 @@
-var ConfigPrintingDecryptView=BaseConfigPrintingDecryptView.extend({initialize:function(){if($.browser.chrome&&$.browser.version<"30"){this.noAppPrinting();}
-ConfigPrintingDecryptView.__super__.initialize();},noAppPrinting:function(){$('#printEnabled').remove();$('#noAppPrint').removeClass('defaultHide');lockifyUtils.setupQtips('#noAppPrint',{my:'bottom left',at:'top left'});}});

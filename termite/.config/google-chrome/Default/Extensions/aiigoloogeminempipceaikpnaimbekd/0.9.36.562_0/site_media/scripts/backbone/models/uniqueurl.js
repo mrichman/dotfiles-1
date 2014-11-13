@@ -1,1 +1,0 @@
-var UniqueurlInfoModel=Backbone.Model.extend({url:function(){return'/'+lockifyGlobals.UNIQUEURL_SUBPATH+'/'+this.get('id')+'/unique_info';}});

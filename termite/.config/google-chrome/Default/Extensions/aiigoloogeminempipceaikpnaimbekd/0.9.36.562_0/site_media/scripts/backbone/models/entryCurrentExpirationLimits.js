@@ -1,1 +1,0 @@
-var EntryCurrentExpirationLimitsModel=Backbone.Model.extend({defaults:{isExpired:null,expirationReasonCode:null,dateTime:null,remainingViews:null,remainingTime:null},url:'/entry/expire_limits'});

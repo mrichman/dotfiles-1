@@ -1,1 +1,0 @@
-var FileRowView=Backbone.View.extend({defaults:{},events:{},initialize:function(){}});

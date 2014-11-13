@@ -1,1 +1,0 @@
-var SecondaryEmailModel=Backbone.Model.extend({url:'/account/secondary_email/'});var SecondaryEmailCollection=Backbone.Collection.extend({model:SecondaryEmailModel,url:'/account/secondary_emails/'});

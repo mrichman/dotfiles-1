@@ -1,1 +1,0 @@
-var BaseEncryptOutputView=Backbone.View.extend({events:{},initialize:function(){}});

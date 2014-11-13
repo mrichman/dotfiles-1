@@ -1,3 +1,0 @@
-var UserInfoModel=Backbone.Model.extend({defaults:{csrf_token:null,is_authenticated:null,isActive:null,pagePrefs:null,username:null,uniqueUrl:null,publicId:null,useChromeExt:null,is_browser_supported:null,},url:function(){var onDecryptPage;var isAnonDecryptOnlyBrowser=$.browser.msie&&parseInt($.browser.version,10)==8;if(isAnonDecryptOnlyBrowser){onDecryptPage=lockifyUtils.onDecryptPage();}
-var srch=window.location.search;if(isAnonDecryptOnlyBrowser&&onDecryptPage){srch=srch.length?srch+"&":"?";srch+="recheckBrowser=1";}
-return'/accounts/check/'+srch;}});
