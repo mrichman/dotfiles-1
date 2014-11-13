@@ -1,6 +1,6 @@
 [user]
-	name = Erik St. Martin
-	email = alakriti@gmail.com
+	name = Brian Ketelsen
+	email = bketelsen@gmail.com
 [apply]
   whitespace=warn
 [color]
@@ -39,9 +39,3 @@
   unstaged = diff
 [core]
 	excludesfile = ~/.gitignore
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true

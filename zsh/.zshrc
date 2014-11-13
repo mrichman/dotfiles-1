@@ -44,20 +44,12 @@ alias gst='g st'
 alias gstp='g stp'
 alias gd='g d'
 
-export PATH=./bin:$GOPATH/bin:$HOME/node_modules/.bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export PATH=./bin:$GOPATH/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:$PATH
 
 # Tab Completion of .ssh/known_hosts
 local knownhosts
 knownhosts=( ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*} ) 
 zstyle ':completion:*:(ssh|scp|sftp):*' hosts $knownhosts
-
-###-begin-npm-completion-###
-#
-# npm command completion script
-#
-# Installation: npm completion >> ~/.bashrc  (or ~/.zshrc)
-# Or, maybe: npm completion > /usr/local/etc/bash_completion.d/npm
-#
 
 COMP_WORDBREAKS=${COMP_WORDBREAKS/=/}
 COMP_WORDBREAKS=${COMP_WORDBREAKS/@/}
@@ -108,4 +100,3 @@ fi
 
 export TERM=xterm-256color
 export XDG_CONFIG_HOME=~/.config
-export DOCKER_HOST=tcp://192.168.1.200:2375

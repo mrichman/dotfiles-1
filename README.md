@@ -1,6 +1,8 @@
-## Erik's dotfiles
+## Brian's dotfiles
 
 A collection of tools, scripts, configuration to make my shell and vim more awesome
+
+{forked from Erik St. Martin's dotfiles originally}
 
 ### Install
 
@@ -9,7 +11,7 @@ This repo is meant to store configuration files which are then symlinked by usin
 ##### Download / Install dotfiles
 <pre>
 cd ~/
-git clone git@github.com:erikstmartin/dotfiles.git
+git clone git@github.com:bketelsen/dotfiles.git
 git submodule update --init --recursive
 cd dotfiles
 </pre>
