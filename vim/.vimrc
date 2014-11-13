@@ -14,7 +14,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc', {'build' : {'mac' : 'make -f make_mac.mak', 'unix' : 'make -f make_unix.mak'}}
 
 NeoBundle 'fatih/vim-go' " Go
-NeoBundle 'chriskempson/base16-vim'
+"NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'tomasr/molokai'
 NeoBundle 'rking/ag.vim' 			          " search
 NeoBundle 'bling/vim-airline' 			    " statusline
 NeoBundle 'airblade/vim-gitgutter'

@@ -2,7 +2,8 @@ set nocompatible
 
 let base16colorspace=256  " Access colors present in 256 colorspace, used with base16-shell
 "colorscheme ir_black
-colorscheme base16-default
+"colorscheme base16-default
+colorscheme molokai
 set background=dark
 
 set cmdheight=1 		" Height of command bar
