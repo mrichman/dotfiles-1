@@ -44,7 +44,7 @@ alias gst='g st'
 alias gstp='g stp'
 alias gd='g d'
 
-if command -v direnv >/dev/nul 2>&1; then
+if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
 
