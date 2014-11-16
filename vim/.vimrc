@@ -34,10 +34,13 @@ NeoBundle 'airblade/vim-rooter'         " sets current working directory based o
 NeoBundleLazy 'godlygeek/tabular', {'autoload':{'commands':'Tabularize'}}
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'tpope/vim-dispatch' " build tasks FTW
-NeoBundle 'Valloric/YouCompleteMe', {'build': {'unix': './install.sh --clang-completer --system-libclang', 'mac': './install.sh --clang-completer'}}
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'Chiel92/vim-autoformat'                 " Autoformat code
+NeoBundle 'Shougo/neocomplete'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/vimfiler.vim'
 
+NeoBundle 'Shougo/neosnippet-snippets'
 " Git
 NeoBundle 'tpope/vim-git', {'autoload':{'filetypes':['gitcommit','gitconfig', 'gitrebase', 'gitsendmail']}}
 
