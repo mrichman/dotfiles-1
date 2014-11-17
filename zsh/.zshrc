@@ -105,3 +105,7 @@ fi
 
 export TERM=xterm-256color
 export XDG_CONFIG_HOME=~/.config
+
+if [ `uname` = "Darwin" ]; then
+	alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+fi
