@@ -131,6 +131,7 @@ highlight BadWhitespace ctermbg=red guibg=red
 colorscheme molokai
 
 set mousemodel=popup
+set mouse=a
 set t_Co=256
 set nocursorline
 set guioptions=egmrti
