@@ -2,6 +2,7 @@ pmodload 'helper'
 
 CURRENT_BG='NONE'
 SEGMENT_SEPARATOR=''
+NEWLINE=$'\n'
 
 function prompt_segment {
   local bg fg
@@ -22,7 +23,7 @@ function prompt_end {
   else
     echo -n "%{%k%}"
   fi
-  echo -n "%{%f%}"
+  echo -n "%{%f%}${NEWLINE}$SEGMENT_SEPARATOR"
   CURRENT_BG=''
 }
 
