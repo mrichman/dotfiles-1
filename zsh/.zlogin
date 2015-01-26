@@ -11,3 +11,6 @@ if [ -f ~/.ztheme ];
   source ~/.ztheme
 then
 fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

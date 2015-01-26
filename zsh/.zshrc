@@ -21,7 +21,9 @@ conflicts='grep -rI "<<<" *'
 
 #alias vncstart="vncserver -geometry 1440x900 -alwaysshared -autokill -dpi 96 :1"
 #alias vncstop="vncserver -kill :1"
-alias cdxor="cd ~/src/source.xordataexchange.com/exch/xor"
+alias xor="cd ~/src/source.xordataexchange.com/exch/xor"
+alias github="cd ~/src/github.com"
+
 
 # Git aliases
 alias g='git'
@@ -49,8 +51,9 @@ if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
 
-export PATH=./bin:$GOPATH/bin:/usr/local/go/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export PATH=./bin:$GOPATH/bin:/usr/local/go/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/cuda-6.5/bin:$PATH
 
+export LD_LIBRARY_PATH=/usr/local/cuda-6.5/lib64:$LD_LIBRARY_PATH
 # Tab Completion of .ssh/known_hosts
 local knownhosts
 knownhosts=( ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*} ) 
@@ -109,3 +112,4 @@ export XDG_CONFIG_HOME=~/.config
 if [ `uname` = "Darwin" ]; then
 	alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 fi
+
