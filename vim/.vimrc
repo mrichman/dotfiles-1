@@ -47,6 +47,7 @@ NeoBundle 'Shougo/vimproc.vim', {
       \    },
       \ }
 NeoBundle 'Shougo/vimshell.vim'
+NeoBundle 'Shougo/unite.vim'
 
 "" Snippets
 NeoBundle 'SirVer/ultisnips'
@@ -55,13 +56,14 @@ NeoBundle 'honza/vim-snippets'
 "" Color
 NeoBundle 'tomasr/molokai'
 
+NeoBundle 'rking/ag.vim'
 "" Custom bundles
 
 "" Go Lang Bundle
 NeoBundle "majutsushi/tagbar"
 NeoBundle "fatih/vim-go"
-
-
+NeoBundle "altercation/vim-colors-solarized"
+NeoBundle 'ryanss/vim-hackernews'
 
 call neobundle#end()
 
@@ -127,8 +129,9 @@ set ruler
 set number
 
 let no_buffers_menu=1
-highlight BadWhitespace ctermbg=red guibg=red
-colorscheme molokai
+highlight BadWhitespace ctermbg=white guibg=white
+set background=dark
+colorscheme solarized
 
 set mousemodel=popup
 set mouse=a
@@ -198,16 +201,16 @@ cnoreabbrev W w
 cnoreabbrev Q q
 
 "" NERDTree configuration
-let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__']
-let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let g:NERDTreeShowBookmarks=1
-let g:nerdtree_tabs_focus_on_files=1
-let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
-let g:NERDTreeWinSize = 20
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-noremap <F3> :NERDTreeToggle<CR>
+"let g:NERDTreeChDirMode=2
+"let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__']
+"let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
+"let g:NERDTreeShowBookmarks=1
+"let g:nerdtree_tabs_focus_on_files=1
+"let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
+"let g:NERDTreeWinSize = 20
+"set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
+"nnoremap <silent> <F2> :NERDTreeFind<CR>
+"noremap <F3> :NERDTreeToggle<CR>
 
 " grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
@@ -249,9 +252,9 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType make set noexpandtab
 autocmd BufNewFile,BufRead CMakeLists.txt setlocal ft=cmake
 
-"if has("gui_running")
-"  autocmd BufWritePre * :call TrimWhiteSpace()
-"endif
+if has("gui_running")
+  autocmd BufWritePre * :call TrimWhiteSpace()
+endif
 
 set autoread
 
@@ -289,12 +292,24 @@ noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|tox)$'
-let g:ctrlp_user_command = "find %s -type f | grep -Ev '"+ g:ctrlp_custom_ignore +"'"
+"let g:ctrlp_user_command = "find %s -type f | grep -Ev '"+ g:ctrlp_custom_ignore +"'"
 let g:ctrlp_use_caching = 0
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 noremap <leader>b :CtrlPBuffer<CR>
-let g:ctrlp_map = ',e'
 let g:ctrlp_open_new_file = 'r'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+set grepprg=ag\ --nogroup\ --nocolor
+
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+
+" bind \ (backward slash) to grep shortcut
+"command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+nnoremap \ :Ag<SPACE>
+
 
 " snippets
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -369,3 +384,4 @@ let g:tagbar_type_go = {
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+

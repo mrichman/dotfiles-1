@@ -21,7 +21,7 @@ conflicts='grep -rI "<<<" *'
 
 #alias vncstart="vncserver -geometry 1440x900 -alwaysshared -autokill -dpi 96 :1"
 #alias vncstop="vncserver -kill :1"
-alias xor="cd ~/src/source.xordataexchange.com/exch/xor"
+alias xor="cd ~/src/source.xordataexchange.com/exchange/xorapi"
 alias github="cd ~/src/github.com"
 
 
