@@ -32,6 +32,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'sheerun/vim-polyglot'
@@ -236,6 +237,9 @@ function TrimWhiteSpace()
   ''
 endfunction
 
+
+map <F3> :NERDTreeToggle<CR>
+map <F2> :NERDTreeFind<CR>
 "*****************************************************************************
 "" Autocmd Rules
 "*****************************************************************************
