@@ -389,3 +389,4 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
+let g:go_fmt_command = "gofmt"
