@@ -30,7 +30,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "*****************************************************************************
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-commentary'
-NeoBundle 'morhetc/gruvbox'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
@@ -134,7 +133,8 @@ set number
 let no_buffers_menu=1
 highlight BadWhitespace ctermbg=white guibg=white
 set background=dark
-colorscheme base16-default
+colorscheme molokai
+let g:rehash256=1
 
 set mousemodel=popup
 set mouse=a
