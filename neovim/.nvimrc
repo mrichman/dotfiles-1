@@ -143,22 +143,8 @@ set nocursorline
 set guioptions=egmrti
 set gfn=Monospace\ 8
 
-if has("gui_running")
-  if has("gui_mac") || has("gui_macvim")
-    set guifont=Menlo:h12
-    set transparency=5
-  endif
-else
   let g:CSApprox_loaded = 1
 
-  if $COLORTERM == 'gnome-terminal'
-    set term=gnome-256color
-  else
-    if $TERM == 'xterm'
-      set term=xterm-256color
-    endif
-  endif
-endif
 
 if &term =~ '256color'
   set t_ut=
