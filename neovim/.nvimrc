@@ -84,6 +84,9 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
 
+" always use the clipboard for all operations
+set clipboard+=unnamedplus
+
 "" Fix backspace indent
 set backspace=indent,eol,start
 
