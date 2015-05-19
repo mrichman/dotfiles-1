@@ -21,31 +21,10 @@ conflicts='grep -rI "<<<" *'
 
 #alias vncstart="vncserver -geometry 1440x900 -alwaysshared -autokill -dpi 96 :1"
 #alias vncstop="vncserver -kill :1"
-alias xor="cd ~/src/mono"
+alias xor="cd ~/src/src.xor.exchange/xor/xor"
 alias github="cd ~/src/github.com"
 
 
-# Git aliases
-alias g='git'
-
-alias gl='g l'
-alias grl='g rl'
-alias gls='g ls'
-alias gs='g s'
-alias ga='g a'
-alias gc='g c'
-alias gau='g au'
-alias grm='g rm'
-alias gb='g b'
-alias gco='g co'
-alias gm='g m'
-alias gmff='g mff'
-alias gp='g p'
-alias gpu='g pu'
-alias gf='g f'
-alias gst='g st'
-alias gstp='g stp'
-alias gd='g d'
 
 if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
