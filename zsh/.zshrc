@@ -2,7 +2,7 @@
 if [[ -s $HOME/.zprezto/init.zsh ]]; then
   source $HOME/.zprezto/init.zsh
 fi
-
+eval "$(fasd --init auto)"
 # aliases
 alias vi="vim"
 
@@ -23,8 +23,18 @@ conflicts='grep -rI "<<<" *'
 #alias vncstop="vncserver -kill :1"
 alias xor="cd ~/src/src.xor.exchange/xor/xor"
 alias github="cd ~/src/github.com"
+alias gophercon="cd ~/src/github.com/gophercon/gc15"
+alias gopheracademy="cd ~/src/github.com/gopheracademy/gopheracademy-web"
+alias bketelsen="cd ~/src/github.com/bketelsen"
 
-
+alias a='fasd -a'        # any
+alias s='fasd -si'       # show / search / select
+alias d='fasd -d'        # directory
+alias f='fasd -f'        # file
+alias sd='fasd -sid'     # interactive directory selection
+alias sf='fasd -sif'     # interactive file selection
+alias z='fasd_cd -d'     # cd, same functionality as j in autojump
+alias zz='fasd_cd -d -i' # cd with interactive selection
 
 if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
