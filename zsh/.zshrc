@@ -2,44 +2,25 @@
 if [[ -s $HOME/.zprezto/init.zsh ]]; then
   source $HOME/.zprezto/init.zsh
 fi
-eval "$(fasd --init auto)"
 # aliases
 alias vi="vim"
 
-brew-load() {
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.$1.plist
-}
-
-brew-unload() {
-  launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.$1.plist
-}
-
 # Git blows up because of CA for SSL, ignore it
-#export GIT_SSL_NO_VERIFY=true
+export GIT_SSL_NO_VERIFY=true
 
 conflicts='grep -rI "<<<" *'
 
 #alias vncstart="vncserver -geometry 1440x900 -alwaysshared -autokill -dpi 96 :1"
 #alias vncstop="vncserver -kill :1"
 alias xor="cd ~/src/src.xor.exchange/xor/xor"
+alias infra="cd ~/src/src.xor.exchange/xor/infrastructure"
 alias github="cd ~/src/github.com"
 alias gophercon="cd ~/src/github.com/gophercon/gc15"
 alias gopheracademy="cd ~/src/github.com/gopheracademy/gopheracademy-web"
 alias bketelsen="cd ~/src/github.com/bketelsen"
-
-alias a='fasd -a'        # any
-alias s='fasd -si'       # show / search / select
-alias d='fasd -d'        # directory
-alias f='fasd -f'        # file
-alias sd='fasd -sid'     # interactive directory selection
-alias sf='fasd -sif'     # interactive file selection
-alias z='fasd_cd -d'     # cd, same functionality as j in autojump
-alias zz='fasd_cd -d -i' # cd with interactive selection
-
 if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
-
 export PATH=./bin:$GOPATH/bin:/usr/local/go/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/cuda-6.5/bin:$PATH
 
 export LD_LIBRARY_PATH=/usr/local/cuda-6.5/lib64:$LD_LIBRARY_PATH
@@ -98,7 +79,6 @@ fi
 export TERM=xterm-256color
 export XDG_CONFIG_HOME=~/.config
 
-if [ `uname` = "Darwin" ]; then
-	alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-fi
+export PATH="$HOME/.rbenv/bin:$PATH" 
+eval "$(rbenv init -)"
 

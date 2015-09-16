@@ -28,10 +28,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "*****************************************************************************
 "" NeoBundle install packages
 "*****************************************************************************
-NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'airblade/vim-gitgutter'
@@ -39,16 +37,6 @@ NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'vim-scripts/grep.vim'
 NeoBundle 'vim-scripts/CSApprox'
 NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'Shougo/vimproc.vim', {
-      \ 'build' : {
-      \     'windows' : 'tools\\update-dll-mingw',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
-NeoBundle 'Shougo/vimshell.vim'
-NeoBundle 'Shougo/unite.vim'
 
 "" Snippets
 NeoBundle 'SirVer/ultisnips'
@@ -64,7 +52,6 @@ NeoBundle 'rking/ag.vim'
 NeoBundle "majutsushi/tagbar"
 NeoBundle "fatih/vim-go"
 NeoBundle "altercation/vim-colors-solarized"
-NeoBundle 'ryanss/vim-hackernews'
 NeoBundle 'chriskempson/base16-vim'
 
 call neobundle#end()
@@ -208,11 +195,6 @@ noremap <F3> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>f :Rgrep<CR>
 let Grep_Default_Options = '-IR'
 
-" vimshell
-let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
-let g:vimshell_prompt =  '$ '
-nnoremap <silent> <leader>sh :VimShellCreate<CR>
-
 "*****************************************************************************
 "" Functions
 "*****************************************************************************
@@ -282,19 +264,6 @@ noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 "" Opens a tab edit command with the path of the currently edited file filled
 noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
-
-"" ctrlp.vim
-set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|tox)$'
-"let g:ctrlp_user_command = "find %s -type f | grep -Ev '"+ g:ctrlp_custom_ignore +"'"
-let g:ctrlp_use_caching = 0
-cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
-noremap <leader>b :CtrlPBuffer<CR>
-let g:ctrlp_open_new_file = 'r'
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 
 set grepprg=ag\ --nogroup\ --nocolor
 
