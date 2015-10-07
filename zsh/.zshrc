@@ -3,7 +3,7 @@ if [[ -s $HOME/.zprezto/init.zsh ]]; then
   source $HOME/.zprezto/init.zsh
 fi
 # aliases
-alias vi="vim"
+alias vi="nvim"
 
 # Git blows up because of CA for SSL, ignore it
 export GIT_SSL_NO_VERIFY=true
@@ -23,7 +23,6 @@ if command -v direnv >/dev/null 2>&1; then
 fi
 export PATH=./bin:$GOPATH/bin:/usr/local/go/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/cuda-6.5/bin:$PATH
 
-export LD_LIBRARY_PATH=/usr/local/cuda-6.5/lib64:$LD_LIBRARY_PATH
 # Tab Completion of .ssh/known_hosts
 local knownhosts
 knownhosts=( ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*} ) 
@@ -79,6 +78,4 @@ fi
 export TERM=xterm-256color
 export XDG_CONFIG_HOME=~/.config
 
-export PATH="$HOME/.rbenv/bin:$PATH" 
-eval "$(rbenv init -)"
 

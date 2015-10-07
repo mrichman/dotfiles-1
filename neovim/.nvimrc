@@ -188,8 +188,8 @@ let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 20
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-noremap <F3> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>2 :NERDTreeFind<CR>
+noremap <leader>3 :NERDTreeToggle<CR>
 
 " grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
@@ -211,8 +211,8 @@ function TrimWhiteSpace()
 endfunction
 
 
-map <F3> :NERDTreeToggle<CR>
-map <F2> :NERDTreeFind<CR>
+map <leader>3 :NERDTreeToggle<CR>
+map <leader>2 :NERDTreeFind<CR>
 "*****************************************************************************
 "" Autocmd Rules
 "*****************************************************************************

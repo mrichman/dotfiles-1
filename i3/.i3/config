@@ -35,8 +35,11 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -fn 'Source Code Pro-13'
- bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -fn 'Source Code Pro-24' -nb '#2D2D2D' -nf '#888888' -sb '#D64937' -sf '#DEDEDE' -l 10 -i"
-bindsym shift+$mod+d exec kupfer
+# bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -fn 'Source Code Pro-18' -nb '#2D2D2D' -nf '#888888' -sb '#D64937' -sf '#DEDEDE' -l 10 -i"
+#bindsym shift+$mod+d exec kupfer
+bindsym $mod+d exec rofi -show run -font "Source Code Pro for Powerline 18" -fg "#505050" -bg "#000000" -hlfg "#ffb964" -hlbg "#000000" -o 50
+bindsym $mod+Shift+d exec rofi -show run -font "Source Code Pro for Powerline 18" -fg "#505050" -bg "#000000" -hlfg "#ffb964" -hlbg "#000000" -o 50
+#
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -92,28 +95,46 @@ bindsym $mod+a focus parent
 bindsym $mod+c focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace $WS1
+bindsym $mod+2 workspace $WS2
+bindsym $mod+3 workspace $WS3
+bindsym $mod+4 workspace $WS4
+bindsym $mod+5 workspace $WS5
+bindsym $mod+6 workspace $WS6
+bindsym $mod+7 workspace $WS7
+bindsym $mod+8 workspace $WS8
+bindsym $mod+9 workspace $WS9
+bindsym $mod+0 workspace 0
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace $WS1
+bindsym $mod+Shift+2 move container to workspace $WS2
+bindsym $mod+Shift+3 move container to workspace $WS3
+bindsym $mod+Shift+4 move container to workspace $WS4
+bindsym $mod+Shift+5 move container to workspace $WS5
+bindsym $mod+Shift+6 move container to workspace $WS6
+bindsym $mod+Shift+7 move container to workspace $WS7
+bindsym $mod+Shift+8 move container to workspace $WS8
+bindsym $mod+Shift+9 move container to workspace $WS9
+bindsym $mod+Shift+0 move container to workspace 0
+
+set $WS1 1:[ TERM ]
+set $WS2 2:[ WEB ]
+set $WS3 3:[ EMAIL ]
+set $WS4 4:[ SCUDCLOUD ]
+set $WS5 5:[ FILES ]
+set $WS6 6:[  ]
+set $WS7 7:[  ]
+set $WS8 8:[  ]
+set $WS9 9:[  ]
+
+# Assign applications to specific WS
+assign [class="Chromium|chromium"] $WS2
+assign [class="Firefox|firefox"] $WS2
+assign [class="Thunar|thunar"] $WS5
+assign [class="Evolution|evolution"] $WS3
+assign [class="Geary|geary"] $WS3
+assign [title="ScudCloud|scudcloud"] $WS4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -145,8 +166,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 bindsym $mod+y move workspace to output left
 bindsym $mod+Control+Shift+l exec i3lock
-bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
-bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ unmute 
+bindsym XF86AudioLowerVolume exec amixer set Master 5%- 
+bindsym XF86AudioPlay exec mpc toggle && pkill --signal RTMIN+2 i3blocks
+bindsym XF86AudioPause exec mpc toggle && pkill --signal RTMIN+2 i3blocks
+bindsym XF86AudioNext exec mpc next && pkill --signal RTMIN+2 i3blocks
+bindsym XF86AudioPrev exec mpc prev && pkill --signal RTMIN+2 i3blocks
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 # granular volume control
 bindsym $mod+XF86AudioRaiseVolume exec amixer -D pulse sset Master 1%+ && pkill -RTMIN+1 i3blocks
 bindsym $mod+XF86AudioLowerVolume exec amixer -D pulse sset Master 1%- && pkill -RTMIN+1 i3blocks
@@ -159,6 +186,8 @@ bar {
     status_command    i3blocks
     position          top
     workspace_buttons yes
+	mode dock
+    strip_workspace_numbers yes
 
 
     colors {
@@ -180,3 +209,4 @@ workspace_auto_back_and_forth yes
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id gnome-session-manager
 exec --no-startup-id /usr/bin/nm-applet
+exec --no-startup-id xautolock -time 5 -locker lock
