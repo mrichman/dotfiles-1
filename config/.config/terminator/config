@@ -3,7 +3,11 @@
 [profiles]
   [[default]]
     use_system_font = False
-    font = Source Code Pro for Powerline 14
+    background_image = None
+    foreground_color = "#839496"
+    show_titlebar = False
+    font = Source Code Pro for Powerline 12
+    background_color = "#002b36"
 [layouts]
   [[default]]
     [[[child1]]]
