@@ -18,6 +18,8 @@ alias github="cd ~/src/github.com"
 alias gophercon="cd ~/src/github.com/gophercon/gc15"
 alias gopheracademy="cd ~/src/github.com/gopheracademy/gopheracademy-web"
 alias bketelsen="cd ~/src/github.com/bketelsen"
+alias gorma="cd ~/src/github.com/goadesign/gorma"
+alias goa="cd ~/src/github.com/goadesign/goa"
 if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
@@ -77,5 +79,6 @@ fi
 
 export TERM=xterm-256color
 export XDG_CONFIG_HOME=~/.config
+export DOCKER_HOST=192.168.100.5:4243
 
 
