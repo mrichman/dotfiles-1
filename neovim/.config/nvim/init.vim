@@ -15,7 +15,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'unblevable/quick-scope'  
 Plug 'scrooloose/nerdtree'
-
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/syntastic'
 Plug 'Shougo/neopairs.vim'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
@@ -33,6 +34,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'elzr/vim-json', {'for' : 'json'}
 Plug 'tejr/vim-tmux', {'for': 'tmux'}
 Plug 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
+Plug 'fatih/vim-nginx' , {'for' : 'nginx'}
 Plug 'corylanou/vim-present', {'for' : 'present'}
 
 call plug#end()
@@ -89,7 +91,7 @@ set clipboard^=unnamedplus
 set lazyredraw          " Wait to redraw
 syntax sync minlines=256
 set synmaxcol=300
-" set re=1
+set re=1
 
 if has('persistent_undo')
   set undofile
@@ -169,6 +171,16 @@ else
   colorscheme molokai
 endif
 
+
+" For toggling
+noremap <Leader>n :<C-u>call g:NerdTreeFindToggle()<cr>
+
+nnoremap <silent> <F2> :NERDTreeFind<CR>
+noremap <F3> :NERDTreeToggle<CR>
+map <F3> :NERDTreeToggle<CR>
+map <F2> :NERDTreeFind<CR>
+
+
 " open help vertically
 command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
@@ -177,6 +189,9 @@ autocmd BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 au BufNewFile,BufRead *.vim setlocal noet ts=2 sw=2 sts=2
 au BufNewFile,BufRead *.txt setlocal noet ts=4 sw=4
 au BufNewFile,BufRead *.md setlocal noet ts=4 sw=4
+
+autocmd FileType json setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 
 augroup filetypedetect
   au BufNewFile,BufRead .tmux.conf*,tmux.conf* setf tmux
@@ -203,8 +218,8 @@ let g:mapleader = ","
 ":cn      next error
 ":cp      previous error
 ":clist   list all errors
-map <C-n> :lnext<CR>
-map <C-m> :lprevious<CR>
+" map <C-n> :lnext<CR>
+" map <C-m> :lprevious<CR>
 nnoremap <leader>a :lclose<CR>
 
 " Fast saving
@@ -223,6 +238,16 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Resize window quickly
+" nnoremap <silent> <A-Right> :vertical resize +10<CR>
+" nnoremap <silent> <A-Left> :vertical resize -10<CR>
+" nnoremap <silent> <A-Up> :resize +10<CR>
+" nnoremap <silent> <A-Down> :resize -10<CR>
+if bufwinnr(1)
+  map = <C-W>>
+  map - <C-W><
+endif
+
 " Print full path
 map <C-f> :echo expand("%:p")<cr>
 
@@ -239,9 +264,9 @@ if has('nvim')
   tnoremap <C-l> <C-\><C-n><C-w>l
 
   " Open terminal in vertical, horizontal and new tab
-  nnoremap <leader>tv :vsplit term://zsh<CR>
-  nnoremap <leader>ts :split term://zsh<CR>
-  nnoremap <leader>tt :tabnew term://zsh<CR>
+  " nnoremap <leader>tv :vsplit term://zsh<CR>
+  " nnoremap <leader>ts :split term://zsh<CR>
+  " nnoremap <leader>tt :tabnew term://zsh<CR>
 
   " always start terminal in insert mode
   autocmd BufWinEnter,WinEnter term://* startinsert
@@ -292,18 +317,15 @@ nnoremap <silent> * :let stay_star_view = winsaveview()<cr>*:call winrestview(st
 " Time out on key codes but not mappings.
 " Basically this makes terminal Vim work sanely.
 if !has('gui_running')
-    set notimeout
-    set ttimeout
-    set ttimeoutlen=10
-    augroup FastEscape
-        autocmd!
-        au InsertEnter * set timeoutlen=0
-        au InsertLeave * set timeoutlen=1000
-    augroup END
+  set notimeout
+  set ttimeout
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+  augroup END
 endif
-
-" Resize splits when the window is resized
-au VimResized * :wincmd =
 
 " Visual Mode */# from Scrooloose {{{
 function! s:VSetSearch()
@@ -316,20 +338,30 @@ endfunction
 vnoremap * :<C-u>call <SID>VSetSearch()<CR>//<CR><c-o>
 vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR><c-o>
 
+
+" prependend
+function! s:CreateGoDocComment()
+  norm "zyiw
+  execute ":put! z"
+  execute ":norm I# \<Esc>$"
+endfunction
+
+nnoremap <leader>ui :<C-u>call <SID>CreateGoDocComment()<CR>
+
 "====================================================
 "===================== PLUGINS ======================
 
+" ==================== Fugitive ====================
+vnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gb :Gblame<CR>
+
 " ==================== Vim-go ====================
 let g:go_fmt_fail_silently = 0
+let g:syntastic_go_checkers = ['golint', 'govet', 'gb']
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
-
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', "gotype"]
-let g:go_metalinter_autosave_enabled = ['vet', 'golint']
-
 let g:go_term_enabled = 1
-
+let g:go_snippet_engine = "neosnippet"
 let g:go_highlight_space_tab_error = 0
 let g:go_highlight_array_whitespace_error = 0
 let g:go_highlight_trailing_whitespace_error = 0
@@ -344,17 +376,21 @@ au FileType go nmap <Leader>v <Plug>(go-def-vertical)
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>l <Plug>(go-metalinter)
 
-au FileType go nmap <leader>rr  <Plug>(go-run)
-au FileType go nmap <Leader>rt <Plug>(go-run-tab)
-au FileType go nmap <Leader>rs <Plug>(go-run-split)
-au FileType go nmap <Leader>rv <Plug>(go-run-vertical)
+au FileType go nmap <leader>r  <Plug>(go-run)
 
 au FileType go nmap <leader>b  <Plug>(go-build)
 au FileType go nmap <leader>t  <Plug>(go-test)
 au FileType go nmap <leader>dt  <Plug>(go-test-compile)
 au FileType go nmap <Leader>d <Plug>(go-doc)
-au FileType go nmap <Leader>f :GoImports<CR>
-au BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
+
+" I like these more!
+augroup go
+    autocmd!
+    autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
+    autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
+    autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
+augroup END
+
 " ==================== CtrlP ====================
 let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_working_path_mode = 'ra'
@@ -366,13 +402,7 @@ let g:ctrlp_use_caching = 1
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 
-let g:ctrlp_buftag_types = {
-      \ 'go'     	   : '--language-force=go --golang-types=ftv',
-      \ 'coffee'     : '--language-force=coffee --coffee-types=cmfvf',
-      \ 'markdown'   : '--language-force=markdown --markdown-types=hik',
-      \ 'objc'       : '--language-force=objc --objc-types=mpci',
-      \ 'rc'         : '--language-force=rust --rust-types=fTm'
-      \ }
+let g:ctrlp_buftag_types = {'go' : '--language-force=go --golang-types=ftv'}
 
 func! MyCtrlPTag()
   let g:ctrlp_prompt_mappings = {
@@ -389,66 +419,12 @@ imap <C-g> <esc>:MyCtrlPTag<cr>
 nmap <C-b> :CtrlPCurWD<cr>
 imap <C-b> <esc>:CtrlPCurWD<cr>
 
-
-
-" ==================== delimitMate ====================
-let g:delimitMate_expand_cr = 1		
-let g:delimitMate_expand_space = 1		
-let g:delimitMate_smart_quotes = 1		
-let g:delimitMate_expand_inside_quotes = 0		
-let g:delimitMate_smart_matchpairs = '^\%(\w\|\$\)'		
-
-" ==================== NerdTree ====================
-" Open nerdtree in current dir, write our own custom function because
-" NerdTreeToggle just sucks and doesn't work for buffers
-function! g:NerdTreeFindToggle()
-  if g:NERDTree.IsOpen()
-    exec 'NERDTreeClose'
-  else
-    exec 'NERDTree'
-  endif
-endfunction
-
-"" NERDTree configuration
-let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__']
-let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let g:NERDTreeShowBookmarks=1
-let g:nerdtree_tabs_focus_on_files=1
-let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
-let g:NERDTreeWinSize = 20
-
-" For toggling
-noremap <Leader>n :<C-u>call g:NerdTreeFindToggle()<cr>
-
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-noremap <F3> :NERDTreeToggle<CR>
-map <F3> :NERDTreeToggle<CR>
-map <F2> :NERDTreeFind<CR>
-
-let g:ctrlp_status_func = {
-  \ 'main': 'CtrlPStatusFunc_1',
-  \ 'prog': 'CtrlPStatusFunc_2',
-  \ }
-
-""""""""""""""""" TMUXLINE
-
-let g:tmuxline_separators = {
-    \ 'left' : '',
-    \ 'left_alt': '',
-    \ 'right' : '',
-    \ 'right_alt' : '',
-    \ 'space' : ' '}
-
-""""""""""""""""" TMUXLINE
-
-" Trigger a highlight in the appropriate direction when pressing these keys:
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-
 " Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
+<<<<<<< HEAD
+=======
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds'     : [  'p:package', 'i:imports:1', 'c:constants', 'v:variables',
@@ -461,29 +437,206 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
     \ }
 
-" Syntastic
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_style_error_symbol = '✗'
-let g:syntastic_style_warning_symbol = '⚠'
-let g:syntastic_auto_loc_list=1
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_always_check_on_open=1
-let g:syntastic_always_check_on_wq=1
+" ==================== delimitMate ====================
+let g:delimitMate_expand_cr = 1		
+let g:delimitMate_expand_space = 1		
+let g:delimitMate_smart_quotes = 1		
+let g:delimitMate_expand_inside_quotes = 0		
+let g:delimitMate_smart_matchpairs = '^\%(\w\|\$\)'		
 
-"Airline
-set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\ %{fugitive#statusline()}
 
-let g:airline_theme = 'powerlineish'
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+" ==================== Lightline ====================
+"
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste'],
+      \             [ 'fugitive', 'filename', 'modified', 'ctrlpmark' ],
+      \             [ 'go'] ],
+      \   'right': [ [ 'lineinfo' ], 
+      \              [ 'percent' ], 
+      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \ },
+      \ 'inactive': {
+      \   'left': [ [ 'go'] ],
+      \ },
+      \ 'component_function': {
+      \   'lineinfo': 'LightLineInfo',
+      \   'percent': 'LightLinePercent',
+      \   'modified': 'LightLineModified',
+      \   'filename': 'LightLineFilename',
+      \   'go': 'LightLineGo',
+      \   'fileformat': 'LightLineFileformat',
+      \   'filetype': 'LightLineFiletype',
+      \   'fileencoding': 'LightLineFileencoding',
+      \   'mode': 'LightLineMode',
+      \   'fugitive': 'LightLineFugitive',
+      \   'ctrlpmark': 'CtrlPMark',
+      \ },
+      \ }
 
-autocmd BufEnter * :syntax sync fromstart
+function! LightLineModified()
+  if &filetype == "help"
+    return ""
+  elseif &modified
+    return "+"
+  elseif &modifiable
+    return ""
+  else
+    return ""
+  endif
+endfunction
+
+function! LightLineFileformat()
+  return winwidth(0) > 70 ? &fileformat : ''
+endfunction
+
+function! LightLineFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype : 'no ft') : ''
+endfunction
+
+function! LightLineFileencoding()
+  return winwidth(0) > 70 ? (strlen(&fenc) ? &fenc : &enc) : ''
+endfunction
+
+function! LightLineInfo()
+  return winwidth(0) > 60 ? printf("%3d:%-2d", line('.'), col('.')) : ''
+endfunction
+
+function! LightLinePercent()
+  return &ft =~? 'vimfiler' ? '' : (100 * line('.') / line('$')) . '%'
+endfunction
+
+function! LightLineFugitive()
+  return exists('*fugitive#head') ? fugitive#head() : ''
+endfunction
+>>>>>>> a407b941dde30561d4442d13f88198f9096af040
+
+function! LightLineGo()
+  " return ''
+  return exists('*go#jobcontrol#Statusline') ? go#jobcontrol#Statusline() : ''
+endfunction
+
+function! LightLineMode()
+  let fname = expand('%:t')
+  return fname == 'ControlP' ? 'CtrlP' :
+        \ &ft == 'vimfiler' ? 'VimFiler' :
+        \ winwidth(0) > 60 ? lightline#mode() : ''
+endfunction
+
+function! LightLineFilename()
+  let fname = expand('%:t')
+  if mode() == 't'
+    return ''
+  endif
+
+  return fname == 'ControlP' ? g:lightline.ctrlp_item :
+        \ &ft == 'vimfiler' ? vimfiler#get_status_string() :
+        \ ('' != LightLineReadonly() ? LightLineReadonly() . ' ' : '') .
+        \ ('' != fname ? fname : '[No Name]')
+endfunction
+
+function! LightLineReadonly()
+  return &ft !~? 'help' && &readonly ? 'RO' : ''
+endfunction
+
+function! CtrlPMark()
+  if expand('%:t') =~ 'ControlP'
+    call lightline#link('iR'[g:lightline.ctrlp_regex])
+    return lightline#concatenate([g:lightline.ctrlp_prev, g:lightline.ctrlp_item
+          \ , g:lightline.ctrlp_next], 0)
+  else
+    return ''
+  endif
+endfunction
+
+let g:ctrlp_status_func = {
+      \ 'main': 'CtrlPStatusFunc_1',
+      \ 'prog': 'CtrlPStatusFunc_2',
+      \ }
+
+function! CtrlPStatusFunc_1(focus, byfname, regex, prev, item, next, marked)
+  let g:lightline.ctrlp_regex = a:regex
+  let g:lightline.ctrlp_prev = a:prev
+  let g:lightline.ctrlp_item = a:item
+  let g:lightline.ctrlp_next = a:next
+  return lightline#statusline(0)
+endfunction
+
+function! CtrlPStatusFunc_2(str)
+  return lightline#statusline(0)
+endfunction
+
+
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" ==================== NerdTree ====================
+" For toggling
+noremap <Leader>n :NERDTreeToggle<cr>
+noremap <Leader>f :NERDTreeFind<cr>
+
+let NERDTreeShowHidden=1
+
+" ==================== vim-json ====================
+let g:vim_json_syntax_conceal = 0
+
+" ==================== completion and snippet =========================
+" I use deoplete for Neovim and neocomplete for Vim.
+if has('nvim')
+  let g:deoplete#enable_at_startup = 1
+  let g:deoplete#ignore_sources = {}
+  let g:deoplete#ignore_sources._ = ['buffer', 'member', 'tag', 'file', 'neosnippet']
+  let g:deoplete#sources#go#sort_class = ['func', 'type', 'var', 'const']
+
+  " Use partial fuzzy matches like YouCompleteMe
+  call deoplete#custom#set('_', 'matchers', ['matcher_full_fuzzy'])
+else
+  let g:neocomplete#enable_at_startup = 1
+  let g:neocomplete#enable_smart_case = 1
+  let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+	if !exists('g:neocomplete#sources')
+	  let g:neocomplete#sources = {}
+	endif
+	let g:neocomplete#sources._ = ['buffer', 'member', 'tag', 'file', 'dictionary']
+	let g:neocomplete#sources.go = ['omni']
+
+  " disable sorting
+	call neocomplete#custom#source('_', 'sorters', [])
+endif
+
+" I want to use my tab more smarter. If we are inside a completion menu jump
+" to the next item. Otherwise check if there is any snippet to expand, if yes
+" expand it. Also if inside a snippet and we need to jump tab jumps. If none
+" of the above matches we just call our usual 'tab'.
+function! s:tab_complete()
+  if pumvisible()
+    return "\<c-n>"
+  endif
+
+  if neosnippet#expandable_or_jumpable() 
+    return "\<Plug>(neosnippet_expand_or_jump)"
+  endif
+
+  return "\<tab>"
+endfunction
+imap <silent><expr><TAB> <SID>tab_complete()
+
+smap <expr><tab> neosnippet#expandable_or_jumpable() ? 
+      \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+inoremap <silent><expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
+imap <silent><expr> <CR> pumvisible() ? "\<C-y>" : '<Plug>delimitMateCR'
+
+autocmd InsertLeave * NeoSnippetClearMarkers
+
+if has('conceal')
+  set conceallevel=2 concealcursor=inv
+endif
+
 " vim:ts=2:sw=2:et
 if has('nvim')
     :tnoremap <Esc> <C-\><C-n>
     nnoremap <leader>tss :below 10sp term://$SHELL<cr>
 endif
+
