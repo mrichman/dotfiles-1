@@ -423,8 +423,6 @@ imap <C-b> <esc>:CtrlPCurWD<cr>
 nmap <silent> <F4> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
-<<<<<<< HEAD
-=======
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds'     : [  'p:package', 'i:imports:1', 'c:constants', 'v:variables',
@@ -509,7 +507,6 @@ endfunction
 function! LightLineFugitive()
   return exists('*fugitive#head') ? fugitive#head() : ''
 endfunction
->>>>>>> a407b941dde30561d4442d13f88198f9096af040
 
 function! LightLineGo()
   " return ''
