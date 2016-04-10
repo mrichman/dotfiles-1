@@ -23,7 +23,7 @@ alias goa="cd ~/src/github.com/goadesign/goa"
 if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
-export PATH=./bin:$GOPATH/bin:/usr/local/go/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/cuda-6.5/bin:$PATH
+export PATH=./bin:$GOPATH/bin:~/nim/bin:/usr/local/go/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:$PATH
 
 # Tab Completion of .ssh/known_hosts
 local knownhosts
@@ -79,6 +79,5 @@ fi
 
 export TERM=xterm-256color
 export XDG_CONFIG_HOME=~/.config
-export DOCKER_HOST=192.168.100.5:4243
 
 
