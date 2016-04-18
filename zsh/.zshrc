@@ -1,5 +1,6 @@
+export TERM=xterm-256color
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/bketelsen/.oh-my-zsh
+export ZSH=/home/bketelsen/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -83,7 +84,7 @@ plugins=(git brew docker)
 
 # User configuration
 
-export PATH="./bin:/Users/bketelsen/bin:/Users/bketelsen/nim/bin:/usr/local/go/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/go/bin:/usr/local/sbin"
+export PATH="./bin:/home/bketelsen/bin:/home/bketelsen/nim/bin:/usr/local/go/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/go/bin:/usr/local/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -122,8 +123,6 @@ export GIT_SSL_NO_VERIFY=true
 
 conflicts='grep -rI "<<<" *'
 
-alias xor="cd ~/src/src.xor.exchange/xor/xor"
-alias infra="cd ~/src/src.xor.exchange/xor/infrastructure"
 alias github="cd ~/src/github.com"
 alias gophercon="cd ~/src/github.com/gophercon/gc15"
 alias gopheracademy="cd ~/src/github.com/gopheracademy/gopheracademy-web"
@@ -134,5 +133,6 @@ if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
 
-export TERM=xterm-256color
+
 export XDG_CONFIG_HOME=~/.config
+export GOPATH=~
