@@ -6,3 +6,7 @@ vendor/bundle/ruby
 *.swp
 *.swo
 NeoBundle.lock
+neovim/.config/nvim/tmp/
+neovim/.config/nvim/.init.vim-rplugin~
+neovim/.config/nvim/plugged/
+
