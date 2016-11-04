@@ -1,8 +1,8 @@
-## Brian's dotfiles
+## Mark's dotfiles
 
 A collection of tools, scripts, configuration to make my shell and vim more awesome
 
-{forked from Erik St. Martin's dotfiles originally}
+{forked from Brian Ketelsen's dotfiles originally}
 
 ### Install
 
